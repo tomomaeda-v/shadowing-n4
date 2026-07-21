@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadowing N4 — Latihan Bahasa Jepang</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<style>
+  :root{
+    --bg:#f7f5f0; --card:#ffffff; --ink:#2b2b33; --sub:#7a7a85;
+    --accent:#d43d51; --accent-soft:#fbe9ec; --green:#2e9e6b; --green-soft:#e3f4ec;
+    --blue:#3b6fd4; --blue-soft:#e8eefb; --line:#e8e5de; --radius:16px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{margin:0; font-family:'Hiragino Sans','Noto Sans JP','Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--ink)}
+  .wrap{max-width:640px; margin:0 auto; padding:16px 16px 90px}
+  header{display:flex; align-items:center; justify-content:space-between; padding:10px 0 18px}
+  .logo{font-size:20px; font-weight:800}
+  .logo span{color:var(--accent)}
+  .badge{font-size:12px; background:var(--accent); color:#fff; border-radius:99px; padding:3px 10px; font-weight:700}
+  .progress-card{background:linear-gradient(135deg,#d43d51,#b2314f); color:#fff; border-radius:var(--radius); padding:18px 20px; margin-bottom:18px}
+  .progress-card h2{margin:0 0 6px; font-size:15px; font-weight:600; opacity:.9}
+  .progress-num{font-size:28px; font-weight:800}
+  .bar{height:8px; background:rgba(255,255,255,.25); border-radius:99px; margin-top:10px; overflow:hidden}
+  .bar>i{display:block; height:100%; background:#fff; border-radius:99px; transition:width .4s}
+  .cats{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .cat{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px; cursor:pointer; transition:transform .12s, box-shadow .12s}
+  .cat:active{transform:scale(.97)}
+  .cat .ic{font-size:26px}
+  .cat h3{margin:6px 0 2px; font-size:15px}
+  .cat p{margin:0; font-size:12px; color:var(--sub)}
+  .cat .done{font-size:11px; color:var(--green); font-weight:700; margin-top:4px}
+  .list-head{display:flex; align-items:center; gap:10px; margin:4px 0 14px}
+  .back{border:none; background:var(--card); border:1px solid var(--line); width:38px; height:38px; border-radius:12px; font-size:17px; cursor:pointer}
+  .list-head h2{margin:0; font-size:18px}
+  .sentence-item{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin-bottom:10px; cursor:pointer; display:flex; gap:12px; align-items:center}
+  .sentence-item .num{min-width:30px; height:30px; border-radius:99px; background:var(--accent-soft); color:var(--accent); font-weight:800; font-size:13px; display:flex; align-items:center; justify-content:center}
+  .sentence-item.is-done .num{background:var(--green-soft); color:var(--green)}
+  .sentence-item .jp{font-size:15px; font-weight:600}
+  .sentence-item .idn{font-size:12px; color:var(--sub); margin-top:2px}
+  /* practice */
+  .practice{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:22px 20px; text-align:center}
+  .step-label{font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent); text-transform:uppercase}
+  .jp-big{font-size:24px; font-weight:800; line-height:1.6; margin:14px 0 6px}
+  .kana,.romaji,.idn-t{font-size:14px; color:var(--sub); margin:4px 0; line-height:1.6}
+  .idn-t{color:var(--blue); font-weight:600}
+  .toggles{display:flex; gap:8px; justify-content:center; margin:14px 0}
+  .tgl{font-size:12px; border:1px solid var(--line); background:var(--bg); border-radius:99px; padding:6px 12px; cursor:pointer; color:var(--sub); font-weight:600}
+  .tgl.on{background:var(--blue-soft); color:var(--blue); border-color:transparent}
+  .play-row{display:flex; gap:12px; justify-content:center; align-items:center; margin:18px 0 6px}
+  .btn-play{width:74px; height:74px; border-radius:99px; border:none; background:var(--accent); color:#fff; font-size:30px; cursor:pointer; box-shadow:0 8px 20px rgba(212,61,81,.35); transition:transform .1s}
+  .btn-play:active{transform:scale(.93)}
+  .btn-mini{width:52px; height:52px; border-radius:99px; border:1px solid var(--line); background:var(--card); font-size:19px; cursor:pointer; color:var(--ink)}
+  .btn-mini.on{background:var(--blue-soft); border-color:var(--blue); color:var(--blue)}
+  .hint{font-size:11px; color:var(--sub)}
+  .rec-row{display:flex; gap:10px; justify-content:center; margin-top:18px}
+  .btn-rec{border:none; border-radius:14px; padding:12px 18px; font-size:14px; font-weight:700; cursor:pointer}
+  .rec-start{background:var(--ink); color:#fff}
+  .rec-start.recording{background:#c02626; animation:pulse 1s infinite}
+  @keyframes pulse{50%{opacity:.6}}
+  .rec-play{background:var(--bg); border:1px solid var(--line); color:var(--ink)}
+  .nav-row{display:flex; gap:10px; margin-top:20px}
+  .nav-row button{flex:1; padding:14px; border-radius:14px; font-size:14px; font-weight:700; cursor:pointer; border:1px solid var(--line); background:var(--card)}
+  .btn-done{background:var(--green)!important; color:#fff; border:none!important}
+  .btn-done.undone{background:var(--card)!important; color:var(--green); border:1.5px solid var(--green)!important}
+  .counter{font-size:12px; color:var(--sub); margin-top:12px}
+  .guide{background:var(--blue-soft); border-radius:var(--radius); padding:14px 16px; font-size:13px; color:#274b8f; line-height:1.7; margin-bottom:16px}
+  .guide b{display:block; margin-bottom:4px}
+  .hidden{display:none!important}
+  footer{position:fixed; bottom:0; left:0; right:0; background:rgba(247,245,240,.94); backdrop-filter:blur(6px); border-top:1px solid var(--line); padding:9px 16px; text-align:center; font-size:11px; color:var(--sub)}
+  footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🎧 Shadowing <span>N4</span></div>
+    <div class="badge">JLPT N4</div>
+  </header>
+
+  <!-- HOME -->
+  <div id="view-home">
+    <div class="progress-card">
+      <h2>Kemajuan Belajar Anda</h2>
+      <div class="progress-num"><span id="p-done">0</span> / <span id="p-total">0</span> kalimat</div>
+      <div class="bar"><i id="p-bar" style="width:0%"></i></div>
+    </div>
+    <div class="guide">
+      <b>Cara latihan shadowing 🗣️</b>
+      1. Dengarkan audio bahasa Jepang.<br>
+      2. Tirukan ucapannya <u>bersamaan</u> dengan audio (seperti bayangan).<br>
+      3. Rekam suara Anda dan bandingkan.<br>
+      4. Ulangi sampai lancar, lalu tandai ✓ Selesai.
+    </div>
+    <div class="cats" id="cat-grid"></div>
+  </div>
+
+  <!-- LIST -->
+  <div id="view-list" class="hidden">
+    <div class="list-head">
+      <button class="back" onclick="showHome()">←</button>
+      <h2 id="list-title"></h2>
+    </div>
+    <div id="sentence-list"></div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div id="view-practice" class="hidden">
+    <div class="list-head">
+      <button class="back" onclick="backToList()">←</button>
+      <h2 id="practice-cat"></h2>
+    </div>
+    <div class="practice">
+      <div class="step-label">Dengarkan & Tirukan</div>
+      <div class="jp-big" id="pr-jp"></div>
+      <div class="kana" id="pr-kana"></div>
+      <div class="romaji" id="pr-romaji"></div>
+      <div class="idn-t" id="pr-idn"></div>
+      <div class="toggles">
+        <button class="tgl on" id="tg-kana" onclick="toggleField('kana')">かな</button>
+        <button class="tgl on" id="tg-romaji" onclick="toggleField('romaji')">Romaji</button>
+        <button class="tgl on" id="tg-idn" onclick="toggleField('idn')">Arti</button>
+      </div>
+      <div class="play-row">
+        <button class="btn-mini" id="btn-slow" onclick="toggleSlow()" title="Pelan">🐢</button>
+        <button class="btn-play" id="btn-play" onclick="playAudio()">▶</button>
+        <button class="btn-mini" id="btn-loop" onclick="toggleLoop()" title="Ulangi otomatis">🔁</button>
+      </div>
+      <div class="hint">🐢 = pelan &nbsp;|&nbsp; 🔁 = putar berulang</div>
+      <div class="rec-row">
+        <button class="btn-rec rec-start" id="btn-rec" onclick="toggleRec()">🎙️ Rekam suara saya</button>
+        <button class="btn-rec rec-play hidden" id="btn-recplay" onclick="playRec()">▶ Putar rekaman</button>
+      </div>
+      <div class="nav-row">
+        <button onclick="prevSentence()">← Sebelumnya</button>
+        <button class="btn-done undone" id="btn-done" onclick="toggleDone()">✓ Selesai</button>
+        <button onclick="nextSentence()">Berikutnya →</button>
+      </div>
+      <div class="counter" id="pr-counter"></div>
+    </div>
+  </div>
+</div>
+<footer>Shadowing N4 — Aplikasi latihan shadowing untuk pembelajar Indonesia · <a href="admin.html">管理画面</a></footer>
+
+<script>
+const LS_PROGRESS = 'shadowing_n4_progress';
+const LS_CUSTOM = 'shadowing_n4_custom_data';
+let DATA = null, curCat = null, curList = [], curIdx = 0;
+let audio = new Audio(), slow = false, loop = false;
+let mediaRec = null, recChunks = [], recUrl = null, recording = false;
+let progress = JSON.parse(localStorage.getItem(LS_PROGRESS) || '{}');
+let show = { kana: true, romaji: true, idn: true };
+
+async function init() {
+  const res = await fetch('data.json?v=' + Date.now());
+  DATA = await res.json();
+  // merge admin overrides saved in this browser
+  const custom = JSON.parse(localStorage.getItem(LS_CUSTOM) || 'null');
+  if (custom && custom.sentences) DATA = custom;
+  renderHome();
+}
+function sentencesOf(catId){ return DATA.sentences.filter(s => s.category === catId); }
+function doneCount(list){ return list.filter(s => progress[s.id]).length; }
+
+function renderHome() {
+  const total = DATA.sentences.length, done = doneCount(DATA.sentences);
+  document.getElementById('p-done').textContent = done;
+  document.getElementById('p-total').textContent = total;
+  document.getElementById('p-bar').style.width = (total ? done/total*100 : 0) + '%';
+  const grid = document.getElementById('cat-grid');
+  grid.innerHTML = '';
+  DATA.categories.forEach(c => {
+    const list = sentencesOf(c.id);
+    if (!list.length) return;
+    const d = doneCount(list);
+    const el = document.createElement('div');
+    el.className = 'cat';
+    el.innerHTML = `<div class="ic">${c.icon || '📘'}</div><h3>${c.name_id}</h3><p>${c.name_jp} · ${list.length} kalimat</p>` +
+      (d ? `<div class="done">✓ ${d}/${list.length} selesai</div>` : '');
+    el.onclick = () => showList(c);
+    grid.appendChild(el);
+  });
+}
+function showHome(){ stopAll(); swap('view-home'); renderHome(); }
+function showList(cat) {
+  curCat = cat; curList = sentencesOf(cat.id);
+  document.getElementById('list-title').textContent = `${cat.icon || ''} ${cat.name_id}`;
+  const box = document.getElementById('sentence-list');
+  box.innerHTML = '';
+  curList.forEach((s, i) => {
+    const el = document.createElement('div');
+    el.className = 'sentence-item' + (progress[s.id] ? ' is-done' : '');
+    el.innerHTML = `<div class="num">${progress[s.id] ? '✓' : i+1}</div><div><div class="jp">${s.jp}</div><div class="idn">${s.idn}</div></div>`;
+    el.onclick = () => showPractice(i);
+    box.appendChild(el);
+  });
+  swap('view-list');
+}
+function backToList(){ stopAll(); showList(curCat); }
+function showPractice(i) {
+  curIdx = i; clearRec();
+  const s = curList[i];
+  document.getElementById('practice-cat').textContent = `${curCat.icon || ''} ${curCat.name_id}`;
+  document.getElementById('pr-jp').textContent = s.jp;
+  document.getElementById('pr-kana').textContent = s.kana || '';
+  document.getElementById('pr-romaji').textContent = s.romaji || '';
+  document.getElementById('pr-idn').textContent = s.idn || '';
+  document.getElementById('pr-counter').textContent = `Kalimat ${i+1} / ${curList.length}`;
+  updateDoneBtn(); applyToggles();
+  swap('view-practice');
+  playAudio();
+}
+function swap(id){ ['view-home','view-list','view-practice'].forEach(v => document.getElementById(v).classList.toggle('hidden', v !== id)); }
+
+function playAudio() {
+  const s = curList[curIdx];
+  window.speechSynthesis && speechSynthesis.cancel();
+  if (s.audio) {
+    audio.src = s.audio; audio.playbackRate = slow ? 0.7 : 1.0;
+    audio.onended = () => { if (loop) setTimeout(() => audio.play(), 700); };
+    audio.play().catch(() => speakFallback(s));
+  } else speakFallback(s);
+}
+function speakFallback(s) {
+  if (!window.speechSynthesis) return;
+  const u = new SpeechSynthesisUtterance(s.jp);
+  u.lang = 'ja-JP'; u.rate = slow ? 0.65 : 0.9;
+  u.onend = () => { if (loop) setTimeout(() => speakFallback(s), 700); };
+  speechSynthesis.speak(u);
+}
+function stopAll(){ audio.pause(); loop = false; document.getElementById('btn-loop').classList.remove('on'); window.speechSynthesis && speechSynthesis.cancel(); }
+function toggleSlow(){ slow = !slow; document.getElementById('btn-slow').classList.toggle('on', slow); playAudio(); }
+function toggleLoop(){ loop = !loop; document.getElementById('btn-loop').classList.toggle('on', loop); if (loop) playAudio(); else { audio.pause(); window.speechSynthesis && speechSynthesis.cancel(); } }
+
+function toggleField(f) {
+  show[f] = !show[f];
+  document.getElementById('tg-' + f).classList.toggle('on', show[f]);
+  applyToggles();
+}
+function applyToggles() {
+  document.getElementById('pr-kana').style.visibility = show.kana ? 'visible' : 'hidden';
+  document.getElementById('pr-romaji').style.visibility = show.romaji ? 'visible' : 'hidden';
+  document.getElementById('pr-idn').style.visibility = show.idn ? 'visible' : 'hidden';
+}
+async function toggleRec() {
+  const btn = document.getElementById('btn-rec');
+  if (recording) { mediaRec.stop(); return; }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    recChunks = [];
+    mediaRec = new MediaRecorder(stream);
+    mediaRec.ondataavailable = e => recChunks.push(e.data);
+    mediaRec.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      recUrl = URL.createObjectURL(new Blob(recChunks, { type: 'audio/webm' }));
+      recording = false;
+      btn.classList.remove('recording'); btn.textContent = '🎙️ Rekam lagi';
+      document.getElementById('btn-recplay').classList.remove('hidden');
+    };
+    mediaRec.start(); recording = true;
+    btn.classList.add('recording'); btn.textContent = '⏹ Berhenti';
+  } catch (e) { alert('Mikrofon tidak dapat diakses: ' + e.message); }
+}
+function playRec(){ if (recUrl) new Audio(recUrl).play(); }
+function clearRec(){ recUrl = null; recording = false;
+  const b = document.getElementById('btn-rec'); b.classList.remove('recording'); b.textContent = '🎙️ Rekam suara saya';
+  document.getElementById('btn-recplay').classList.add('hidden'); }
+
+function toggleDone() {
+  const s = curList[curIdx];
+  if (progress[s.id]) delete progress[s.id]; else progress[s.id] = Date.now();
+  localStorage.setItem(LS_PROGRESS, JSON.stringify(progress));
+  updateDoneBtn();
+}
+function updateDoneBtn() {
+  const s = curList[curIdx];
+  const b = document.getElementById('btn-done');
+  const done = !!progress[s.id];
+  b.classList.toggle('undone', !done);
+  b.textContent = done ? '✓ Sudah selesai' : '✓ Selesai';
+}
+function nextSentence(){ stopAll(); if (curIdx < curList.length - 1) showPractice(curIdx + 1); else backToList(); }
+function prevSentence(){ stopAll(); if (curIdx > 0) showPractice(curIdx - 1); }
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理画面 — Shadowing N4</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+<style>
+  :root{--bg:#f4f5f7; --card:#fff; --ink:#23262d; --sub:#7c8089; --accent:#3b6fd4; --accent-soft:#e8eefb;
+    --red:#d43d51; --red-soft:#fbe9ec; --green:#2e9e6b; --line:#e4e6ea; --radius:14px}
+  *{box-sizing:border-box}
+  body{margin:0; font-family:'Hiragino Sans','Noto Sans JP','Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--ink)}
+  .wrap{max-width:880px; margin:0 auto; padding:20px 16px 60px}
+  header{display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; flex-wrap:wrap; gap:10px}
+  h1{font-size:20px; margin:0}
+  h1 span{color:var(--accent)}
+  .toolbar{display:flex; gap:8px; flex-wrap:wrap}
+  button{font-family:inherit; cursor:pointer}
+  .btn{border:1px solid var(--line); background:var(--card); border-radius:10px; padding:9px 14px; font-size:13px; font-weight:600}
+  .btn.primary{background:var(--accent); color:#fff; border-color:transparent}
+  .btn.danger{background:var(--red-soft); color:var(--red); border-color:transparent}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px; margin-bottom:16px}
+  .notice{background:#fff8e6; border:1px solid #f0dfa8; border-radius:var(--radius); padding:12px 16px; font-size:13px; line-height:1.7; margin-bottom:16px}
+  table{width:100%; border-collapse:collapse; font-size:13px}
+  th,td{text-align:left; padding:9px 8px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--sub); font-size:12px; font-weight:600}
+  td .jp{font-weight:700}
+  td .idn{color:var(--sub); font-size:12px}
+  .tag{display:inline-block; background:var(--accent-soft); color:var(--accent); border-radius:99px; padding:2px 10px; font-size:11px; font-weight:700}
+  .no-audio{background:var(--red-soft); color:var(--red)}
+  .row-btns{white-space:nowrap}
+  .row-btns button{border:none; background:none; font-size:15px; padding:4px}
+  /* modal */
+  .modal-bg{position:fixed; inset:0; background:rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; padding:16px; z-index:50}
+  .modal{background:#fff; border-radius:16px; padding:22px; width:100%; max-width:520px; max-height:90vh; overflow:auto}
+  .modal h2{margin:0 0 14px; font-size:16px}
+  label{display:block; font-size:12px; font-weight:700; color:var(--sub); margin:12px 0 4px}
+  input,select,textarea{width:100%; padding:10px; border:1px solid var(--line); border-radius:10px; font-size:14px; font-family:inherit}
+  textarea{resize:vertical; min-height:52px}
+  .modal-btns{display:flex; gap:10px; margin-top:18px}
+  .modal-btns .btn{flex:1; padding:12px}
+  .hidden{display:none!important}
+  /* login */
+  .login-box{max-width:360px; margin:80px auto; text-align:center}
+  .login-box .card{padding:28px}
+  .login-box h1{margin-bottom:4px}
+  .login-box p{color:var(--sub); font-size:13px}
+  .stats{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px}
+  .stat{flex:1; min-width:120px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px; text-align:center}
+  .stat b{display:block; font-size:22px}
+  .stat span{font-size:12px; color:var(--sub)}
+  .filter-row{display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="login-box">
+  <div class="card">
+    <h1>🔐 管理画面</h1>
+    <p>Shadowing N4 — 教材管理</p>
+    <label>パスワード</label>
+    <input type="password" id="pw" placeholder="パスワード" onkeydown="if(event.key==='Enter')login()">
+    <div class="modal-btns"><button class="btn primary" onclick="login()">ログイン</button></div>
+    <p style="margin-top:14px; font-size:11px">初期パスワード: <b>n4admin</b>(設定タブで変更できます)</p>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main" class="wrap hidden">
+  <header>
+    <h1>🎧 Shadowing <span>N4</span> 管理画面</h1>
+    <div class="toolbar">
+      <button class="btn" onclick="location.href='index.html'">📱 アプリを見る</button>
+      <button class="btn" onclick="openCatModal()">🏷️ カテゴリ管理</button>
+      <button class="btn" onclick="exportJSON()">⬇️ data.json を書き出し</button>
+      <button class="btn" onclick="document.getElementById('imp').click()">⬆️ 読み込み</button>
+      <input type="file" id="imp" accept=".json" class="hidden" onchange="importJSON(event)">
+      <button class="btn" onclick="changePw()">🔑 パスワード変更</button>
+      <button class="btn danger" onclick="logout()">ログアウト</button>
+    </div>
+  </header>
+
+  <div class="notice">
+    💡 <b>使い方:</b> ここでの変更は<b>このブラウザに即時保存</b>され、同じブラウザで開くアプリに反映されます。<br>
+    🌏 <b>全ユーザーに公開するには:</b>「data.json を書き出し」でファイルをダウンロードし、GitHubリポジトリの
+    <code>data.json</code> を置きかえてください(GitHubのWeb画面で data.json → 鉛筆マーク → 貼り付け → Commit)。<br>
+    🔊 新しく追加した文は、音声ファイルができるまで<b>ブラウザの読み上げ音声</b>で自動再生されます。
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b id="st-total">0</b><span>収録文数</span></div>
+    <div class="stat"><b id="st-cats">0</b><span>カテゴリ</span></div>
+    <div class="stat"><b id="st-noaudio">0</b><span>音声なし(読み上げ代替)</span></div>
+  </div>
+
+  <div class="card">
+    <div class="filter-row">
+      <select id="f-cat" onchange="renderTable()" style="max-width:220px">
+        <option value="">すべてのカテゴリ</option>
+      </select>
+      <input id="f-q" placeholder="検索(日本語 / インドネシア語)" oninput="renderTable()" style="max-width:260px">
+      <button class="btn primary" onclick="openEdit(null)" style="margin-left:auto">＋ 文を追加</button>
+    </div>
+    <table>
+      <thead><tr><th style="width:36px">#</th><th>文</th><th style="width:110px">カテゴリ</th><th style="width:70px">音声</th><th style="width:90px"></th></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- EDIT MODAL -->
+<div id="edit-modal" class="modal-bg hidden">
+  <div class="modal">
+    <h2 id="em-title">文を編集</h2>
+    <label>日本語 *</label><textarea id="em-jp"></textarea>
+    <label>かな(読み)</label><textarea id="em-kana"></textarea>
+    <label>ローマ字</label><textarea id="em-romaji"></textarea>
+    <label>インドネシア語訳 *</label><textarea id="em-idn"></textarea>
+    <label>カテゴリ</label><select id="em-cat"></select>
+    <label>音声ファイル(例: audio/s051.mp3 / 空欄なら読み上げ代替)</label><input id="em-audio">
+    <div class="modal-btns">
+      <button class="btn" onclick="closeEdit()">キャンセル</button>
+      <button class="btn primary" onclick="saveEdit()">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY MODAL -->
+<div id="cat-modal" class="modal-bg hidden">
+  <div class="modal">
+    <h2>🏷️ カテゴリ管理</h2>
+    <div id="cat-list"></div>
+    <label>新しいカテゴリを追加</label>
+    <div style="display:flex; gap:8px">
+      <input id="nc-icon" placeholder="絵文字" style="width:70px">
+      <input id="nc-jp" placeholder="日本語名">
+      <input id="nc-id" placeholder="インドネシア語名">
+    </div>
+    <div class="modal-btns">
+      <button class="btn" onclick="closeCatModal()">閉じる</button>
+      <button class="btn primary" onclick="addCat()">追加</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const LS_CUSTOM = 'shadowing_n4_custom_data';
+const LS_PW = 'shadowing_n4_admin_pw';
+let DATA = null, editId = null;
+
+async function boot() {
+  const res = await fetch('data.json?v=' + Date.now());
+  const base = await res.json();
+  const custom = JSON.parse(localStorage.getItem(LS_CUSTOM) || 'null');
+  DATA = (custom && custom.sentences) ? custom : base;
+}
+boot();
+
+function login() {
+  const saved = localStorage.getItem(LS_PW) || 'n4admin';
+  if (document.getElementById('pw').value === saved) {
+    sessionStorage.setItem('n4_admin_ok', '1');
+    showMain();
+  } else alert('パスワードが違います');
+}
+function logout(){ sessionStorage.removeItem('n4_admin_ok'); location.reload(); }
+function changePw() {
+  const cur = localStorage.getItem(LS_PW) || 'n4admin';
+  const a = prompt('現在のパスワード:');
+  if (a !== cur) return alert('パスワードが違います');
+  const b = prompt('新しいパスワード:');
+  if (b && b.length >= 4) { localStorage.setItem(LS_PW, b); alert('変更しました'); }
+  else if (b) alert('4文字以上にしてください');
+}
+async function showMain() {
+  if (!DATA) await boot();
+  document.getElementById('login').classList.add('hidden');
+  document.getElementById('main').classList.remove('hidden');
+  renderAll();
+}
+if (sessionStorage.getItem('n4_admin_ok')) { showMain(); }
+
+function persist() {
+  localStorage.setItem(LS_CUSTOM, JSON.stringify(DATA));
+  renderAll();
+}
+function renderAll() {
+  document.getElementById('st-total').textContent = DATA.sentences.length;
+  document.getElementById('st-cats').textContent = DATA.categories.length;
+  document.getElementById('st-noaudio').textContent = DATA.sentences.filter(s => !s.audio).length;
+  const fc = document.getElementById('f-cat');
+  const cur = fc.value;
+  fc.innerHTML = '<option value="">すべてのカテゴリ</option>' +
+    DATA.categories.map(c => `<option value="${c.id}">${c.icon || ''} ${c.name_jp}</option>`).join('');
+  fc.value = cur;
+  renderTable();
+}
+function renderTable() {
+  const cat = document.getElementById('f-cat').value;
+  const q = document.getElementById('f-q').value.trim().toLowerCase();
+  const tb = document.getElementById('tbody');
+  tb.innerHTML = '';
+  DATA.sentences.forEach((s, i) => {
+    if (cat && s.category !== cat) return;
+    if (q && !(s.jp + s.idn + (s.kana||'') + (s.romaji||'')).toLowerCase().includes(q)) return;
+    const c = DATA.categories.find(c => c.id === s.category);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${i+1}</td>
+      <td><div class="jp">${esc(s.jp)}</div><div class="idn">${esc(s.idn)}</div></td>
+      <td><span class="tag">${c ? esc(c.name_jp) : '—'}</span></td>
+      <td>${s.audio ? '🔊' : '<span class="tag no-audio">読み上げ</span>'}</td>
+      <td class="row-btns">
+        <button title="試聴" onclick="preview('${s.id}')">▶️</button>
+        <button title="編集" onclick="openEdit('${s.id}')">✏️</button>
+        <button title="削除" onclick="delSentence('${s.id}')">🗑️</button>
+      </td>`;
+    tb.appendChild(tr);
+  });
+}
+function esc(t){ return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+
+function preview(id) {
+  const s = DATA.sentences.find(x => x.id === id);
+  if (s.audio) { new Audio(s.audio).play().catch(() => speak(s.jp)); } else speak(s.jp);
+}
+function speak(t){ if (!window.speechSynthesis) return; const u = new SpeechSynthesisUtterance(t); u.lang = 'ja-JP'; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+
+function openEdit(id) {
+  editId = id;
+  const s = id ? DATA.sentences.find(x => x.id === id) : {};
+  document.getElementById('em-title').textContent = id ? '文を編集' : '文を追加';
+  document.getElementById('em-jp').value = s.jp || '';
+  document.getElementById('em-kana').value = s.kana || '';
+  document.getElementById('em-romaji').value = s.romaji || '';
+  document.getElementById('em-idn').value = s.idn || '';
+  document.getElementById('em-audio').value = s.audio || '';
+  document.getElementById('em-cat').innerHTML = DATA.categories.map(c =>
+    `<option value="${c.id}" ${s.category === c.id ? 'selected' : ''}>${c.icon || ''} ${c.name_jp}</option>`).join('');
+  document.getElementById('edit-modal').classList.remove('hidden');
+}
+function closeEdit(){ document.getElementById('edit-modal').classList.add('hidden'); }
+function saveEdit() {
+  const jp = document.getElementById('em-jp').value.trim();
+  const idn = document.getElementById('em-idn').value.trim();
+  if (!jp || !idn) return alert('日本語とインドネシア語訳は必須です');
+  const obj = {
+    jp, idn,
+    kana: document.getElementById('em-kana').value.trim(),
+    romaji: document.getElementById('em-romaji').value.trim(),
+    category: document.getElementById('em-cat').value,
+    audio: document.getElementById('em-audio').value.trim()
+  };
+  if (editId) {
+    Object.assign(DATA.sentences.find(x => x.id === editId), obj);
+  } else {
+    let n = DATA.sentences.length + 1, id;
+    do { id = 's' + String(n).padStart(3, '0'); n++; } while (DATA.sentences.some(s => s.id === id));
+    DATA.sentences.push({ id, ...obj });
+  }
+  persist(); closeEdit();
+}
+function delSentence(id) {
+  if (!confirm('この文を削除しますか?')) return;
+  DATA.sentences = DATA.sentences.filter(s => s.id !== id);
+  persist();
+}
+
+/* categories */
+function openCatModal() {
+  const box = document.getElementById('cat-list');
+  box.innerHTML = DATA.categories.map(c =>
+    `<div style="display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid var(--line)">
+      <span>${c.icon || '📘'}</span><b style="flex:1">${esc(c.name_jp)}</b>
+      <span style="color:var(--sub); font-size:12px">${esc(c.name_id)} (${DATA.sentences.filter(s => s.category === c.id).length}文)</span>
+      <button style="border:none;background:none;cursor:pointer" onclick="delCat('${c.id}')">🗑️</button>
+    </div>`).join('');
+  document.getElementById('cat-modal').classList.remove('hidden');
+}
+function closeCatModal(){ document.getElementById('cat-modal').classList.add('hidden'); }
+function addCat() {
+  const jp = document.getElementById('nc-jp').value.trim();
+  const idn = document.getElementById('nc-id').value.trim();
+  const icon = document.getElementById('nc-icon').value.trim() || '📘';
+  if (!jp || !idn) return alert('日本語名とインドネシア語名を入力してください');
+  const id = 'cat' + Date.now().toString(36);
+  DATA.categories.push({ id, name_jp: jp, name_id: idn, icon });
+  ['nc-jp','nc-id','nc-icon'].forEach(i => document.getElementById(i).value = '');
+  persist(); openCatModal();
+}
+function delCat(id) {
+  const used = DATA.sentences.filter(s => s.category === id).length;
+  if (used) return alert(`このカテゴリには ${used} 文あります。先に文を移動・削除してください。`);
+  DATA.categories = DATA.categories.filter(c => c.id !== id);
+  persist(); openCatModal();
+}
+
+/* import / export */
+function exportJSON() {
+  const blob = new Blob([JSON.stringify(DATA, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'data.json'; a.click();
+}
+function importJSON(ev) {
+  const f = ev.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const d = JSON.parse(r.result);
+      if (!d.sentences || !d.categories) throw new Error('形式が違います');
+      DATA = d; persist(); alert('読み込みました(' + d.sentences.length + '文)');
+    } catch (e) { alert('読み込み失敗: ' + e.message); }
+  };
+  r.readAsText(f); ev.target.value = '';
+}
+</script>
+</body>
+</html>
