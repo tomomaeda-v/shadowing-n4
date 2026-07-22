@@ -1,63 +1,543 @@
 {
   "appTitle": "Shadowing N4",
   "categories": [
-    { "id": "daily", "name_jp": "あいさつ・日常", "name_id": "Salam & Sehari-hari", "icon": "🌅" },
-    { "id": "shopping", "name_jp": "買い物", "name_id": "Belanja", "icon": "🛒" },
-    { "id": "work", "name_jp": "仕事", "name_id": "Pekerjaan", "icon": "💼" },
-    { "id": "transport", "name_jp": "移動・交通", "name_id": "Transportasi", "icon": "🚉" },
-    { "id": "health", "name_jp": "病院・体調", "name_id": "Kesehatan", "icon": "🏥" },
-    { "id": "study", "name_jp": "学校・勉強", "name_id": "Belajar", "icon": "📚" }
+    {
+      "id": "daily",
+      "name_jp": "あいさつ・日常",
+      "name_id": "Salam & Sehari-hari",
+      "icon": "🌅"
+    },
+    {
+      "id": "shopping",
+      "name_jp": "買い物",
+      "name_id": "Belanja",
+      "icon": "🛒"
+    },
+    {
+      "id": "work",
+      "name_jp": "仕事",
+      "name_id": "Pekerjaan",
+      "icon": "💼"
+    },
+    {
+      "id": "transport",
+      "name_jp": "移動・交通",
+      "name_id": "Transportasi",
+      "icon": "🚉"
+    },
+    {
+      "id": "health",
+      "name_jp": "病院・体調",
+      "name_id": "Kesehatan",
+      "icon": "🏥"
+    },
+    {
+      "id": "study",
+      "name_jp": "学校・勉強",
+      "name_id": "Belajar",
+      "icon": "📚"
+    }
   ],
   "sentences": [
-    { "id": "s001", "category": "daily", "jp": "おはようございます。今日もいい天気ですね。", "kana": "おはようございます。きょうもいいてんきですね。", "romaji": "Ohayō gozaimasu. Kyō mo ii tenki desu ne.", "idn": "Selamat pagi. Hari ini cuacanya bagus juga, ya.", "audio": "audio/s001.mp3" },
-    { "id": "s002", "category": "daily", "jp": "昨日は遅くまで起きていたので、眠いです。", "kana": "きのうはおそくまでおきていたので、ねむいです。", "romaji": "Kinō wa osoku made okite ita node, nemui desu.", "idn": "Karena semalam begadang sampai larut, saya mengantuk.", "audio": "audio/s002.mp3" },
-    { "id": "s003", "category": "daily", "jp": "週末は友だちと映画を見に行くつもりです。", "kana": "しゅうまつはともだちとえいがをみにいくつもりです。", "romaji": "Shūmatsu wa tomodachi to eiga o mi ni iku tsumori desu.", "idn": "Akhir pekan ini saya berencana pergi menonton film dengan teman.", "audio": "audio/s003.mp3" },
-    { "id": "s004", "category": "daily", "jp": "日本の生活にはもう慣れましたか。", "kana": "にほんのせいかつにはもうなれましたか。", "romaji": "Nihon no seikatsu ni wa mō naremashita ka.", "idn": "Apakah Anda sudah terbiasa dengan kehidupan di Jepang?", "audio": "audio/s004.mp3" },
-    { "id": "s005", "category": "daily", "jp": "時間があったら、うちに遊びに来てください。", "kana": "じかんがあったら、うちにあそびにきてください。", "romaji": "Jikan ga attara, uchi ni asobi ni kite kudasai.", "idn": "Kalau ada waktu, silakan main ke rumah saya.", "audio": "audio/s005.mp3" },
-    { "id": "s006", "category": "daily", "jp": "毎朝ごはんを作ってから、会社へ行きます。", "kana": "まいあさごはんをつくってから、かいしゃへいきます。", "romaji": "Maiasa gohan o tsukutte kara, kaisha e ikimasu.", "idn": "Setiap pagi saya memasak nasi dulu, lalu berangkat ke kantor.", "audio": "audio/s006.mp3" },
-    { "id": "s007", "category": "daily", "jp": "音楽を聞きながら、部屋のそうじをしました。", "kana": "おんがくをききながら、へやのそうじをしました。", "romaji": "Ongaku o kikinagara, heya no sōji o shimashita.", "idn": "Saya membersihkan kamar sambil mendengarkan musik.", "audio": "audio/s007.mp3" },
-    { "id": "s008", "category": "daily", "jp": "富士山に登ったことがありますか。", "kana": "ふじさんにのぼったことがありますか。", "romaji": "Fujisan ni nobotta koto ga arimasu ka.", "idn": "Apakah Anda pernah mendaki Gunung Fuji?", "audio": "audio/s008.mp3" },
-    { "id": "s009", "category": "daily", "jp": "今晩は雨が降るかもしれません。", "kana": "こんばんはあめがふるかもしれません。", "romaji": "Konban wa ame ga furu kamoshiremasen.", "idn": "Malam ini mungkin akan turun hujan.", "audio": "audio/s009.mp3" },
-    { "id": "s010", "category": "shopping", "jp": "すみません、これはいくらですか。", "kana": "すみません、これはいくらですか。", "romaji": "Sumimasen, kore wa ikura desu ka.", "idn": "Permisi, ini harganya berapa?", "audio": "audio/s010.mp3" },
-    { "id": "s011", "category": "shopping", "jp": "もう少し安いのはありませんか。", "kana": "もうすこしやすいのはありませんか。", "romaji": "Mō sukoshi yasui no wa arimasen ka.", "idn": "Apakah ada yang sedikit lebih murah?", "audio": "audio/s011.mp3" },
-    { "id": "s012", "category": "shopping", "jp": "このくつをはいてみてもいいですか。", "kana": "このくつをはいてみてもいいですか。", "romaji": "Kono kutsu o haite mite mo ii desu ka.", "idn": "Bolehkah saya mencoba sepatu ini?", "audio": "audio/s012.mp3" },
-    { "id": "s013", "category": "shopping", "jp": "カードで払うことができますか。", "kana": "カードではらうことができますか。", "romaji": "Kādo de harau koto ga dekimasu ka.", "idn": "Apakah bisa membayar dengan kartu?", "audio": "audio/s013.mp3" },
-    { "id": "s014", "category": "shopping", "jp": "プレゼント用に包んでいただけませんか。", "kana": "プレゼントようにつつんでいただけませんか。", "romaji": "Purezento-yō ni tsutsunde itadakemasen ka.", "idn": "Bisakah dibungkus untuk hadiah?", "audio": "audio/s014.mp3" },
-    { "id": "s015", "category": "shopping", "jp": "このりんごは甘くておいしそうですね。", "kana": "このりんごはあまくておいしそうですね。", "romaji": "Kono ringo wa amakute oishisō desu ne.", "idn": "Apel ini manis dan kelihatannya enak, ya.", "audio": "audio/s015.mp3" },
-    { "id": "s016", "category": "shopping", "jp": "サイズが合わなかったら、取りかえられますか。", "kana": "サイズがあわなかったら、とりかえられますか。", "romaji": "Saizu ga awanakattara, torikaeraremasu ka.", "idn": "Kalau ukurannya tidak pas, apakah bisa ditukar?", "audio": "audio/s016.mp3" },
-    { "id": "s017", "category": "shopping", "jp": "袋は要りません。そのままでいいです。", "kana": "ふくろはいりません。そのままでいいです。", "romaji": "Fukuro wa irimasen. Sono mama de ii desu.", "idn": "Tidak perlu kantong. Begitu saja tidak apa-apa.", "audio": "audio/s017.mp3" },
-    { "id": "s018", "category": "shopping", "jp": "閉店時間は何時か教えてください。", "kana": "へいてんじかんはなんじかおしえてください。", "romaji": "Heiten jikan wa nanji ka oshiete kudasai.", "idn": "Tolong beri tahu jam berapa toko tutup.", "audio": "audio/s018.mp3" },
-    { "id": "s019", "category": "work", "jp": "会議は十時に始まる予定です。", "kana": "かいぎはじゅうじにはじまるよていです。", "romaji": "Kaigi wa jūji ni hajimaru yotei desu.", "idn": "Rapat dijadwalkan mulai pukul sepuluh.", "audio": "audio/s019.mp3" },
-    { "id": "s020", "category": "work", "jp": "この書類をコピーしておいてください。", "kana": "このしょるいをコピーしておいてください。", "romaji": "Kono shorui o kopī shite oite kudasai.", "idn": "Tolong fotokopi dokumen ini terlebih dahulu.", "audio": "audio/s020.mp3" },
-    { "id": "s021", "category": "work", "jp": "すみません、少し遅れそうです。", "kana": "すみません、すこしおくれそうです。", "romaji": "Sumimasen, sukoshi okuresō desu.", "idn": "Maaf, sepertinya saya akan sedikit terlambat.", "audio": "audio/s021.mp3" },
-    { "id": "s022", "category": "work", "jp": "明日までにレポートを出さなければなりません。", "kana": "あしたまでにレポートをださなければなりません。", "romaji": "Ashita made ni repōto o dasanakereba narimasen.", "idn": "Saya harus menyerahkan laporan paling lambat besok.", "audio": "audio/s022.mp3" },
-    { "id": "s023", "category": "work", "jp": "部長に呼ばれたので、行ってきます。", "kana": "ぶちょうによばれたので、いってきます。", "romaji": "Buchō ni yobareta node, itte kimasu.", "idn": "Karena dipanggil kepala bagian, saya pergi dulu.", "audio": "audio/s023.mp3" },
-    { "id": "s024", "category": "work", "jp": "仕事が終わったら、飲みに行きませんか。", "kana": "しごとがおわったら、のみにいきませんか。", "romaji": "Shigoto ga owattara, nomi ni ikimasen ka.", "idn": "Setelah pekerjaan selesai, mau pergi minum bersama?", "audio": "audio/s024.mp3" },
-    { "id": "s025", "category": "work", "jp": "使い方がわからないときは、いつでも聞いてください。", "kana": "つかいかたがわからないときは、いつでもきいてください。", "romaji": "Tsukaikata ga wakaranai toki wa, itsudemo kiite kudasai.", "idn": "Kalau tidak tahu cara pakainya, silakan bertanya kapan saja.", "audio": "audio/s025.mp3" },
-    { "id": "s026", "category": "work", "jp": "来月から新しいプロジェクトが始まるそうです。", "kana": "らいげつからあたらしいプロジェクトがはじまるそうです。", "romaji": "Raigetsu kara atarashii purojekuto ga hajimaru sō desu.", "idn": "Katanya mulai bulan depan proyek baru akan dimulai.", "audio": "audio/s026.mp3" },
-    { "id": "s027", "category": "work", "jp": "休みを取りたいんですが、よろしいでしょうか。", "kana": "やすみをとりたいんですが、よろしいでしょうか。", "romaji": "Yasumi o toritai n desu ga, yoroshii deshō ka.", "idn": "Saya ingin mengambil cuti, apakah boleh?", "audio": "audio/s027.mp3" },
-    { "id": "s028", "category": "transport", "jp": "この電車は東京駅に止まりますか。", "kana": "このでんしゃはとうきょうえきにとまりますか。", "romaji": "Kono densha wa Tōkyō-eki ni tomarimasu ka.", "idn": "Apakah kereta ini berhenti di Stasiun Tokyo?", "audio": "audio/s028.mp3" },
-    { "id": "s029", "category": "transport", "jp": "次の駅で乗りかえてください。", "kana": "つぎのえきでのりかえてください。", "romaji": "Tsugi no eki de norikaete kudasai.", "idn": "Silakan pindah kereta di stasiun berikutnya.", "audio": "audio/s029.mp3" },
-    { "id": "s030", "category": "transport", "jp": "終電に間に合わないかもしれません。", "kana": "しゅうでんにまにあわないかもしれません。", "romaji": "Shūden ni maniawanai kamoshiremasen.", "idn": "Mungkin saya tidak sempat mengejar kereta terakhir.", "audio": "audio/s030.mp3" },
-    { "id": "s031", "category": "transport", "jp": "駅までの行き方を教えていただけますか。", "kana": "えきまでのいきかたをおしえていただけますか。", "romaji": "Eki made no ikikata o oshiete itadakemasu ka.", "idn": "Bisakah Anda memberi tahu cara pergi ke stasiun?", "audio": "audio/s031.mp3" },
-    { "id": "s032", "category": "transport", "jp": "道が込んでいて、バスがなかなか来ません。", "kana": "みちがこんでいて、バスがなかなかきません。", "romaji": "Michi ga konde ite, basu ga nakanaka kimasen.", "idn": "Jalanan macet, jadi busnya tidak kunjung datang.", "audio": "audio/s032.mp3" },
-    { "id": "s033", "category": "transport", "jp": "切符をなくしてしまいました。どうすればいいですか。", "kana": "きっぷをなくしてしまいました。どうすればいいですか。", "romaji": "Kippu o nakushite shimaimashita. Dō sureba ii desu ka.", "idn": "Saya kehilangan tiket. Sebaiknya bagaimana, ya?", "audio": "audio/s033.mp3" },
-    { "id": "s034", "category": "transport", "jp": "空港へ行くなら、リムジンバスが便利ですよ。", "kana": "くうこうへいくなら、リムジンバスがべんりですよ。", "romaji": "Kūkō e iku nara, rimujin basu ga benri desu yo.", "idn": "Kalau mau ke bandara, bus limosin itu praktis, lho.", "audio": "audio/s034.mp3" },
-    { "id": "s035", "category": "transport", "jp": "自転車で通勤する人が増えているそうです。", "kana": "じてんしゃでつうきんするひとがふえているそうです。", "romaji": "Jitensha de tsūkin suru hito ga fuete iru sō desu.", "idn": "Katanya orang yang berangkat kerja dengan sepeda semakin banyak.", "audio": "audio/s035.mp3" },
-    { "id": "s036", "category": "health", "jp": "昨日から頭が痛くて、熱もあります。", "kana": "きのうからあたまがいたくて、ねつもあります。", "romaji": "Kinō kara atama ga itakute, netsu mo arimasu.", "idn": "Sejak kemarin kepala saya sakit dan juga demam.", "audio": "audio/s036.mp3" },
-    { "id": "s037", "category": "health", "jp": "この薬は食事の後に飲んでください。", "kana": "このくすりはしょくじのあとにのんでください。", "romaji": "Kono kusuri wa shokuji no ato ni nonde kudasai.", "idn": "Minumlah obat ini setelah makan.", "audio": "audio/s037.mp3" },
-    { "id": "s038", "category": "health", "jp": "無理をしないで、ゆっくり休んだほうがいいですよ。", "kana": "むりをしないで、ゆっくりやすんだほうがいいですよ。", "romaji": "Muri o shinaide, yukkuri yasunda hō ga ii desu yo.", "idn": "Jangan memaksakan diri, lebih baik istirahat dengan tenang.", "audio": "audio/s038.mp3" },
-    { "id": "s039", "category": "health", "jp": "予約をしていないんですが、診てもらえますか。", "kana": "よやくをしていないんですが、みてもらえますか。", "romaji": "Yoyaku o shite inai n desu ga, mite moraemasu ka.", "idn": "Saya belum membuat janji, tapi bisakah diperiksa?", "audio": "audio/s039.mp3" },
-    { "id": "s040", "category": "health", "jp": "たばこをやめたほうがいいと医者に言われました。", "kana": "たばこをやめたほうがいいといしゃにいわれました。", "romaji": "Tabako o yameta hō ga ii to isha ni iwaremashita.", "idn": "Saya diberi tahu dokter bahwa sebaiknya berhenti merokok.", "audio": "audio/s040.mp3" },
-    { "id": "s041", "category": "health", "jp": "毎日運動するようにしています。", "kana": "まいにちうんどうするようにしています。", "romaji": "Mainichi undō suru yō ni shite imasu.", "idn": "Saya berusaha berolahraga setiap hari.", "audio": "audio/s041.mp3" },
-    { "id": "s042", "category": "health", "jp": "けがをした場合は、すぐに知らせてください。", "kana": "けがをしたばあいは、すぐにしらせてください。", "romaji": "Kega o shita baai wa, sugu ni shirasete kudasai.", "idn": "Jika terluka, segera beri tahu, ya.", "audio": "audio/s042.mp3" },
-    { "id": "s043", "category": "study", "jp": "漢字を覚えるのは大変ですが、面白いです。", "kana": "かんじをおぼえるのはたいへんですが、おもしろいです。", "romaji": "Kanji o oboeru no wa taihen desu ga, omoshiroi desu.", "idn": "Menghafal kanji itu berat, tetapi menarik.", "audio": "audio/s043.mp3" },
-    { "id": "s044", "category": "study", "jp": "先生が言ったことをノートに書いておきました。", "kana": "せんせいがいったことをノートにかいておきました。", "romaji": "Sensei ga itta koto o nōto ni kaite okimashita.", "idn": "Saya sudah mencatat apa yang dikatakan guru di buku catatan.", "audio": "audio/s044.mp3" },
-    { "id": "s045", "category": "study", "jp": "日本語が上手になるように、毎日練習しています。", "kana": "にほんごがじょうずになるように、まいにちれんしゅうしています。", "romaji": "Nihongo ga jōzu ni naru yō ni, mainichi renshū shite imasu.", "idn": "Supaya bahasa Jepang saya menjadi mahir, saya berlatih setiap hari.", "audio": "audio/s045.mp3" },
-    { "id": "s046", "category": "study", "jp": "試験に合格したら、家族に知らせるつもりです。", "kana": "しけんにごうかくしたら、かぞくにしらせるつもりです。", "romaji": "Shiken ni gōkaku shitara, kazoku ni shiraseru tsumori desu.", "idn": "Kalau lulus ujian, saya berencana memberi tahu keluarga.", "audio": "audio/s046.mp3" },
-    { "id": "s047", "category": "study", "jp": "この言葉の意味を辞書で調べてみてください。", "kana": "このことばのいみをじしょでしらべてみてください。", "romaji": "Kono kotoba no imi o jisho de shirabete mite kudasai.", "idn": "Cobalah cari arti kata ini di kamus.", "audio": "audio/s047.mp3" },
-    { "id": "s048", "category": "study", "jp": "宿題を忘れて、先生にしかられました。", "kana": "しゅくだいをわすれて、せんせいにしかられました。", "romaji": "Shukudai o wasurete, sensei ni shikararemashita.", "idn": "Saya lupa mengerjakan PR dan dimarahi guru.", "audio": "audio/s048.mp3" },
-    { "id": "s049", "category": "study", "jp": "わからないところがあれば、質問してもいいですか。", "kana": "わからないところがあれば、しつもんしてもいいですか。", "romaji": "Wakaranai tokoro ga areba, shitsumon shite mo ii desu ka.", "idn": "Kalau ada bagian yang tidak dimengerti, bolehkah saya bertanya?", "audio": "audio/s049.mp3" },
-    { "id": "s050", "category": "study", "jp": "留学するために、お金をためています。", "kana": "りゅうがくするために、おかねをためています。", "romaji": "Ryūgaku suru tame ni, okane o tamete imasu.", "idn": "Saya sedang menabung untuk belajar ke luar negeri.", "audio": "audio/s050.mp3" }
+    {
+      "id": "s001",
+      "category": "daily",
+      "jp": "おはようございます。今日もいい天気ですね。",
+      "kana": "おはようございます。きょうもいいてんきですね。",
+      "romaji": "Ohayō gozaimasu. Kyō mo ii tenki desu ne.",
+      "idn": "Selamat pagi. Hari ini cuacanya bagus juga, ya.",
+      "audio": "audio/s001.mp3",
+      "audio_id": "audio_id/s001.mp3"
+    },
+    {
+      "id": "s002",
+      "category": "daily",
+      "jp": "昨日は遅くまで起きていたので、眠いです。",
+      "kana": "きのうはおそくまでおきていたので、ねむいです。",
+      "romaji": "Kinō wa osoku made okite ita node, nemui desu.",
+      "idn": "Karena semalam begadang sampai larut, saya mengantuk.",
+      "audio": "audio/s002.mp3",
+      "audio_id": "audio_id/s002.mp3"
+    },
+    {
+      "id": "s003",
+      "category": "daily",
+      "jp": "週末は友だちと映画を見に行くつもりです。",
+      "kana": "しゅうまつはともだちとえいがをみにいくつもりです。",
+      "romaji": "Shūmatsu wa tomodachi to eiga o mi ni iku tsumori desu.",
+      "idn": "Akhir pekan ini saya berencana pergi menonton film dengan teman.",
+      "audio": "audio/s003.mp3",
+      "audio_id": "audio_id/s003.mp3"
+    },
+    {
+      "id": "s004",
+      "category": "daily",
+      "jp": "日本の生活にはもう慣れましたか。",
+      "kana": "にほんのせいかつにはもうなれましたか。",
+      "romaji": "Nihon no seikatsu ni wa mō naremashita ka.",
+      "idn": "Apakah Anda sudah terbiasa dengan kehidupan di Jepang?",
+      "audio": "audio/s004.mp3",
+      "audio_id": "audio_id/s004.mp3"
+    },
+    {
+      "id": "s005",
+      "category": "daily",
+      "jp": "時間があったら、うちに遊びに来てください。",
+      "kana": "じかんがあったら、うちにあそびにきてください。",
+      "romaji": "Jikan ga attara, uchi ni asobi ni kite kudasai.",
+      "idn": "Kalau ada waktu, silakan main ke rumah saya.",
+      "audio": "audio/s005.mp3",
+      "audio_id": "audio_id/s005.mp3"
+    },
+    {
+      "id": "s006",
+      "category": "daily",
+      "jp": "毎朝ごはんを作ってから、会社へ行きます。",
+      "kana": "まいあさごはんをつくってから、かいしゃへいきます。",
+      "romaji": "Maiasa gohan o tsukutte kara, kaisha e ikimasu.",
+      "idn": "Setiap pagi saya memasak nasi dulu, lalu berangkat ke kantor.",
+      "audio": "audio/s006.mp3",
+      "audio_id": "audio_id/s006.mp3"
+    },
+    {
+      "id": "s007",
+      "category": "daily",
+      "jp": "音楽を聞きながら、部屋のそうじをしました。",
+      "kana": "おんがくをききながら、へやのそうじをしました。",
+      "romaji": "Ongaku o kikinagara, heya no sōji o shimashita.",
+      "idn": "Saya membersihkan kamar sambil mendengarkan musik.",
+      "audio": "audio/s007.mp3",
+      "audio_id": "audio_id/s007.mp3"
+    },
+    {
+      "id": "s008",
+      "category": "daily",
+      "jp": "富士山に登ったことがありますか。",
+      "kana": "ふじさんにのぼったことがありますか。",
+      "romaji": "Fujisan ni nobotta koto ga arimasu ka.",
+      "idn": "Apakah Anda pernah mendaki Gunung Fuji?",
+      "audio": "audio/s008.mp3",
+      "audio_id": "audio_id/s008.mp3"
+    },
+    {
+      "id": "s009",
+      "category": "daily",
+      "jp": "今晩は雨が降るかもしれません。",
+      "kana": "こんばんはあめがふるかもしれません。",
+      "romaji": "Konban wa ame ga furu kamoshiremasen.",
+      "idn": "Malam ini mungkin akan turun hujan.",
+      "audio": "audio/s009.mp3",
+      "audio_id": "audio_id/s009.mp3"
+    },
+    {
+      "id": "s010",
+      "category": "shopping",
+      "jp": "すみません、これはいくらですか。",
+      "kana": "すみません、これはいくらですか。",
+      "romaji": "Sumimasen, kore wa ikura desu ka.",
+      "idn": "Permisi, ini harganya berapa?",
+      "audio": "audio/s010.mp3",
+      "audio_id": "audio_id/s010.mp3"
+    },
+    {
+      "id": "s011",
+      "category": "shopping",
+      "jp": "もう少し安いのはありませんか。",
+      "kana": "もうすこしやすいのはありませんか。",
+      "romaji": "Mō sukoshi yasui no wa arimasen ka.",
+      "idn": "Apakah ada yang sedikit lebih murah?",
+      "audio": "audio/s011.mp3",
+      "audio_id": "audio_id/s011.mp3"
+    },
+    {
+      "id": "s012",
+      "category": "shopping",
+      "jp": "このくつをはいてみてもいいですか。",
+      "kana": "このくつをはいてみてもいいですか。",
+      "romaji": "Kono kutsu o haite mite mo ii desu ka.",
+      "idn": "Bolehkah saya mencoba sepatu ini?",
+      "audio": "audio/s012.mp3",
+      "audio_id": "audio_id/s012.mp3"
+    },
+    {
+      "id": "s013",
+      "category": "shopping",
+      "jp": "カードで払うことができますか。",
+      "kana": "カードではらうことができますか。",
+      "romaji": "Kādo de harau koto ga dekimasu ka.",
+      "idn": "Apakah bisa membayar dengan kartu?",
+      "audio": "audio/s013.mp3",
+      "audio_id": "audio_id/s013.mp3"
+    },
+    {
+      "id": "s014",
+      "category": "shopping",
+      "jp": "プレゼント用に包んでいただけませんか。",
+      "kana": "プレゼントようにつつんでいただけませんか。",
+      "romaji": "Purezento-yō ni tsutsunde itadakemasen ka.",
+      "idn": "Bisakah dibungkus untuk hadiah?",
+      "audio": "audio/s014.mp3",
+      "audio_id": "audio_id/s014.mp3"
+    },
+    {
+      "id": "s015",
+      "category": "shopping",
+      "jp": "このりんごは甘くておいしそうですね。",
+      "kana": "このりんごはあまくておいしそうですね。",
+      "romaji": "Kono ringo wa amakute oishisō desu ne.",
+      "idn": "Apel ini manis dan kelihatannya enak, ya.",
+      "audio": "audio/s015.mp3",
+      "audio_id": "audio_id/s015.mp3"
+    },
+    {
+      "id": "s016",
+      "category": "shopping",
+      "jp": "サイズが合わなかったら、取りかえられますか。",
+      "kana": "サイズがあわなかったら、とりかえられますか。",
+      "romaji": "Saizu ga awanakattara, torikaeraremasu ka.",
+      "idn": "Kalau ukurannya tidak pas, apakah bisa ditukar?",
+      "audio": "audio/s016.mp3",
+      "audio_id": "audio_id/s016.mp3"
+    },
+    {
+      "id": "s017",
+      "category": "shopping",
+      "jp": "袋は要りません。そのままでいいです。",
+      "kana": "ふくろはいりません。そのままでいいです。",
+      "romaji": "Fukuro wa irimasen. Sono mama de ii desu.",
+      "idn": "Tidak perlu kantong. Begitu saja tidak apa-apa.",
+      "audio": "audio/s017.mp3",
+      "audio_id": "audio_id/s017.mp3"
+    },
+    {
+      "id": "s018",
+      "category": "shopping",
+      "jp": "閉店時間は何時か教えてください。",
+      "kana": "へいてんじかんはなんじかおしえてください。",
+      "romaji": "Heiten jikan wa nanji ka oshiete kudasai.",
+      "idn": "Tolong beri tahu jam berapa toko tutup.",
+      "audio": "audio/s018.mp3",
+      "audio_id": "audio_id/s018.mp3"
+    },
+    {
+      "id": "s019",
+      "category": "work",
+      "jp": "会議は十時に始まる予定です。",
+      "kana": "かいぎはじゅうじにはじまるよていです。",
+      "romaji": "Kaigi wa jūji ni hajimaru yotei desu.",
+      "idn": "Rapat dijadwalkan mulai pukul sepuluh.",
+      "audio": "audio/s019.mp3",
+      "audio_id": "audio_id/s019.mp3"
+    },
+    {
+      "id": "s020",
+      "category": "work",
+      "jp": "この書類をコピーしておいてください。",
+      "kana": "このしょるいをコピーしておいてください。",
+      "romaji": "Kono shorui o kopī shite oite kudasai.",
+      "idn": "Tolong fotokopi dokumen ini terlebih dahulu.",
+      "audio": "audio/s020.mp3",
+      "audio_id": "audio_id/s020.mp3"
+    },
+    {
+      "id": "s021",
+      "category": "work",
+      "jp": "すみません、少し遅れそうです。",
+      "kana": "すみません、すこしおくれそうです。",
+      "romaji": "Sumimasen, sukoshi okuresō desu.",
+      "idn": "Maaf, sepertinya saya akan sedikit terlambat.",
+      "audio": "audio/s021.mp3",
+      "audio_id": "audio_id/s021.mp3"
+    },
+    {
+      "id": "s022",
+      "category": "work",
+      "jp": "明日までにレポートを出さなければなりません。",
+      "kana": "あしたまでにレポートをださなければなりません。",
+      "romaji": "Ashita made ni repōto o dasanakereba narimasen.",
+      "idn": "Saya harus menyerahkan laporan paling lambat besok.",
+      "audio": "audio/s022.mp3",
+      "audio_id": "audio_id/s022.mp3"
+    },
+    {
+      "id": "s023",
+      "category": "work",
+      "jp": "部長に呼ばれたので、行ってきます。",
+      "kana": "ぶちょうによばれたので、いってきます。",
+      "romaji": "Buchō ni yobareta node, itte kimasu.",
+      "idn": "Karena dipanggil kepala bagian, saya pergi dulu.",
+      "audio": "audio/s023.mp3",
+      "audio_id": "audio_id/s023.mp3"
+    },
+    {
+      "id": "s024",
+      "category": "work",
+      "jp": "仕事が終わったら、飲みに行きませんか。",
+      "kana": "しごとがおわったら、のみにいきませんか。",
+      "romaji": "Shigoto ga owattara, nomi ni ikimasen ka.",
+      "idn": "Setelah pekerjaan selesai, mau pergi minum bersama?",
+      "audio": "audio/s024.mp3",
+      "audio_id": "audio_id/s024.mp3"
+    },
+    {
+      "id": "s025",
+      "category": "work",
+      "jp": "使い方がわからないときは、いつでも聞いてください。",
+      "kana": "つかいかたがわからないときは、いつでもきいてください。",
+      "romaji": "Tsukaikata ga wakaranai toki wa, itsudemo kiite kudasai.",
+      "idn": "Kalau tidak tahu cara pakainya, silakan bertanya kapan saja.",
+      "audio": "audio/s025.mp3",
+      "audio_id": "audio_id/s025.mp3"
+    },
+    {
+      "id": "s026",
+      "category": "work",
+      "jp": "来月から新しいプロジェクトが始まるそうです。",
+      "kana": "らいげつからあたらしいプロジェクトがはじまるそうです。",
+      "romaji": "Raigetsu kara atarashii purojekuto ga hajimaru sō desu.",
+      "idn": "Katanya mulai bulan depan proyek baru akan dimulai.",
+      "audio": "audio/s026.mp3",
+      "audio_id": "audio_id/s026.mp3"
+    },
+    {
+      "id": "s027",
+      "category": "work",
+      "jp": "休みを取りたいんですが、よろしいでしょうか。",
+      "kana": "やすみをとりたいんですが、よろしいでしょうか。",
+      "romaji": "Yasumi o toritai n desu ga, yoroshii deshō ka.",
+      "idn": "Saya ingin mengambil cuti, apakah boleh?",
+      "audio": "audio/s027.mp3",
+      "audio_id": "audio_id/s027.mp3"
+    },
+    {
+      "id": "s028",
+      "category": "transport",
+      "jp": "この電車は東京駅に止まりますか。",
+      "kana": "このでんしゃはとうきょうえきにとまりますか。",
+      "romaji": "Kono densha wa Tōkyō-eki ni tomarimasu ka.",
+      "idn": "Apakah kereta ini berhenti di Stasiun Tokyo?",
+      "audio": "audio/s028.mp3",
+      "audio_id": "audio_id/s028.mp3"
+    },
+    {
+      "id": "s029",
+      "category": "transport",
+      "jp": "次の駅で乗りかえてください。",
+      "kana": "つぎのえきでのりかえてください。",
+      "romaji": "Tsugi no eki de norikaete kudasai.",
+      "idn": "Silakan pindah kereta di stasiun berikutnya.",
+      "audio": "audio/s029.mp3",
+      "audio_id": "audio_id/s029.mp3"
+    },
+    {
+      "id": "s030",
+      "category": "transport",
+      "jp": "終電に間に合わないかもしれません。",
+      "kana": "しゅうでんにまにあわないかもしれません。",
+      "romaji": "Shūden ni maniawanai kamoshiremasen.",
+      "idn": "Mungkin saya tidak sempat mengejar kereta terakhir.",
+      "audio": "audio/s030.mp3",
+      "audio_id": "audio_id/s030.mp3"
+    },
+    {
+      "id": "s031",
+      "category": "transport",
+      "jp": "駅までの行き方を教えていただけますか。",
+      "kana": "えきまでのいきかたをおしえていただけますか。",
+      "romaji": "Eki made no ikikata o oshiete itadakemasu ka.",
+      "idn": "Bisakah Anda memberi tahu cara pergi ke stasiun?",
+      "audio": "audio/s031.mp3",
+      "audio_id": "audio_id/s031.mp3"
+    },
+    {
+      "id": "s032",
+      "category": "transport",
+      "jp": "道が込んでいて、バスがなかなか来ません。",
+      "kana": "みちがこんでいて、バスがなかなかきません。",
+      "romaji": "Michi ga konde ite, basu ga nakanaka kimasen.",
+      "idn": "Jalanan macet, jadi busnya tidak kunjung datang.",
+      "audio": "audio/s032.mp3",
+      "audio_id": "audio_id/s032.mp3"
+    },
+    {
+      "id": "s033",
+      "category": "transport",
+      "jp": "切符をなくしてしまいました。どうすればいいですか。",
+      "kana": "きっぷをなくしてしまいました。どうすればいいですか。",
+      "romaji": "Kippu o nakushite shimaimashita. Dō sureba ii desu ka.",
+      "idn": "Saya kehilangan tiket. Sebaiknya bagaimana, ya?",
+      "audio": "audio/s033.mp3",
+      "audio_id": "audio_id/s033.mp3"
+    },
+    {
+      "id": "s034",
+      "category": "transport",
+      "jp": "空港へ行くなら、リムジンバスが便利ですよ。",
+      "kana": "くうこうへいくなら、リムジンバスがべんりですよ。",
+      "romaji": "Kūkō e iku nara, rimujin basu ga benri desu yo.",
+      "idn": "Kalau mau ke bandara, bus limosin itu praktis, lho.",
+      "audio": "audio/s034.mp3",
+      "audio_id": "audio_id/s034.mp3"
+    },
+    {
+      "id": "s035",
+      "category": "transport",
+      "jp": "自転車で通勤する人が増えているそうです。",
+      "kana": "じてんしゃでつうきんするひとがふえているそうです。",
+      "romaji": "Jitensha de tsūkin suru hito ga fuete iru sō desu.",
+      "idn": "Katanya orang yang berangkat kerja dengan sepeda semakin banyak.",
+      "audio": "audio/s035.mp3",
+      "audio_id": "audio_id/s035.mp3"
+    },
+    {
+      "id": "s036",
+      "category": "health",
+      "jp": "昨日から頭が痛くて、熱もあります。",
+      "kana": "きのうからあたまがいたくて、ねつもあります。",
+      "romaji": "Kinō kara atama ga itakute, netsu mo arimasu.",
+      "idn": "Sejak kemarin kepala saya sakit dan juga demam.",
+      "audio": "audio/s036.mp3",
+      "audio_id": "audio_id/s036.mp3"
+    },
+    {
+      "id": "s037",
+      "category": "health",
+      "jp": "この薬は食事の後に飲んでください。",
+      "kana": "このくすりはしょくじのあとにのんでください。",
+      "romaji": "Kono kusuri wa shokuji no ato ni nonde kudasai.",
+      "idn": "Minumlah obat ini setelah makan.",
+      "audio": "audio/s037.mp3",
+      "audio_id": "audio_id/s037.mp3"
+    },
+    {
+      "id": "s038",
+      "category": "health",
+      "jp": "無理をしないで、ゆっくり休んだほうがいいですよ。",
+      "kana": "むりをしないで、ゆっくりやすんだほうがいいですよ。",
+      "romaji": "Muri o shinaide, yukkuri yasunda hō ga ii desu yo.",
+      "idn": "Jangan memaksakan diri, lebih baik istirahat dengan tenang.",
+      "audio": "audio/s038.mp3",
+      "audio_id": "audio_id/s038.mp3"
+    },
+    {
+      "id": "s039",
+      "category": "health",
+      "jp": "予約をしていないんですが、診てもらえますか。",
+      "kana": "よやくをしていないんですが、みてもらえますか。",
+      "romaji": "Yoyaku o shite inai n desu ga, mite moraemasu ka.",
+      "idn": "Saya belum membuat janji, tapi bisakah diperiksa?",
+      "audio": "audio/s039.mp3",
+      "audio_id": "audio_id/s039.mp3"
+    },
+    {
+      "id": "s040",
+      "category": "health",
+      "jp": "たばこをやめたほうがいいと医者に言われました。",
+      "kana": "たばこをやめたほうがいいといしゃにいわれました。",
+      "romaji": "Tabako o yameta hō ga ii to isha ni iwaremashita.",
+      "idn": "Saya diberi tahu dokter bahwa sebaiknya berhenti merokok.",
+      "audio": "audio/s040.mp3",
+      "audio_id": "audio_id/s040.mp3"
+    },
+    {
+      "id": "s041",
+      "category": "health",
+      "jp": "毎日運動するようにしています。",
+      "kana": "まいにちうんどうするようにしています。",
+      "romaji": "Mainichi undō suru yō ni shite imasu.",
+      "idn": "Saya berusaha berolahraga setiap hari.",
+      "audio": "audio/s041.mp3",
+      "audio_id": "audio_id/s041.mp3"
+    },
+    {
+      "id": "s042",
+      "category": "health",
+      "jp": "けがをした場合は、すぐに知らせてください。",
+      "kana": "けがをしたばあいは、すぐにしらせてください。",
+      "romaji": "Kega o shita baai wa, sugu ni shirasete kudasai.",
+      "idn": "Jika terluka, segera beri tahu, ya.",
+      "audio": "audio/s042.mp3",
+      "audio_id": "audio_id/s042.mp3"
+    },
+    {
+      "id": "s043",
+      "category": "study",
+      "jp": "漢字を覚えるのは大変ですが、面白いです。",
+      "kana": "かんじをおぼえるのはたいへんですが、おもしろいです。",
+      "romaji": "Kanji o oboeru no wa taihen desu ga, omoshiroi desu.",
+      "idn": "Menghafal kanji itu berat, tetapi menarik.",
+      "audio": "audio/s043.mp3",
+      "audio_id": "audio_id/s043.mp3"
+    },
+    {
+      "id": "s044",
+      "category": "study",
+      "jp": "先生が言ったことをノートに書いておきました。",
+      "kana": "せんせいがいったことをノートにかいておきました。",
+      "romaji": "Sensei ga itta koto o nōto ni kaite okimashita.",
+      "idn": "Saya sudah mencatat apa yang dikatakan guru di buku catatan.",
+      "audio": "audio/s044.mp3",
+      "audio_id": "audio_id/s044.mp3"
+    },
+    {
+      "id": "s045",
+      "category": "study",
+      "jp": "日本語が上手になるように、毎日練習しています。",
+      "kana": "にほんごがじょうずになるように、まいにちれんしゅうしています。",
+      "romaji": "Nihongo ga jōzu ni naru yō ni, mainichi renshū shite imasu.",
+      "idn": "Supaya bahasa Jepang saya menjadi mahir, saya berlatih setiap hari.",
+      "audio": "audio/s045.mp3",
+      "audio_id": "audio_id/s045.mp3"
+    },
+    {
+      "id": "s046",
+      "category": "study",
+      "jp": "試験に合格したら、家族に知らせるつもりです。",
+      "kana": "しけんにごうかくしたら、かぞくにしらせるつもりです。",
+      "romaji": "Shiken ni gōkaku shitara, kazoku ni shiraseru tsumori desu.",
+      "idn": "Kalau lulus ujian, saya berencana memberi tahu keluarga.",
+      "audio": "audio/s046.mp3",
+      "audio_id": "audio_id/s046.mp3"
+    },
+    {
+      "id": "s047",
+      "category": "study",
+      "jp": "この言葉の意味を辞書で調べてみてください。",
+      "kana": "このことばのいみをじしょでしらべてみてください。",
+      "romaji": "Kono kotoba no imi o jisho de shirabete mite kudasai.",
+      "idn": "Cobalah cari arti kata ini di kamus.",
+      "audio": "audio/s047.mp3",
+      "audio_id": "audio_id/s047.mp3"
+    },
+    {
+      "id": "s048",
+      "category": "study",
+      "jp": "宿題を忘れて、先生にしかられました。",
+      "kana": "しゅくだいをわすれて、せんせいにしかられました。",
+      "romaji": "Shukudai o wasurete, sensei ni shikararemashita.",
+      "idn": "Saya lupa mengerjakan PR dan dimarahi guru.",
+      "audio": "audio/s048.mp3",
+      "audio_id": "audio_id/s048.mp3"
+    },
+    {
+      "id": "s049",
+      "category": "study",
+      "jp": "わからないところがあれば、質問してもいいですか。",
+      "kana": "わからないところがあれば、しつもんしてもいいですか。",
+      "romaji": "Wakaranai tokoro ga areba, shitsumon shite mo ii desu ka.",
+      "idn": "Kalau ada bagian yang tidak dimengerti, bolehkah saya bertanya?",
+      "audio": "audio/s049.mp3",
+      "audio_id": "audio_id/s049.mp3"
+    },
+    {
+      "id": "s050",
+      "category": "study",
+      "jp": "留学するために、お金をためています。",
+      "kana": "りゅうがくするために、おかねをためています。",
+      "romaji": "Ryūgaku suru tame ni, okane o tamete imasu.",
+      "idn": "Saya sedang menabung untuk belajar ke luar negeri.",
+      "audio": "audio/s050.mp3",
+      "audio_id": "audio_id/s050.mp3"
+    }
   ]
 }

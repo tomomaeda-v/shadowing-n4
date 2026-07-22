@@ -119,7 +119,8 @@
     <label>ローマ字</label><textarea id="em-romaji"></textarea>
     <label>インドネシア語訳 *</label><textarea id="em-idn"></textarea>
     <label>カテゴリ</label><select id="em-cat"></select>
-    <label>音声ファイル(例: audio/s051.mp3 / 空欄なら読み上げ代替)</label><input id="em-audio">
+    <label>日本語音声ファイル(例: audio/s051.mp3 / 空欄なら読み上げ代替)</label><input id="em-audio">
+    <label>インドネシア語音声ファイル(例: audio_id/s051.mp3 / 空欄なら読み上げ代替)</label><input id="em-audio-id">
     <div class="modal-btns">
       <button class="btn" onclick="closeEdit()">キャンセル</button>
       <button class="btn primary" onclick="saveEdit()">保存</button>
@@ -236,6 +237,7 @@ function openEdit(id) {
   document.getElementById('em-romaji').value = s.romaji || '';
   document.getElementById('em-idn').value = s.idn || '';
   document.getElementById('em-audio').value = s.audio || '';
+  document.getElementById('em-audio-id').value = s.audio_id || '';
   document.getElementById('em-cat').innerHTML = DATA.categories.map(c =>
     `<option value="${c.id}" ${s.category === c.id ? 'selected' : ''}>${c.icon || ''} ${c.name_jp}</option>`).join('');
   document.getElementById('edit-modal').classList.remove('hidden');
@@ -250,7 +252,8 @@ function saveEdit() {
     kana: document.getElementById('em-kana').value.trim(),
     romaji: document.getElementById('em-romaji').value.trim(),
     category: document.getElementById('em-cat').value,
-    audio: document.getElementById('em-audio').value.trim()
+    audio: document.getElementById('em-audio').value.trim(),
+    audio_id: document.getElementById('em-audio-id').value.trim()
   };
   if (editId) {
     Object.assign(DATA.sentences.find(x => x.id === editId), obj);

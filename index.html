@@ -18,13 +18,18 @@
   .logo{font-size:20px; font-weight:800}
   .logo span{color:var(--accent)}
   .badge{font-size:12px; background:var(--accent); color:#fff; border-radius:99px; padding:3px 10px; font-weight:700}
-  .progress-card{background:linear-gradient(135deg,#d43d51,#b2314f); color:#fff; border-radius:var(--radius); padding:18px 20px; margin-bottom:18px}
+  .progress-card{background:linear-gradient(135deg,#d43d51,#b2314f); color:#fff; border-radius:var(--radius); padding:18px 20px; margin-bottom:14px}
   .progress-card h2{margin:0 0 6px; font-size:15px; font-weight:600; opacity:.9}
   .progress-num{font-size:28px; font-weight:800}
   .bar{height:8px; background:rgba(255,255,255,.25); border-radius:99px; margin-top:10px; overflow:hidden}
   .bar>i{display:block; height:100%; background:#fff; border-radius:99px; transition:width .4s}
+  .lesson-card{background:linear-gradient(135deg,#3b6fd4,#2b53a8); color:#fff; border-radius:var(--radius); padding:18px 20px; margin-bottom:14px; cursor:pointer; display:flex; align-items:center; gap:14px; transition:transform .12s}
+  .lesson-card:active{transform:scale(.98)}
+  .lesson-card .big{font-size:34px}
+  .lesson-card h2{margin:0 0 3px; font-size:16px}
+  .lesson-card p{margin:0; font-size:12px; opacity:.85}
   .cats{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-  .cat{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px; cursor:pointer; transition:transform .12s, box-shadow .12s}
+  .cat{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px; cursor:pointer; transition:transform .12s}
   .cat:active{transform:scale(.97)}
   .cat .ic{font-size:26px}
   .cat h3{margin:6px 0 2px; font-size:15px}
@@ -69,6 +74,29 @@
   .hidden{display:none!important}
   footer{position:fixed; bottom:0; left:0; right:0; background:rgba(247,245,240,.94); backdrop-filter:blur(6px); border-top:1px solid var(--line); padding:9px 16px; text-align:center; font-size:11px; color:var(--sub)}
   footer a{color:var(--sub)}
+  /* lesson setup */
+  .set-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:12px}
+  .set-card h3{margin:0 0 10px; font-size:14px}
+  .opt-row{display:flex; gap:8px; flex-wrap:wrap}
+  .opt{border:1.5px solid var(--line); background:var(--bg); border-radius:12px; padding:9px 14px; font-size:13px; font-weight:600; cursor:pointer; color:var(--sub)}
+  .opt.on{border-color:var(--blue); background:var(--blue-soft); color:var(--blue)}
+  select.opt-select{width:100%; padding:11px; border:1.5px solid var(--line); border-radius:12px; font-size:14px; font-family:inherit; background:var(--bg)}
+  .btn-start{width:100%; padding:16px; border:none; border-radius:16px; background:var(--blue); color:#fff; font-size:16px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px rgba(59,111,212,.35); margin-top:6px}
+  /* lesson play */
+  .lesson-play{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:24px 20px; text-align:center}
+  .timer{font-size:38px; font-weight:800; font-variant-numeric:tabular-nums}
+  .timer-label{font-size:12px; color:var(--sub); margin-bottom:14px}
+  .phase{font-size:15px; font-weight:700; margin:10px 0; min-height:24px}
+  .phase .flag{font-size:20px}
+  .l-text{min-height:110px; display:flex; flex-direction:column; justify-content:center}
+  .l-jp{font-size:22px; font-weight:800; line-height:1.6}
+  .l-idn{font-size:14px; color:var(--blue); font-weight:600; margin-top:6px}
+  .blurred{filter:blur(9px); user-select:none}
+  .peek-btn{margin:10px auto 0; display:block; border:1px solid var(--line); background:var(--bg); border-radius:99px; padding:7px 16px; font-size:13px; cursor:pointer; font-weight:600}
+  .l-ctrl{display:flex; gap:12px; justify-content:center; margin-top:18px}
+  .l-ctrl .btn-play{background:var(--blue); box-shadow:0 8px 20px rgba(59,111,212,.35)}
+  .l-count{font-size:12px; color:var(--sub); margin-top:14px}
+  .fin{font-size:44px; margin:10px 0}
 </style>
 </head>
 <body>
@@ -84,6 +112,13 @@
       <h2>Kemajuan Belajar Anda</h2>
       <div class="progress-num"><span id="p-done">0</span> / <span id="p-total">0</span> kalimat</div>
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
+    </div>
+    <div class="lesson-card" onclick="showLessonSetup()">
+      <div class="big">▶️</div>
+      <div>
+        <h2>Pelajaran Otomatis</h2>
+        <p>Audio diputar otomatis: Indonesia → Jepang. Pilih durasi (10–45 menit), urutan acak, mode tanpa teks.</p>
+      </div>
     </div>
     <div class="guide">
       <b>Cara latihan shadowing 🗣️</b>
@@ -139,6 +174,93 @@
       <div class="counter" id="pr-counter"></div>
     </div>
   </div>
+
+  <!-- LESSON SETUP -->
+  <div id="view-lesson-setup" class="hidden">
+    <div class="list-head">
+      <button class="back" onclick="showHome()">←</button>
+      <h2>▶️ Pelajaran Otomatis</h2>
+    </div>
+    <div class="set-card">
+      <h3>📚 Kategori</h3>
+      <select id="ls-cat" class="opt-select"><option value="">Semua kategori</option></select>
+    </div>
+    <div class="set-card">
+      <h3>⏱️ Durasi</h3>
+      <div class="opt-row" id="ls-dur">
+        <button class="opt" data-v="10">10 menit</button>
+        <button class="opt" data-v="20">20 menit</button>
+        <button class="opt on" data-v="30">30 menit</button>
+        <button class="opt" data-v="45">45 menit</button>
+      </div>
+    </div>
+    <div class="set-card">
+      <h3>🔀 Urutan</h3>
+      <div class="opt-row" id="ls-order">
+        <button class="opt on" data-v="seq">Berurutan (1→2→3)</button>
+        <button class="opt" data-v="rand">Acak (1→3→2…)</button>
+      </div>
+    </div>
+    <div class="set-card">
+      <h3>🔊 Pola audio</h3>
+      <div class="opt-row" id="ls-pattern">
+        <button class="opt on" data-v="idjpidjp">🇮🇩→🇯🇵→🇮🇩→🇯🇵</button>
+        <button class="opt" data-v="idjp">🇮🇩→🇯🇵</button>
+        <button class="opt" data-v="jpjp">🇯🇵→🇯🇵</button>
+        <button class="opt" data-v="jp">🇯🇵 saja</button>
+      </div>
+    </div>
+    <div class="set-card">
+      <h3>⏸️ Jeda menirukan</h3>
+      <div class="opt-row" id="ls-gap">
+        <button class="opt on" data-v="1">Ada (untuk mengulang ucapan)</button>
+        <button class="opt" data-v="0">Tidak ada</button>
+      </div>
+    </div>
+    <div class="set-card">
+      <h3>👁️ Teks</h3>
+      <div class="opt-row" id="ls-text">
+        <button class="opt on" data-v="1">Tampilkan teks</button>
+        <button class="opt" data-v="0">Hanya audio (tanpa teks)</button>
+      </div>
+    </div>
+    <button class="btn-start" onclick="startLesson()">▶ Mulai Pelajaran</button>
+  </div>
+
+  <!-- LESSON PLAY -->
+  <div id="view-lesson" class="hidden">
+    <div class="list-head">
+      <button class="back" onclick="stopLesson()">←</button>
+      <h2>▶️ Pelajaran Otomatis</h2>
+    </div>
+    <div class="lesson-play">
+      <div class="timer" id="l-timer">30:00</div>
+      <div class="timer-label">sisa waktu</div>
+      <div class="phase" id="l-phase"></div>
+      <div class="l-text" id="l-textbox">
+        <div class="l-jp" id="l-jp"></div>
+        <div class="l-idn" id="l-idn"></div>
+      </div>
+      <button class="peek-btn hidden" id="l-peek" onclick="peekText()">👁 Lihat teks sebentar</button>
+      <div class="l-ctrl">
+        <button class="btn-play" id="l-pause" onclick="togglePauseLesson()">⏸</button>
+      </div>
+      <div class="l-count" id="l-count"></div>
+    </div>
+  </div>
+
+  <!-- LESSON DONE -->
+  <div id="view-lesson-done" class="hidden">
+    <div class="lesson-play">
+      <div class="fin">🎉</div>
+      <h2 style="margin:0 0 8px">Pelajaran selesai!</h2>
+      <p style="color:var(--sub); font-size:14px" id="ld-summary"></p>
+      <div class="l-ctrl">
+        <button class="btn-rec rec-start" onclick="showLessonSetup()">🔁 Sekali lagi</button>
+        <button class="btn-rec rec-play" onclick="showHome()">🏠 Beranda</button>
+      </div>
+    </div>
+  </div>
 </div>
 <footer>Shadowing N4 — Aplikasi latihan shadowing untuk pembelajar Indonesia · <a href="admin.html">管理画面</a></footer>
 
@@ -154,10 +276,10 @@ let show = { kana: true, romaji: true, idn: true };
 async function init() {
   const res = await fetch('data.json?v=' + Date.now());
   DATA = await res.json();
-  // merge admin overrides saved in this browser
   const custom = JSON.parse(localStorage.getItem(LS_CUSTOM) || 'null');
   if (custom && custom.sentences) DATA = custom;
   renderHome();
+  if (window.speechSynthesis) speechSynthesis.getVoices(); // warm up voice list
 }
 function sentencesOf(catId){ return DATA.sentences.filter(s => s.category === catId); }
 function doneCount(list){ return list.filter(s => progress[s.id]).length; }
@@ -181,7 +303,9 @@ function renderHome() {
     grid.appendChild(el);
   });
 }
-function showHome(){ stopAll(); swap('view-home'); renderHome(); }
+const VIEWS = ['view-home','view-list','view-practice','view-lesson-setup','view-lesson','view-lesson-done'];
+function swap(id){ VIEWS.forEach(v => document.getElementById(v).classList.toggle('hidden', v !== id)); }
+function showHome(){ stopAll(); lessonAbort(); swap('view-home'); renderHome(); }
 function showList(cat) {
   curCat = cat; curList = sentencesOf(cat.id);
   document.getElementById('list-title').textContent = `${cat.icon || ''} ${cat.name_id}`;
@@ -210,7 +334,6 @@ function showPractice(i) {
   swap('view-practice');
   playAudio();
 }
-function swap(id){ ['view-home','view-list','view-practice'].forEach(v => document.getElementById(v).classList.toggle('hidden', v !== id)); }
 
 function playAudio() {
   const s = curList[curIdx];
@@ -228,7 +351,7 @@ function speakFallback(s) {
   u.onend = () => { if (loop) setTimeout(() => speakFallback(s), 700); };
   speechSynthesis.speak(u);
 }
-function stopAll(){ audio.pause(); loop = false; document.getElementById('btn-loop').classList.remove('on'); window.speechSynthesis && speechSynthesis.cancel(); }
+function stopAll(){ audio.pause(); loop = false; const b=document.getElementById('btn-loop'); b && b.classList.remove('on'); window.speechSynthesis && speechSynthesis.cancel(); }
 function toggleSlow(){ slow = !slow; document.getElementById('btn-slow').classList.toggle('on', slow); playAudio(); }
 function toggleLoop(){ loop = !loop; document.getElementById('btn-loop').classList.toggle('on', loop); if (loop) playAudio(); else { audio.pause(); window.speechSynthesis && speechSynthesis.cancel(); } }
 
@@ -281,6 +404,175 @@ function updateDoneBtn() {
 }
 function nextSentence(){ stopAll(); if (curIdx < curList.length - 1) showPractice(curIdx + 1); else backToList(); }
 function prevSentence(){ stopAll(); if (curIdx > 0) showPractice(curIdx - 1); }
+
+/* ================= LESSON MODE ================= */
+let L = null; // lesson state
+
+function showLessonSetup() {
+  stopAll(); lessonAbort();
+  const sel = document.getElementById('ls-cat');
+  sel.innerHTML = '<option value="">Semua kategori (' + DATA.sentences.length + ' kalimat)</option>' +
+    DATA.categories.map(c => {
+      const n = sentencesOf(c.id).length;
+      return n ? `<option value="${c.id}">${c.icon || ''} ${c.name_id} (${n})</option>` : '';
+    }).join('');
+  swap('view-lesson-setup');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.opt-row .opt');
+  if (!b) return;
+  b.parentElement.querySelectorAll('.opt').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+});
+function optVal(rowId){ return document.querySelector('#' + rowId + ' .opt.on').dataset.v; }
+
+const PATTERNS = { idjpidjp: ['id','jp','id','jp'], idjp: ['id','jp'], jpjp: ['jp','jp'], jp: ['jp'] };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+function idVoice() {
+  if (!window.speechSynthesis) return null;
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v => /^id([-_]|$)/i.test(v.lang)) || null;
+}
+
+function startLesson() {
+  const catId = document.getElementById('ls-cat').value;
+  const list = catId ? sentencesOf(catId) : DATA.sentences.slice();
+  if (!list.length) return;
+  L = {
+    list,
+    endAt: Date.now() + parseInt(optVal('ls-dur')) * 60000,
+    order: optVal('ls-order'),
+    steps: PATTERNS[optVal('ls-pattern')],
+    gap: optVal('ls-gap') === '1',
+    showText: optVal('ls-text') === '1',
+    paused: false, stopped: false, played: 0, seqIdx: -1, lastIdx: -1,
+    startedMin: parseInt(optVal('ls-dur'))
+  };
+  document.getElementById('l-peek').classList.toggle('hidden', L.showText);
+  document.getElementById('l-textbox').classList.toggle('blurred', !L.showText);
+  document.getElementById('l-pause').textContent = '⏸';
+  swap('view-lesson');
+  try { navigator.wakeLock && navigator.wakeLock.request('screen').then(w => L.wake = w).catch(()=>{}); } catch(e){}
+  L.timerInt = setInterval(updateLessonTimer, 500);
+  updateLessonTimer();
+  runLesson();
+}
+function updateLessonTimer() {
+  if (!L) return;
+  const ms = Math.max(0, L.paused ? L.pauseLeft : L.endAt - Date.now());
+  const m = Math.floor(ms / 60000), s = Math.floor(ms % 60000 / 1000);
+  document.getElementById('l-timer').textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+function nextLessonSentence() {
+  if (L.order === 'rand') {
+    if (L.list.length === 1) return 0;
+    let i;
+    do { i = Math.floor(Math.random() * L.list.length); } while (i === L.lastIdx);
+    return i;
+  }
+  return (L.seqIdx + 1) % L.list.length;
+}
+async function waitWhilePaused() {
+  while (L && L.paused && !L.stopped) await sleep(200);
+}
+function playFileAsync(src, rate) {
+  return new Promise(resolve => {
+    audio.src = src; audio.playbackRate = rate || 1;
+    audio.onended = resolve;
+    audio.onerror = resolve;
+    audio.play().catch(resolve);
+  });
+}
+function speakAsync(text, lang, rate, voice) {
+  return new Promise(resolve => {
+    if (!window.speechSynthesis) return resolve();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang; u.rate = rate || 0.95;
+    if (voice) u.voice = voice;
+    u.onend = resolve; u.onerror = resolve;
+    speechSynthesis.speak(u);
+    setTimeout(resolve, 15000); // safety
+  });
+}
+async function playStep(s, step) {
+  const ph = document.getElementById('l-phase');
+  if (step === 'id') {
+    ph.innerHTML = '<span class="flag">🇮🇩</span> Bahasa Indonesia';
+    const v = idVoice();
+    if (v) await speakAsync(s.idn, v.lang, 1.0, v);
+    else if (s.audio_id) await playFileAsync(s.audio_id);
+    else await speakAsync(s.idn, 'id-ID', 1.0, null);
+  } else {
+    ph.innerHTML = '<span class="flag">🇯🇵</span> Bahasa Jepang — tirukan!';
+    if (s.audio) await playFileAsync(s.audio);
+    else await speakAsync(s.jp, 'ja-JP', 0.9, null);
+  }
+}
+async function runLesson() {
+  const my = L;
+  while (L === my && !L.stopped && Date.now() < L.endAt) {
+    const i = nextLessonSentence();
+    L.seqIdx = (L.order === 'rand') ? L.seqIdx : i;
+    L.lastIdx = i;
+    const s = L.list[i];
+    document.getElementById('l-jp').textContent = s.jp;
+    document.getElementById('l-idn').textContent = s.idn;
+    document.getElementById('l-count').textContent = `Kalimat diputar: ${L.played + 1}`;
+    for (const step of L.steps) {
+      if (L !== my || L.stopped || Date.now() >= L.endAt) break;
+      await waitWhilePaused(); if (L !== my || L.stopped) return;
+      await playStep(s, step);
+      await waitWhilePaused(); if (L !== my || L.stopped) return;
+      if (step === 'jp' && L.gap) {
+        const d = (audio.duration && isFinite(audio.duration)) ? Math.min(Math.max(audio.duration * 1000, 1500), 7000) : 2500;
+        await sleep(d); // silent gap: learner repeats aloud
+      } else {
+        await sleep(700);
+      }
+    }
+    L.played++;
+    await sleep(500);
+  }
+  if (L === my && !L.stopped) finishLesson();
+}
+function togglePauseLesson() {
+  if (!L) return;
+  L.paused = !L.paused;
+  document.getElementById('l-pause').textContent = L.paused ? '▶' : '⏸';
+  if (L.paused) {
+    L.pauseLeft = L.endAt - Date.now();
+    audio.pause();
+    window.speechSynthesis && speechSynthesis.pause();
+  } else {
+    L.endAt = Date.now() + L.pauseLeft;
+    if (audio.src && audio.paused && !audio.ended) audio.play().catch(()=>{});
+    window.speechSynthesis && speechSynthesis.resume();
+  }
+}
+let peekTimer = null;
+function peekText() {
+  const tb = document.getElementById('l-textbox');
+  tb.classList.remove('blurred');
+  clearTimeout(peekTimer);
+  peekTimer = setTimeout(() => { if (L && !L.showText) tb.classList.add('blurred'); }, 3000);
+}
+function lessonCleanup() {
+  if (!L) return;
+  L.stopped = true;
+  clearInterval(L.timerInt);
+  if (L.wake) { try { L.wake.release(); } catch(e){} }
+  audio.pause();
+  window.speechSynthesis && speechSynthesis.cancel();
+}
+function lessonAbort(){ if (L) { lessonCleanup(); L = null; } }
+function stopLesson(){ lessonAbort(); showHome(); }
+function finishLesson() {
+  const played = L.played, mins = L.startedMin;
+  lessonCleanup(); L = null;
+  document.getElementById('ld-summary').textContent = `${mins} menit · ${played} kalimat diputar. Kerja bagus!`;
+  swap('view-lesson-done');
+}
 init();
 </script>
 </body>
