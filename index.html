@@ -340,6 +340,7 @@ function playAudio() {
   window.speechSynthesis && speechSynthesis.cancel();
   if (s.audio) {
     audio.src = s.audio; audio.playbackRate = slow ? 0.7 : 1.0;
+    audio.preservesPitch = audio.mozPreservesPitch = audio.webkitPreservesPitch = true;
     audio.onended = () => { if (loop) setTimeout(() => audio.play(), 700); };
     audio.play().catch(() => speakFallback(s));
   } else speakFallback(s);
@@ -479,6 +480,7 @@ async function waitWhilePaused() {
 function playFileAsync(src, rate) {
   return new Promise(resolve => {
     audio.src = src; audio.playbackRate = rate || 1;
+    audio.preservesPitch = audio.mozPreservesPitch = audio.webkitPreservesPitch = true;
     audio.onended = resolve;
     audio.onerror = resolve;
     audio.play().catch(resolve);
