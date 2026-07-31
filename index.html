@@ -97,13 +97,29 @@
   .l-ctrl .btn-play{background:var(--blue); box-shadow:0 8px 20px rgba(59,111,212,.35)}
   .l-count{font-size:12px; color:var(--sub); margin-top:14px}
   .fin{font-size:44px; margin:10px 0}
+  /* login */
+  .user-chip{border:1px solid var(--line); background:var(--card); border-radius:99px; padding:6px 12px; font-size:12px; font-weight:700; cursor:pointer; color:var(--ink); max-width:150px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .login-overlay{position:fixed; inset:0; background:var(--bg); z-index:50; display:flex; align-items:center; justify-content:center; padding:20px}
+  .login-card{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px 24px; width:100%; max-width:360px; text-align:center; box-shadow:0 12px 30px rgba(0,0,0,.08)}
+  .login-card .ic{font-size:38px}
+  .login-card h2{margin:8px 0 4px; font-size:20px}
+  .login-card h2 span{color:var(--accent)}
+  .login-card p{margin:0 0 18px; font-size:13px; color:var(--sub)}
+  .login-card input{width:100%; padding:13px 14px; border:1.5px solid var(--line); border-radius:12px; font-size:15px; font-family:inherit; background:var(--bg); margin-bottom:10px}
+  .login-card input:focus{outline:none; border-color:var(--accent)}
+  .login-btn{width:100%; padding:14px; border:none; border-radius:14px; background:var(--accent); color:#fff; font-size:15px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px rgba(212,61,81,.35)}
+  .login-btn:disabled{opacity:.6}
+  .login-err{font-size:12px; color:#c02626; margin:0 0 10px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="logo">🎧 Shadowing <span>N4</span></div>
-    <div class="badge">JLPT N4</div>
+    <div style="display:flex; gap:8px; align-items:center">
+      <button class="user-chip hidden" id="user-chip" onclick="confirmLogout()">👤 <span id="chip-name"></span></button>
+      <div class="badge">JLPT N4</div>
+    </div>
   </header>
 
   <!-- HOME -->
@@ -264,14 +280,133 @@
 </div>
 <footer>Shadowing N4 — Aplikasi latihan shadowing untuk pembelajar Indonesia · <a href="admin.html">管理画面</a></footer>
 
+<!-- LOGIN OVERLAY -->
+<div id="login-overlay" class="login-overlay hidden">
+  <form class="login-card" onsubmit="doLogin(event)">
+    <div class="ic">🎧</div>
+    <h2>Shadowing <span>N4</span></h2>
+    <p>Masuk untuk mulai belajar</p>
+    <input id="li-id" placeholder="ID Pengguna" autocomplete="username" autocapitalize="none">
+    <input id="li-pin" type="password" inputmode="numeric" placeholder="PIN" autocomplete="current-password">
+    <div id="li-err" class="login-err hidden"></div>
+    <button type="submit" class="login-btn" id="li-btn">Masuk</button>
+  </form>
+</div>
+
 <script>
+/* ===== Supabase 接続設定（デプロイ前にここを実際の値に書き換える） ===== */
+const SB_URL = 'https://klwmsyxxtmhxrsgstpen.supabase.co';
+const SB_ANON_KEY = 'sb_publishable_7T6YHioA1egDVJmvF5hr0A_izm2wWYo';
+
 const LS_PROGRESS = 'shadowing_n4_progress';
 const LS_CUSTOM = 'shadowing_n4_custom_data';
+const LS_SESSION = 'shadowing_n4_session';
+const LS_QUEUE = 'shadowing_n4_event_queue';
 let DATA = null, curCat = null, curList = [], curIdx = 0;
 let audio = new Audio(), slow = false, loop = false;
 let mediaRec = null, recChunks = [], recUrl = null, recording = false;
 let progress = JSON.parse(localStorage.getItem(LS_PROGRESS) || '{}');
 let show = { kana: true, romaji: true, idn: true };
+
+/* ================= LOGIN & TRACKING ================= */
+let session = null;
+try { session = JSON.parse(localStorage.getItem(LS_SESSION) || 'null'); } catch (e) {}
+let evQueue = [];
+try { evQueue = JSON.parse(localStorage.getItem(LS_QUEUE) || '[]') || []; } catch (e) {}
+let flushTimer = null, flushing = false;
+
+function sbReady() {
+  return SB_URL.indexOf('YOUR-PROJECT') === -1 && SB_ANON_KEY.indexOf('YOUR-ANON') === -1;
+}
+async function sbRpc(fn, args, opts) {
+  const res = await fetch(SB_URL + '/rest/v1/rpc/' + fn, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'apikey': SB_ANON_KEY,
+      'Authorization': 'Bearer ' + SB_ANON_KEY
+    },
+    body: JSON.stringify(args || {}),
+    keepalive: !!(opts && opts.keepalive)
+  });
+  if (!res.ok) throw new Error('RPC ' + fn + ' HTTP ' + res.status);
+  return res.json();
+}
+function initSession() {
+  if (session && session.user_id) {
+    showChip();
+    if (sbReady()) sbRpc('sh_log_open', { p_user_id: session.user_id }).catch(() => {});
+    flushEvents();
+  } else {
+    document.getElementById('login-overlay').classList.remove('hidden');
+    setTimeout(() => document.getElementById('li-id').focus(), 100);
+  }
+}
+function showChip() {
+  document.getElementById('chip-name').textContent = session.name || session.user_id;
+  document.getElementById('user-chip').classList.remove('hidden');
+}
+async function doLogin(e) {
+  if (e) e.preventDefault();
+  const id = document.getElementById('li-id').value.trim();
+  const pin = document.getElementById('li-pin').value.trim();
+  const err = document.getElementById('li-err');
+  err.classList.add('hidden');
+  if (!id || !pin) return;
+  const btn = document.getElementById('li-btn');
+  btn.disabled = true; btn.textContent = '...';
+  try {
+    const r = await sbRpc('sh_login', { p_user_id: id, p_pin: pin });
+    if (r && r.ok) {
+      session = { user_id: id, name: r.name, ts: Date.now() };
+      localStorage.setItem(LS_SESSION, JSON.stringify(session));
+      document.getElementById('login-overlay').classList.add('hidden');
+      document.getElementById('li-pin').value = '';
+      showChip();
+      flushEvents();
+    } else {
+      err.textContent = 'ID atau PIN salah.';
+      err.classList.remove('hidden');
+    }
+  } catch (ex) {
+    err.textContent = 'Tidak dapat terhubung. Periksa koneksi internet Anda.';
+    err.classList.remove('hidden');
+  }
+  btn.disabled = false; btn.textContent = 'Masuk';
+}
+function confirmLogout() {
+  if (!session) return;
+  if (!confirm('Keluar dari akun ' + (session.name || session.user_id) + '?')) return;
+  flushEvents({ keepalive: true });
+  localStorage.removeItem(LS_SESSION);
+  session = null;
+  location.reload();
+}
+function logPlay(sentenceId, mode) {
+  if (!session) return;
+  evQueue.push({ sentence_id: sentenceId, mode: mode, ts: Date.now() });
+  localStorage.setItem(LS_QUEUE, JSON.stringify(evQueue));
+  clearTimeout(flushTimer);
+  flushTimer = setTimeout(flushEvents, 4000);
+}
+async function flushEvents(opts) {
+  if (flushing || !session || !evQueue.length || !sbReady() || !navigator.onLine) return;
+  const batch = evQueue.slice(0, 500);
+  flushing = true;
+  try {
+    const r = await sbRpc('sh_log_plays', { p_user_id: session.user_id, p_events: batch }, opts);
+    if (r && r.ok) {
+      evQueue = evQueue.slice(batch.length);
+      localStorage.setItem(LS_QUEUE, JSON.stringify(evQueue));
+    }
+  } catch (e) { /* オフライン等 — キューに残して次回再送 */ }
+  flushing = false;
+  if (evQueue.length >= 500) flushEvents(opts);
+}
+window.addEventListener('online', () => flushEvents());
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') flushEvents({ keepalive: true });
+});
 
 async function init() {
   const res = await fetch('data.json?v=' + Date.now());
@@ -280,6 +415,7 @@ async function init() {
   if (custom && custom.sentences) DATA = custom;
   renderHome();
   if (window.speechSynthesis) speechSynthesis.getVoices(); // warm up voice list
+  initSession();
 }
 function sentencesOf(catId){ return DATA.sentences.filter(s => s.category === catId); }
 function doneCount(list){ return list.filter(s => progress[s.id]).length; }
@@ -337,6 +473,7 @@ function showPractice(i) {
 
 function playAudio() {
   const s = curList[curIdx];
+  logPlay(s.id, 'manual');
   window.speechSynthesis && speechSynthesis.cancel();
   if (s.audio) {
     audio.src = s.audio; audio.playbackRate = slow ? 0.7 : 1.0;
@@ -507,6 +644,7 @@ async function playStep(s, step) {
     else await speakAsync(s.idn, 'id-ID', 1.0, null);
   } else {
     ph.innerHTML = '<span class="flag">🇯🇵</span> Bahasa Jepang — tirukan!';
+    logPlay(s.id, 'lesson');
     if (s.audio) await playFileAsync(s.audio);
     else await speakAsync(s.jp, 'ja-JP', 0.9, null);
   }

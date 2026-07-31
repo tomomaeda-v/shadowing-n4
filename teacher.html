@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadowing N4 — 講師用ダッシュボード</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<style>
+  :root{
+    --bg:#f7f5f0; --card:#ffffff; --ink:#2b2b33; --sub:#7a7a85;
+    --accent:#d43d51; --accent-soft:#fbe9ec; --green:#2e9e6b; --green-soft:#e3f4ec;
+    --blue:#3b6fd4; --blue-soft:#e8eefb; --line:#e8e5de; --radius:16px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{margin:0; font-family:'Hiragino Sans','Noto Sans JP','Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--ink)}
+  .wrap{max-width:760px; margin:0 auto; padding:16px 16px 60px}
+  header{display:flex; align-items:center; justify-content:space-between; padding:10px 0 18px}
+  .logo{font-size:19px; font-weight:800}
+  .logo span{color:var(--accent)}
+  .badge{font-size:12px; background:var(--accent); color:#fff; border-radius:99px; padding:3px 10px; font-weight:700}
+  .hidden{display:none!important}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:12px}
+  /* PIN */
+  .pin-card{max-width:360px; margin:60px auto; text-align:center; padding:28px 24px; border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,.08)}
+  .pin-card .ic{font-size:38px}
+  .pin-card h2{margin:8px 0 4px; font-size:20px}
+  .pin-card p{margin:0 0 18px; font-size:13px; color:var(--sub)}
+  .pin-card input{width:100%; padding:13px 14px; border:1.5px solid var(--line); border-radius:12px; font-size:16px; font-family:inherit; background:var(--bg); margin-bottom:10px; text-align:center; letter-spacing:.2em}
+  .pin-card input:focus{outline:none; border-color:var(--accent)}
+  .pin-btn{width:100%; padding:14px; border:none; border-radius:14px; background:var(--accent); color:#fff; font-size:15px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px rgba(212,61,81,.35)}
+  .pin-btn:disabled{opacity:.6}
+  .pin-err{font-size:12px; color:#c02626; margin:0 0 10px}
+  /* dashboard */
+  .toolbar{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; flex-wrap:wrap}
+  .seg{display:flex; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  .seg button{border:none; background:transparent; padding:9px 16px; font-size:13px; font-weight:700; cursor:pointer; color:var(--sub); font-family:inherit}
+  .seg button.on{background:var(--accent); color:#fff}
+  .refresh{border:1px solid var(--line); background:var(--card); border-radius:12px; padding:9px 14px; font-size:13px; font-weight:700; cursor:pointer; font-family:inherit}
+  .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:14px}
+  .stat{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px; text-align:center}
+  .stat .num{font-size:26px; font-weight:800; color:var(--accent)}
+  .stat .lbl{font-size:11px; color:var(--sub); margin-top:2px}
+  h3.sec{font-size:14px; margin:18px 0 8px}
+  /* user table */
+  .u-row{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px; margin-bottom:8px; cursor:pointer; display:flex; align-items:center; gap:12px; transition:transform .1s}
+  .u-row:active{transform:scale(.985)}
+  .u-row .avatar{min-width:38px; height:38px; border-radius:99px; background:var(--accent-soft); color:var(--accent); font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center}
+  .u-row .info{flex:1; min-width:0}
+  .u-row .name{font-size:15px; font-weight:700}
+  .u-row .meta{font-size:11px; color:var(--sub); margin-top:2px}
+  .u-row .nums{display:flex; gap:14px; text-align:center}
+  .u-row .nums div b{display:block; font-size:16px}
+  .u-row .nums div span{font-size:10px; color:var(--sub)}
+  .u-row .nums .today b{color:var(--green)}
+  .inactive{opacity:.5}
+  /* detail */
+  .back{border:none; background:var(--card); border:1px solid var(--line); width:38px; height:38px; border-radius:12px; font-size:17px; cursor:pointer}
+  .d-head{display:flex; align-items:center; gap:10px; margin:4px 0 14px}
+  .d-head h2{margin:0; font-size:18px}
+  .bar-row{display:flex; align-items:center; gap:8px; margin-bottom:6px; font-size:12px}
+  .bar-row .lbl{min-width:86px; color:var(--sub); font-variant-numeric:tabular-nums}
+  .bar-row .track{flex:1; display:flex; align-items:center; gap:6px}
+  .bar-row .bar{height:16px; border-radius:5px; background:var(--accent); min-width:2px}
+  .bar-row.blue .bar{background:var(--blue)}
+  .bar-row b{font-size:12px}
+  .p-row{display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px solid var(--line); font-size:13px}
+  .p-row:last-child{border-bottom:none}
+  .p-row .cnt{min-width:44px; font-weight:800; color:var(--accent); text-align:right}
+  .p-row .jp{flex:1}
+  .p-row .jp small{display:block; color:var(--sub); font-size:11px}
+  .h-row{display:flex; gap:10px; padding:7px 0; border-bottom:1px solid var(--line); font-size:12px; align-items:baseline}
+  .h-row:last-child{border-bottom:none}
+  .h-row .ts{min-width:118px; color:var(--sub); font-variant-numeric:tabular-nums}
+  .h-row .tag{font-size:10px; font-weight:700; border-radius:99px; padding:2px 8px}
+  .tag.login{background:var(--blue-soft); color:var(--blue)}
+  .tag.manual{background:var(--accent-soft); color:var(--accent)}
+  .tag.lesson{background:var(--green-soft); color:var(--green)}
+  .empty{color:var(--sub); font-size:13px; text-align:center; padding:14px}
+  footer{text-align:center; font-size:11px; color:var(--sub); padding:20px 0}
+  footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">📊 Shadowing <span>N4</span> 講師用</div>
+    <div class="badge">STAFF</div>
+  </header>
+
+  <!-- PIN -->
+  <div id="view-pin">
+    <form class="card pin-card" onsubmit="doPinLogin(event)">
+      <div class="ic">🔒</div>
+      <h2>講師用ダッシュボード</h2>
+      <p>スタッフPINを入力してください</p>
+      <input id="pin-input" type="password" inputmode="numeric" placeholder="PIN" autocomplete="off">
+      <div id="pin-err" class="pin-err hidden"></div>
+      <button type="submit" class="pin-btn" id="pin-btn">ログイン</button>
+    </form>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="view-dash" class="hidden">
+    <div class="toolbar">
+      <div class="seg" id="seg-days">
+        <button data-v="7">7日</button>
+        <button data-v="30" class="on">30日</button>
+        <button data-v="90">90日</button>
+      </div>
+      <button class="refresh" onclick="reload()">🔄 更新</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num" id="st-users">-</div><div class="lbl">登録人材数</div></div>
+      <div class="stat"><div class="num" id="st-plays">-</div><div class="lbl">期間内再生数</div></div>
+      <div class="stat"><div class="num" id="st-today">-</div><div class="lbl">今日学習した人数</div></div>
+    </div>
+    <h3 class="sec">👥 人材一覧（タップで詳細）</h3>
+    <div id="user-list"></div>
+  </div>
+
+  <!-- DETAIL -->
+  <div id="view-detail" class="hidden">
+    <div class="d-head">
+      <button class="back" onclick="showDash()">←</button>
+      <h2 id="d-name"></h2>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num" id="d-logins">-</div><div class="lbl">ログイン回数</div></div>
+      <div class="stat"><div class="num" id="d-plays">-</div><div class="lbl">期間内再生数</div></div>
+      <div class="stat"><div class="num" id="d-today">-</div><div class="lbl">今日の再生</div></div>
+    </div>
+    <h3 class="sec">📅 日別再生数</h3>
+    <div class="card" id="d-daily"></div>
+    <h3 class="sec">🗣️ フレーズ別再生回数</h3>
+    <div class="card" id="d-phrases"></div>
+    <h3 class="sec">🕐 直近の履歴（100件）</h3>
+    <div class="card" id="d-history"></div>
+  </div>
+</div>
+<footer><a href="index.html">← アプリに戻る</a></footer>
+
+<script>
+/* ===== Supabase 接続設定（デプロイ前にここを実際の値に書き換える） ===== */
+const SB_URL = 'https://klwmsyxxtmhxrsgstpen.supabase.co';
+const SB_ANON_KEY = 'sb_publishable_7T6YHioA1egDVJmvF5hr0A_izm2wWYo';
+
+let PIN = '', DAYS = 30, REPORT = null, SENT = {}, curUser = null;
+
+async function sbRpc(fn, args) {
+  const res = await fetch(SB_URL + '/rest/v1/rpc/' + fn, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'apikey': SB_ANON_KEY,
+      'Authorization': 'Bearer ' + SB_ANON_KEY
+    },
+    body: JSON.stringify(args || {})
+  });
+  if (!res.ok) throw new Error('RPC ' + fn + ' HTTP ' + res.status);
+  return res.json();
+}
+async function loadSentences() {
+  try {
+    const res = await fetch('data.json?v=' + Date.now());
+    const data = await res.json();
+    (data.sentences || []).forEach(s => { SENT[s.id] = s; });
+  } catch (e) { /* data.json が読めなくても ID 表示で続行 */ }
+}
+async function fetchReport() {
+  const r = await sbRpc('sh_teacher_report', { p_staff_pin: PIN, p_days: DAYS });
+  if (!r || !r.ok) throw new Error('unauthorized');
+  REPORT = r;
+}
+
+async function doPinLogin(e) {
+  e.preventDefault();
+  const pin = document.getElementById('pin-input').value.trim();
+  const err = document.getElementById('pin-err');
+  err.classList.add('hidden');
+  if (!pin) return;
+  const btn = document.getElementById('pin-btn');
+  btn.disabled = true; btn.textContent = '...';
+  try {
+    PIN = pin;
+    await fetchReport();
+    await loadSentences();
+    document.getElementById('view-pin').classList.add('hidden');
+    showDash(); renderDash();
+  } catch (ex) {
+    PIN = '';
+    err.textContent = (ex.message === 'unauthorized')
+      ? 'PINが違います。' : '接続できません。設定と通信環境を確認してください。';
+    err.classList.remove('hidden');
+  }
+  btn.disabled = false; btn.textContent = 'ログイン';
+}
+
+document.getElementById('seg-days').addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  document.querySelectorAll('#seg-days button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  DAYS = parseInt(b.dataset.v);
+  await reload();
+});
+async function reload() {
+  if (!PIN) return;
+  try {
+    await fetchReport();
+    if (curUser) renderDetail(curUser); else renderDash();
+  } catch (e) { alert('データの取得に失敗しました。'); }
+}
+
+function showDash() {
+  curUser = null;
+  document.getElementById('view-detail').classList.add('hidden');
+  document.getElementById('view-dash').classList.remove('hidden');
+}
+function isToday(ts) {
+  const d = new Date(ts), n = new Date();
+  return d.getFullYear() === n.getFullYear() && d.getMonth() === n.getMonth() && d.getDate() === n.getDate();
+}
+function fmt(ts) {
+  const d = new Date(ts);
+  const p = x => String(x).padStart(2, '0');
+  return `${d.getMonth()+1}/${d.getDate()} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+function dayKey(ts) {
+  const d = new Date(ts);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g,
+    c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderDash() {
+  const users = REPORT.users || [], logins = REPORT.logins || [], plays = REPORT.plays || [];
+  document.getElementById('st-users').textContent = users.filter(u => u.active).length;
+  document.getElementById('st-plays').textContent = plays.length;
+  document.getElementById('st-today').textContent =
+    new Set(plays.filter(p => isToday(p.ts)).map(p => p.user_id)).size;
+
+  const box = document.getElementById('user-list');
+  box.innerHTML = '';
+  if (!users.length) { box.innerHTML = '<div class="empty">登録された人材がいません。</div>'; return; }
+  users.slice().sort((a, b) => {
+    const la = lastLogin(a.user_id, logins), lb = lastLogin(b.user_id, logins);
+    return (lb || 0) - (la || 0);
+  }).forEach(u => {
+    const uLogins = logins.filter(l => l.user_id === u.user_id);
+    const uPlays = plays.filter(p => p.user_id === u.user_id);
+    const today = uPlays.filter(p => isToday(p.ts)).length;
+    const last = lastLogin(u.user_id, logins);
+    const el = document.createElement('div');
+    el.className = 'u-row' + (u.active ? '' : ' inactive');
+    el.innerHTML =
+      `<div class="avatar">${esc((u.name || u.user_id).charAt(0))}</div>` +
+      `<div class="info"><div class="name">${esc(u.name)}${u.active ? '' : '（停止中）'}</div>` +
+      `<div class="meta">ID: ${esc(u.user_id)} · 最終ログイン: ${last ? fmt(last) : 'なし'}</div></div>` +
+      `<div class="nums">` +
+      `<div><b>${uLogins.length}</b><span>ログイン</span></div>` +
+      `<div><b>${uPlays.length}</b><span>再生</span></div>` +
+      `<div class="today"><b>${today}</b><span>今日</span></div>` +
+      `</div>`;
+    el.onclick = () => renderDetail(u);
+    box.appendChild(el);
+  });
+}
+function lastLogin(uid, logins) {
+  let m = 0;
+  logins.forEach(l => { if (l.user_id === uid) { const t = new Date(l.ts).getTime(); if (t > m) m = t; } });
+  return m || null;
+}
+
+function renderDetail(u) {
+  curUser = u;
+  const logins = (REPORT.logins || []).filter(l => l.user_id === u.user_id);
+  const plays = (REPORT.plays || []).filter(p => p.user_id === u.user_id);
+  document.getElementById('d-name').textContent = `👤 ${u.name}`;
+  document.getElementById('d-logins').textContent = logins.length;
+  document.getElementById('d-plays').textContent = plays.length;
+  document.getElementById('d-today').textContent = plays.filter(p => isToday(p.ts)).length;
+
+  // 日別再生数（横棒グラフ・新しい日が上）
+  const byDay = {};
+  plays.forEach(p => { const k = dayKey(p.ts); byDay[k] = (byDay[k] || 0) + 1; });
+  const days = Object.keys(byDay).sort().reverse();
+  const maxDay = Math.max(1, ...days.map(k => byDay[k]));
+  document.getElementById('d-daily').innerHTML = days.length
+    ? days.map(k =>
+        `<div class="bar-row"><div class="lbl">${k.slice(5).replace('-', '/')}</div>` +
+        `<div class="track"><div class="bar" style="width:${byDay[k] / maxDay * 100}%"></div>` +
+        `<b>${byDay[k]}</b></div></div>`).join('')
+    : '<div class="empty">期間内の再生がありません。</div>';
+
+  // フレーズ別再生回数（data.json の日本語文と突合）
+  const bySent = {};
+  plays.forEach(p => { bySent[p.sentence_id] = (bySent[p.sentence_id] || 0) + 1; });
+  const sids = Object.keys(bySent).sort((a, b) => bySent[b] - bySent[a]);
+  document.getElementById('d-phrases').innerHTML = sids.length
+    ? sids.map(sid => {
+        const s = SENT[sid];
+        return `<div class="p-row"><div class="cnt">${bySent[sid]}回</div>` +
+          `<div class="jp">${s ? esc(s.jp) : esc(sid)}` +
+          `${s ? `<small>${esc(s.idn || '')}</small>` : ''}</div></div>`;
+      }).join('')
+    : '<div class="empty">期間内の再生がありません。</div>';
+
+  // 直近履歴100件（ログイン＋再生を混在）
+  const hist = [
+    ...logins.map(l => ({ ts: l.ts, type: 'login' })),
+    ...plays.map(p => ({ ts: p.ts, type: p.mode === 'lesson' ? 'lesson' : 'manual', sid: p.sentence_id }))
+  ].sort((a, b) => new Date(b.ts) - new Date(a.ts)).slice(0, 100);
+  document.getElementById('d-history').innerHTML = hist.length
+    ? hist.map(h => {
+        const tag = h.type === 'login'
+          ? '<span class="tag login">ログイン</span>'
+          : (h.type === 'lesson' ? '<span class="tag lesson">レッスン</span>' : '<span class="tag manual">練習</span>');
+        const body = h.type === 'login' ? '' :
+          esc(SENT[h.sid] ? SENT[h.sid].jp : h.sid);
+        return `<div class="h-row"><div class="ts">${fmt(h.ts)}</div>${tag}<div>${body}</div></div>`;
+      }).join('')
+    : '<div class="empty">履歴がありません。</div>';
+
+  document.getElementById('view-dash').classList.add('hidden');
+  document.getElementById('view-detail').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
