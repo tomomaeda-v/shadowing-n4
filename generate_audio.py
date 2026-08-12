@@ -80,7 +80,9 @@ async def main():
     jobs = []  # (出力パス, 本文, 声, ラベル)
     for s in sentences:
         if args.lang in ("ja", "both") and s.get("audio") and s.get("jp"):
-            jobs.append((os.path.join(HERE, s["audio"]), s["jp"].strip(),
+            # jp_tts があればそちらを読み上げに使う（読み間違い対策。表示は jp のまま）
+            jobs.append((os.path.join(HERE, s["audio"]),
+                         (s.get("jp_tts") or s["jp"]).strip(),
                          args.voice or JA_VOICE_DEFAULT, f"{s['id']} 🇯🇵"))
         if args.lang in ("id", "both") and s.get("audio_id") and s.get("idn"):
             jobs.append((os.path.join(HERE, s["audio_id"]), s["idn"].strip(),

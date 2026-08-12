@@ -213,6 +213,7 @@
       "id": "s018",
       "category": "shopping",
       "jp": "閉店時間は何時か教えてください。",
+      "jp_tts": "閉店時間はなんじか教えてください。",
       "kana": "へいてんじかんはなんじかおしえてください。",
       "romaji": "Heiten jikan wa nanji ka oshiete kudasai.",
       "idn": "Tolong beri tahu jam berapa toko tutup.",
