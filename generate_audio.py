@@ -4,20 +4,21 @@
 generate_audio.py — Shadowing N4 の音声を edge-tts（無料）で生成するスクリプト
 
 data.json の各文について MP3 を書き出します。
-  日本語（jp）      → audio/    （--lang ja）
-  インドネシア語（idn）→ audio_id/ （--lang id）
+  日本語（jp / jp_tts）   → audio/     （--lang ja）
+  インドネシア語（idn）    → audio_id/  （--lang id）
+  ミャンマー語（mya）      → audio_my/  （--lang my）
 
 使い方:
     pip install edge-tts
 
     python generate_audio.py --lang ja                     # 日本語のみ（既定の声）
-    python generate_audio.py --lang ja --voice ja-JP-KeitaNeural
-    python generate_audio.py --lang id                     # インドネシア語のみ
-    python generate_audio.py --lang both                   # 両方
+    python generate_audio.py --lang all --missing-only     # 無いファイルだけ全言語生成
+    python generate_audio.py --lang my                     # ミャンマー語のみ
 
 主な声:
-  日本語   女性: ja-JP-NanamiNeural / 男性: ja-JP-KeitaNeural
-  インドネシア語 女性: id-ID-GadisNeural / 男性: id-ID-ArdiNeural
+  日本語        女性: ja-JP-NanamiNeural / 男性: ja-JP-KeitaNeural
+  インドネシア語 女性: id-ID-GadisNeural  / 男性: id-ID-ArdiNeural
+  ミャンマー語   女性: my-MM-NilarNeural  / 男性: my-MM-ThihaNeural
 """
 
 import argparse
@@ -40,38 +41,51 @@ except ImportError:
 
 JA_VOICE_DEFAULT = "ja-JP-NanamiNeural"
 ID_VOICE_DEFAULT = "id-ID-GadisNeural"
+MY_VOICE_DEFAULT = "my-MM-NilarNeural"
 RATE = "+0%"        # 話速は標準
-MAX_RETRIES = 3
+MAX_RETRIES = 4
+CONCURRENCY = 4     # 同時生成数（上げすぎるとレート制限のおそれ）
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(HERE, "data.json")
 
 
-async def synth(text, voice, out_path):
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    last_err = None
-    for attempt in range(1, MAX_RETRIES + 1):
-        try:
-            await edge_tts.Communicate(text, voice, rate=RATE).save(out_path)
-            if os.path.getsize(out_path) > 0:
-                return
-            last_err = RuntimeError("0バイトのファイルが生成されました")
-        except Exception as e:  # ネットワーク一時エラー等
-            last_err = e
-        await asyncio.sleep(attempt * 2)
-    raise SystemExit(f"生成失敗 {out_path}: {last_err}")
+async def synth(sem, text, voice, out_path, label, progress):
+    async with sem:
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        last_err = None
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                await edge_tts.Communicate(text, voice, rate=RATE).save(out_path)
+                if os.path.getsize(out_path) > 0:
+                    progress[0] += 1
+                    if progress[0] % 25 == 0 or progress[0] == progress[1]:
+                        print(f"  {progress[0]}/{progress[1]} 完了 (最新: {label})",
+                              flush=True)
+                    return
+                last_err = RuntimeError("0バイトのファイルが生成されました")
+            except Exception as e:  # ネットワーク一時エラー等
+                last_err = e
+            await asyncio.sleep(attempt * 3)
+        raise SystemExit(f"生成失敗 {out_path}: {last_err}")
 
 
 async def main():
     parser = argparse.ArgumentParser(
         description="Shadowing N4 の音声を edge-tts で生成します。")
-    parser.add_argument("--lang", choices=["ja", "id", "both"], default="ja",
-                        help="生成する言語（既定: ja）")
+    parser.add_argument("--lang", choices=["ja", "id", "my", "both", "all"],
+                        default="ja",
+                        help="生成する言語（both=ja+id / all=ja+id+my）")
     parser.add_argument("--voice", default=None,
                         help="日本語の声（既定: %s）" % JA_VOICE_DEFAULT)
-    parser.add_argument("--id-voice", default=ID_VOICE_DEFAULT,
-                        help="インドネシア語の声（既定: %s）" % ID_VOICE_DEFAULT)
+    parser.add_argument("--id-voice", default=ID_VOICE_DEFAULT)
+    parser.add_argument("--my-voice", default=MY_VOICE_DEFAULT)
+    parser.add_argument("--missing-only", action="store_true",
+                        help="既にあるファイルはスキップして無い分だけ生成")
     args = parser.parse_args()
+
+    langs = {"ja": ["ja"], "id": ["id"], "my": ["my"],
+             "both": ["ja", "id"], "all": ["ja", "id", "my"]}[args.lang]
 
     with open(DATA_PATH, encoding="utf-8") as f:
         data = json.load(f)
@@ -79,30 +93,37 @@ async def main():
 
     jobs = []  # (出力パス, 本文, 声, ラベル)
     for s in sentences:
-        if args.lang in ("ja", "both") and s.get("audio") and s.get("jp"):
+        pairs = []
+        if "ja" in langs and s.get("audio") and s.get("jp"):
             # jp_tts があればそちらを読み上げに使う（読み間違い対策。表示は jp のまま）
-            jobs.append((os.path.join(HERE, s["audio"]),
-                         (s.get("jp_tts") or s["jp"]).strip(),
-                         args.voice or JA_VOICE_DEFAULT, f"{s['id']} 🇯🇵"))
-        if args.lang in ("id", "both") and s.get("audio_id") and s.get("idn"):
-            jobs.append((os.path.join(HERE, s["audio_id"]), s["idn"].strip(),
-                         args.id_voice, f"{s['id']} 🇮🇩"))
+            pairs.append((s["audio"], (s.get("jp_tts") or s["jp"]),
+                          args.voice or JA_VOICE_DEFAULT, "🇯🇵"))
+        if "id" in langs and s.get("audio_id") and s.get("idn"):
+            pairs.append((s["audio_id"], s["idn"], args.id_voice, "🇮🇩"))
+        if "my" in langs and s.get("audio_my") and s.get("mya"):
+            pairs.append((s["audio_my"], s["mya"], args.my_voice, "🇲🇲"))
+        for rel, text, voice, flag in pairs:
+            path = os.path.join(HERE, rel)
+            if args.missing_only and os.path.exists(path) and os.path.getsize(path) > 0:
+                continue
+            jobs.append((path, text.strip(), voice, f"{s['id']} {flag}"))
 
     print(f"全 {len(sentences)} 文 / 生成対象 {len(jobs)} ファイル "
-          f"(声: {args.voice or JA_VOICE_DEFAULT}"
-          + (f", {args.id_voice}" if args.lang in ("id", "both") else "") + ")")
+          f"(並列 {CONCURRENCY})")
+    if not jobs:
+        print("生成するファイルはありません。")
+        return
 
-    for i, (path, text, voice, label) in enumerate(jobs, 1):
-        print(f"  [{i}/{len(jobs)}] {label} -> {os.path.relpath(path, HERE)}",
-              flush=True)
-        await synth(text, voice, path)
+    sem = asyncio.Semaphore(CONCURRENCY)
+    progress = [0, len(jobs)]
+    await asyncio.gather(*[synth(sem, t, v, p, lb, progress)
+                           for p, t, v, lb in jobs])
 
-    # 検証: 全ファイルが存在し 0 バイトでないこと
-    bad = [p for p, *_ in jobs
-           if not os.path.exists(p) or os.path.getsize(p) == 0]
+    bad = [p for p, *_ in jobs if not os.path.exists(p) or os.path.getsize(p) == 0]
     if bad:
-        raise SystemExit(f"エラー: 不正なファイルがあります: {bad}")
-    print(f"\n完了: {len(jobs)} 件の MP3 を生成しました（すべて 0 バイトでないことを確認済み）。")
+        raise SystemExit(f"エラー: 不正なファイルがあります: {bad[:10]}")
+    print(f"\n完了: {len(jobs)} 件の MP3 を生成しました"
+          "（すべて 0 バイトでないことを確認済み）。")
 
 
 if __name__ == "__main__":

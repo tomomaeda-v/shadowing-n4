@@ -1,0 +1,6720 @@
+[
+ {
+  "file": "f1",
+  "lesson": 1,
+  "no": 1,
+  "title": "はじめまして",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "はじめまして。わたしはマイク・ミラーです。",
+    "kana": "はじめまして。わたしはまいく・みらーです。",
+    "romaji": "Hajimemashite. watashi wa maiku miraa desu."
+   },
+   {
+    "sp": "B",
+    "jp": "はじめまして。わたしはキム・ミンジュンです。",
+    "kana": "はじめまして。わたしはきむ・みんじゅんです。",
+    "romaji": "Hajimemashite. watashi wa kimu minjun desu."
+   },
+   {
+    "sp": "A",
+    "jp": "ミンジュンさんは がくせいですか。",
+    "kana": "みんじゅんさんはがくせいですか。",
+    "romaji": "Minjun san wa gakuseidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、がくせいじゃ ありません。かいしゃいんです。",
+    "kana": "いいえ、がくせいじゃありません。かいしゃいんです。",
+    "romaji": "Iie, gakuseija arimasen. kaishaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。どちらの かいしゃですか。",
+    "kana": "そうですか。どちらのかいしゃですか。",
+    "romaji": "Soudesu ka. dochirano kaishadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "IMCです。ミラーさんは？",
+    "kana": "IMCです。みらーさんは？",
+    "romaji": "IMC desu. miraa san wa?"
+   },
+   {
+    "sp": "A",
+    "jp": "わたしも かいしゃいんです。ABCの しゃいんです。",
+    "kana": "わたしもかいしゃいんです。ABCのしゃいんです。",
+    "romaji": "Watashimo kaishaindesu. ABC no shaindesu."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。よろしく おねがいします。",
+    "kana": "そうですか。よろしくおねがいします。",
+    "romaji": "Soudesu ka. yoroshiku onegaishimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "こちらこそ、よろしく おねがいします。",
+    "kana": "こちらこそ、よろしくおねがいします。",
+    "romaji": "Kochirakoso, yoroshiku onegaishimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "ミラーさんは アメリカじんですか。",
+    "kana": "みらーさんはあめりかじんですか。",
+    "romaji": "Miraa san wa amerika jindesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、そうです。ミンジュンさんは かんこくじんですか。",
+    "kana": "はい、そうです。みんじゅんさんはかんこくじんですか。",
+    "romaji": "Hai, soudesu. minjun san wa kankokujindesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。どうぞ よろしく。",
+    "kana": "はい、そうです。どうぞよろしく。",
+    "romaji": "Hai, soudesu. douzo yoroshiku."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 1,
+  "no": 2,
+  "title": "じこしょうかい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、おなまえは？",
+    "kana": "すみません、おなまえは？",
+    "romaji": "Sumimasen, onamae wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "テレーザです。テレーザ・サントスです。",
+    "kana": "てれーざです。てれーざ・さんとすです。",
+    "romaji": "Tereeza desu. tereeza santosu desu."
+   },
+   {
+    "sp": "A",
+    "jp": "サントスさんは なんさいですか。",
+    "kana": "さんとすさんはなんさいですか。",
+    "romaji": "Santosu san wa nansaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "25さいです。あなたは？",
+    "kana": "25さいです。あなたは？",
+    "romaji": "25 saidesu. anata wa?"
+   },
+   {
+    "sp": "A",
+    "jp": "わたしは 28さいです。サントスさんは ブラジルじんですか。",
+    "kana": "わたしは28さいです。さんとすさんはぶらじるじんですか。",
+    "romaji": "Watashi wa 28 saidesu. santosu san wa burajiru jindesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。わたしは ブラジルじんです。",
+    "kana": "はい、そうです。わたしはぶらじるじんです。",
+    "romaji": "Hai, soudesu. watashi wa burajiru jindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。かいしゃいんですか。",
+    "kana": "そうですか。かいしゃいんですか。",
+    "romaji": "Soudesu ka. kaishaindesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、かいしゃいんじゃ ありません。りゅうがくせいです。",
+    "kana": "いいえ、かいしゃいんじゃありません。りゅうがくせいです。",
+    "romaji": "Iie, kaishainja arimasen. ryuugakuseidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんごの がくせいですか。",
+    "kana": "にほんごのがくせいですか。",
+    "romaji": "Nihongono gakuseidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。よろしく おねがいします。",
+    "kana": "はい、そうです。よろしくおねがいします。",
+    "romaji": "Hai, soudesu. yoroshiku onegaishimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 2,
+  "no": 3,
+  "title": "これは なんですか",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、それは なんですか。",
+    "kana": "すみません、それはなんですか。",
+    "romaji": "Sumimasen, sore wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "これは じしょです。にほんごの じしょです。",
+    "kana": "これはじしょです。にほんごのじしょです。",
+    "romaji": "Kore wa jishodesu. nihongono jishodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "あれも じしょですか。",
+    "kana": "あれもじしょですか。",
+    "romaji": "Aremo jishodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、あれは じしょじゃ ありません。ほんです。",
+    "kana": "いいえ、あれはじしょじゃありません。ほんです。",
+    "romaji": "Iie, are wa jishoja arimasen. hondesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。この ほんは だれのですか。",
+    "kana": "そうですか。このほんはだれのですか。",
+    "romaji": "Soudesu ka. kono hon wa darenodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わたしのです。やまださんの ほんじゃ ありません。",
+    "kana": "わたしのです。やまださんのほんじゃありません。",
+    "romaji": "Watashinodesu. yamadasanno honja arimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "それは ボールペンですか、シャープペンシルですか。",
+    "kana": "それはぼーるぺんですか、しゃーぷぺんしるですか。",
+    "romaji": "Sore wa boorupen desu ka, shaapupenshiru desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ボールペンです。",
+    "kana": "ぼーるぺんです。",
+    "romaji": "Boorupen desu."
+   },
+   {
+    "sp": "A",
+    "jp": "この ノートは ミラーさんのですか。",
+    "kana": "こののーとはみらーさんのですか。",
+    "romaji": "Kono nooto wa miraa sannodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。わたしのです。",
+    "kana": "はい、そうです。わたしのです。",
+    "romaji": "Hai, soudesu. watashinodesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 2,
+  "no": 4,
+  "title": "かいものの じゅんび",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "これは なんですか。",
+    "kana": "これはなんですか。",
+    "romaji": "Kore wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "くるまの ほんです。",
+    "kana": "くるまのほんです。",
+    "romaji": "Kurumano hondesu."
+   },
+   {
+    "sp": "A",
+    "jp": "あれは だれの かばんですか。",
+    "kana": "あれはだれのかばんですか。",
+    "romaji": "Are wa dareno kabandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "やまださんの かばんです。",
+    "kana": "やまださんのかばんです。",
+    "romaji": "Yamadasanno kabandesu."
+   },
+   {
+    "sp": "A",
+    "jp": "この てちょうも やまださんのですか。",
+    "kana": "このてちょうもやまださんのですか。",
+    "romaji": "Kono techoumo yamadasannodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、その てちょうは わたしのです。",
+    "kana": "いいえ、そのてちょうはわたしのです。",
+    "romaji": "Iie, sono techou wa watashinodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。あの かさは？",
+    "kana": "そうですか。あのかさは？",
+    "romaji": "Soudesu ka. ano kasa wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "あの かさも わたしのです。",
+    "kana": "あのかさもわたしのです。",
+    "romaji": "Ano kasamo watashinodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "では、これは なんですか。",
+    "kana": "では、これはなんですか。",
+    "romaji": "De wa, kore wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "それは かいしゃの パソコンです。",
+    "kana": "それはかいしゃのぱそこんです。",
+    "romaji": "Sore wa kaishano pasokon desu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 3,
+  "no": 5,
+  "title": "かいしゃの なか",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、トイレは どこですか。",
+    "kana": "すみません、といれはどこですか。",
+    "romaji": "Sumimasen, toire wa dokodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "トイレは あそこです。",
+    "kana": "といれはあそこです。",
+    "romaji": "Toire wa asokodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "うけつけは どこですか。",
+    "kana": "うけつけはどこですか。",
+    "romaji": "Uketsuke wa dokodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "うけつけは ここです。",
+    "kana": "うけつけはここです。",
+    "romaji": "Uketsuke wa kokodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "じどうはんばいきは なんかいですか。",
+    "kana": "じどうはんばいきはなんかいですか。",
+    "romaji": "Jidouhambaiki wa nankaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "2かいです。エレベーターは あちらです。",
+    "kana": "2かいです。えれべーたーはあちらです。",
+    "romaji": "2 kaidesu. erebeetaa wa achiradesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ありがとうございます。かいぎしつも 2かいですか。",
+    "kana": "ありがとうございます。かいぎしつも2かいですか。",
+    "romaji": "Arigatougozaimasu. kaigishitsumo 2 kaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、かいぎしつは 3かいです。",
+    "kana": "いいえ、かいぎしつは3かいです。",
+    "romaji": "Iie, kaigishitsu wa 3 kaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。どうも ありがとう。",
+    "kana": "そうですか。どうもありがとう。",
+    "romaji": "Soudesu ka. doumo arigatou."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、どういたしまして。",
+    "kana": "いいえ、どういたしまして。",
+    "romaji": "Iie, douitashimashite."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 3,
+  "no": 6,
+  "title": "おみせで",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、この ネクタイは いくらですか。",
+    "kana": "すみません、このねくたいはいくらですか。",
+    "romaji": "Sumimasen, kono nekutai wa ikuradesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "1,500えんです。",
+    "kana": "1,500えんです。",
+    "romaji": "1, 500 endesu."
+   },
+   {
+    "sp": "A",
+    "jp": "あの ネクタイは？",
+    "kana": "あのねくたいは？",
+    "romaji": "Ano nekutai wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "あれは 2,000えんです。",
+    "kana": "あれは2,000えんです。",
+    "romaji": "Are wa 2, 000 endesu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。あなたの くには どこですか。",
+    "kana": "そうですか。あなたのくにはどこですか。",
+    "romaji": "Soudesu ka. anatano kuni wa dokodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "フランスです。パリから きました。",
+    "kana": "ふらんすです。ぱりからきました。",
+    "romaji": "Furansu desu. pari kara kimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。これは にほんの くるまですか。",
+    "kana": "そうですか。これはにほんのくるまですか。",
+    "romaji": "Soudesu ka. kore wa nihonno kurumadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。にほんの くるまです。",
+    "kana": "はい、そうです。にほんのくるまです。",
+    "romaji": "Hai, soudesu. nihonno kurumadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "いい くるまですね。",
+    "kana": "いいくるまですね。",
+    "romaji": "Ii kurumadesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ええ、とても いい くるまです。",
+    "kana": "ええ、とてもいいくるまです。",
+    "romaji": "Ee, totemo ii kurumadesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 4,
+  "no": 7,
+  "title": "まいにちの せいかつ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "いま なんじですか。",
+    "kana": "いまなんじですか。",
+    "romaji": "Ima nanjidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "4じ 5ふんです。",
+    "kana": "4じ5ふんです。",
+    "romaji": "4 ji 5 fundesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ミラーさんは まいあさ なんじに おきますか。",
+    "kana": "みらーさんはまいあさなんじにおきますか。",
+    "romaji": "Miraa san wa maiasa nanjini okimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "6じに おきます。",
+    "kana": "6じにおきます。",
+    "romaji": "6 jini okimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "はやいですね。なんじから なんじまで はたらきますか。",
+    "kana": "はやいですね。なんじからなんじまではたらきますか。",
+    "romaji": "Hayaidesu ne. nanjikara nanjimade hatarakimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "9じから 5じまで はたらきます。",
+    "kana": "9じから5じまではたらきます。",
+    "romaji": "9 jikara 5 jimade hatarakimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "やすみは なんようびですか。",
+    "kana": "やすみはなんようびですか。",
+    "romaji": "Yasumi wa nanyoubidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "どようびと にちようびです。",
+    "kana": "どようびとにちようびです。",
+    "romaji": "Doyoubito nichiyoubidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ひるやすみは なんじから なんじまでですか。",
+    "kana": "ひるやすみはなんじからなんじまでですか。",
+    "romaji": "Hiruyasumi wa nanjikara nanjimadedesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "12じから 1じまでです。",
+    "kana": "12じから1じまでです。",
+    "romaji": "12 jikara 1 jimadedesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 4,
+  "no": 8,
+  "title": "スケジュール",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きのう どこへ いきましたか。",
+    "kana": "きのうどこへいきましたか。",
+    "romaji": "Kinou doko e ikimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "デパートへ いきました。",
+    "kana": "でぱーとへいきました。",
+    "romaji": "Depaato e ikimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "なんじに いきましたか。",
+    "kana": "なんじにいきましたか。",
+    "romaji": "Nanjini ikimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "3じに いきました。",
+    "kana": "3じにいきました。",
+    "romaji": "3 jini ikimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "なんじに かえりましたか。",
+    "kana": "なんじにかえりましたか。",
+    "romaji": "Nanjini kaerimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "6じに かえりました。",
+    "kana": "6じにかえりました。",
+    "romaji": "6 jini kaerimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "きょうは どこへ いきますか。",
+    "kana": "きょうはどこへいきますか。",
+    "romaji": "Kyou wa doko e ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "どこも いきません。うちに います。",
+    "kana": "どこもいきません。うちにいます。",
+    "romaji": "Dokomo ikimasen. uchini imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "あしたは？",
+    "kana": "あしたは？",
+    "romaji": "Ashita wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "あしたは かいしゃへ いきます。8じに いきます。",
+    "kana": "あしたはかいしゃへいきます。8じにいきます。",
+    "romaji": "Ashita wa kaisha e ikimasu. 8 jini ikimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 5,
+  "no": 9,
+  "title": "りょこうの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "しゅうまつ どこかへ いきますか。",
+    "kana": "しゅうまつどこかへいきますか。",
+    "romaji": "Shuumatsu dokoka e ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、きょうとへ いきます。",
+    "kana": "はい、きょうとへいきます。",
+    "romaji": "Hai, kyouto e ikimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "なんで いきますか。",
+    "kana": "なんでいきますか。",
+    "romaji": "Nande ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "しんかんせんで いきます。",
+    "kana": "しんかんせんでいきます。",
+    "romaji": "Shinkansende ikimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "だれと いきますか。",
+    "kana": "だれといきますか。",
+    "romaji": "Dareto ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ミラーさんと いきます。",
+    "kana": "みらーさんといきます。",
+    "romaji": "Miraa santo ikimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "いつ かえりますか。",
+    "kana": "いつかえりますか。",
+    "romaji": "Itsu kaerimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "にちようびに かえります。",
+    "kana": "にちようびにかえります。",
+    "romaji": "Nichiyoubini kaerimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "たんじょうびは いつですか。",
+    "kana": "たんじょうびはいつですか。",
+    "romaji": "Tanjoubi wa itsudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "6がつ 13にちです。",
+    "kana": "6がつ13にちです。",
+    "romaji": "6 gatsu 13 nichidesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 5,
+  "no": 10,
+  "title": "でかける まえに",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "どこへ いきますか。",
+    "kana": "どこへいきますか。",
+    "romaji": "Doko e ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "スーパーへ いきます。",
+    "kana": "すーぱーへいきます。",
+    "romaji": "Suupaa e ikimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "バスで いきますか。",
+    "kana": "ばすでいきますか。",
+    "romaji": "Basu de ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、じてんしゃで いきます。",
+    "kana": "いいえ、じてんしゃでいきます。",
+    "romaji": "Iie, jitenshade ikimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "なんじに かえりますか。",
+    "kana": "なんじにかえりますか。",
+    "romaji": "Nanjini kaerimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "5じに かえります。",
+    "kana": "5じにかえります。",
+    "romaji": "5 jini kaerimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "7がつ 15にちに くにへ かえりますか。",
+    "kana": "7がつ15にちにくにへかえりますか。",
+    "romaji": "7 gatsu 15 nichini kuni e kaerimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、そうです。ひこうきで かえります。",
+    "kana": "はい、そうです。ひこうきでかえります。",
+    "romaji": "Hai, soudesu. hikoukide kaerimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですか。きをつけて。",
+    "kana": "そうですか。きをつけて。",
+    "romaji": "Soudesu ka. kiwotsukete."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。",
+    "kana": "ありがとうございます。",
+    "romaji": "Arigatougozaimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 6,
+  "no": 11,
+  "title": "しょくじに さそう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ひるごはんは なにを たべますか。",
+    "kana": "ひるごはんはなにをたべますか。",
+    "romaji": "Hirugohan wa nani wo tabemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "サンドイッチを たべます。",
+    "kana": "さんどいっちをたべます。",
+    "romaji": "Sandoitchi wo tabemasu."
+   },
+   {
+    "sp": "A",
+    "jp": "いっしょに しょくどうへ いきませんか。",
+    "kana": "いっしょにしょくどうへいきませんか。",
+    "romaji": "Isshoni shokudou e ikimasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいですね。いきましょう。",
+    "kana": "いいですね。いきましょう。",
+    "romaji": "Iidesu ne. ikimashou."
+   },
+   {
+    "sp": "A",
+    "jp": "きょうとへ いっしょに いきませんか。",
+    "kana": "きょうとへいっしょにいきませんか。",
+    "romaji": "Kyouto e isshoni ikimasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいですね。いつ いきますか。",
+    "kana": "いいですね。いついきますか。",
+    "romaji": "Iidesu ne. itsu ikimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "どようびは どうですか。",
+    "kana": "どようびはどうですか。",
+    "romaji": "Doyoubi wa doudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "どようびは ちょっと……にちようびは どうですか。",
+    "kana": "どようびはちょっと……にちようびはどうですか。",
+    "romaji": "Doyoubi wa chotto...... nichiyoubi wa doudesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "にちようびも いいですよ。",
+    "kana": "にちようびもいいですよ。",
+    "romaji": "Nichiyoubimo iidesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "では、にちようびに いきましょう。",
+    "kana": "では、にちようびにいきましょう。",
+    "romaji": "De wa, nichiyoubini ikimashou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 6,
+  "no": 12,
+  "title": "かいものと しょくじ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きのう なにを しましたか。",
+    "kana": "きのうなにをしましたか。",
+    "romaji": "Kinou nani wo shimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "デパートで かいものを しました。",
+    "kana": "でぱーとでかいものをしました。",
+    "romaji": "Depaato de kaimono wo shimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "なにを かいましたか。",
+    "kana": "なにをかいましたか。",
+    "romaji": "Nani wo kaimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "こうちゃを かいました。",
+    "kana": "こうちゃをかいました。",
+    "romaji": "Koucha wo kaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "あそこで すこし やすみましょうか。",
+    "kana": "あそこですこしやすみましょうか。",
+    "romaji": "Asokode sukoshi yasumimashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうしましょう。コーヒーを のみましょう。",
+    "kana": "そうしましょう。こーひーをのみましょう。",
+    "romaji": "Soushimashou. koohii wo nomimashou."
+   },
+   {
+    "sp": "A",
+    "jp": "あなたは なにを のみますか。",
+    "kana": "あなたはなにをのみますか。",
+    "romaji": "Anata wa nani wo nomimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "コーヒーを のみます。あなたは？",
+    "kana": "こーひーをのみます。あなたは？",
+    "romaji": "Koohii wo nomimasu. anata wa?"
+   },
+   {
+    "sp": "A",
+    "jp": "わたしは こうちゃに します。",
+    "kana": "わたしはこうちゃにします。",
+    "romaji": "Watashi wa kouchani shimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "じゃあ、あそこで まちましょう。",
+    "kana": "じゃあ、あそこでまちましょう。",
+    "romaji": "Jaa, asokode machimashou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 7,
+  "no": 13,
+  "title": "プレゼント",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "これは なんで たべますか。",
+    "kana": "これはなんでたべますか。",
+    "romaji": "Kore wa nande tabemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はしで たべます。",
+    "kana": "はしでたべます。",
+    "romaji": "Hashide tabemasu."
+   },
+   {
+    "sp": "A",
+    "jp": "むずかしいですね。フォークで たべても いいですか。",
+    "kana": "むずかしいですね。ふぉーくでたべてもいいですか。",
+    "romaji": "Muzukashiidesu ne. fooku de tabetemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろんです。",
+    "kana": "もちろんです。",
+    "romaji": "Mochirondesu."
+   },
+   {
+    "sp": "A",
+    "jp": "さとうさんに なにを あげましたか。",
+    "kana": "さとうさんになにをあげましたか。",
+    "romaji": "Satousanni nani wo agemashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "チョコレートを あげました。",
+    "kana": "ちょこれーとをあげました。",
+    "romaji": "Chokoreeto wo agemashita."
+   },
+   {
+    "sp": "A",
+    "jp": "さとうさんから なにを もらいましたか。",
+    "kana": "さとうさんからなにをもらいましたか。",
+    "romaji": "Satousankara nani wo moraimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ほんを もらいました。",
+    "kana": "ほんをもらいました。",
+    "romaji": "Hon wo moraimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "もう プレゼントを おくりましたか。",
+    "kana": "もうぷれぜんとをおくりましたか。",
+    "romaji": "Mou purezento wo okurimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、まだです。あした おくります。",
+    "kana": "いいえ、まだです。あしたおくります。",
+    "romaji": "Iie, madadesu. ashita okurimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 7,
+  "no": 14,
+  "title": "ことばと やりとり",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "「ありがとう」は えいごで なんですか。",
+    "kana": "「ありがとう」はえいごでなんですか。",
+    "romaji": "Arigatou wa eigode nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "\"Thank you\" です。",
+    "kana": "\"Thankyou\"です。",
+    "romaji": "\"Thankyou\" desu."
+   },
+   {
+    "sp": "A",
+    "jp": "「すみません」は えいごで なんですか。",
+    "kana": "「すみません」はえいごでなんですか。",
+    "romaji": "Sumimasen wa eigode nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "\"Excuse me\" です。",
+    "kana": "\"Excuseme\"です。",
+    "romaji": "\"Excuseme\" desu."
+   },
+   {
+    "sp": "A",
+    "jp": "ワットさんに なにを もらいましたか。",
+    "kana": "わっとさんになにをもらいましたか。",
+    "romaji": "Watto sanni nani wo moraimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ほんを もらいました。",
+    "kana": "ほんをもらいました。",
+    "romaji": "Hon wo moraimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "あなたは ワットさんに なにを あげましたか。",
+    "kana": "あなたはわっとさんになにをあげましたか。",
+    "romaji": "Anata wa watto sanni nani wo agemashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "CDを あげました。",
+    "kana": "CDをあげました。",
+    "romaji": "CD wo agemashita."
+   },
+   {
+    "sp": "A",
+    "jp": "もう にもつを おくりましたか。",
+    "kana": "もうにもつをおくりましたか。",
+    "romaji": "Mou nimotsu wo okurimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、もう おくりました。",
+    "kana": "はい、もうおくりました。",
+    "romaji": "Hai, mou okurimashita."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 8,
+  "no": 15,
+  "title": "まちの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ならは どんな まちですか。",
+    "kana": "ならはどんなまちですか。",
+    "romaji": "Nara wa donna machidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ふるくて、ゆうめいな まちです。",
+    "kana": "ふるくて、ゆうめいなまちです。",
+    "romaji": "Furukute, yuumeina machidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "きれいですか。",
+    "kana": "きれいですか。",
+    "romaji": "Kireidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても きれいです。おてらが たくさん あります。",
+    "kana": "はい、とてもきれいです。おてらがたくさんあります。",
+    "romaji": "Hai, totemo kireidesu. oteraga takusan arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "とうきょうは どうですか。",
+    "kana": "とうきょうはどうですか。",
+    "romaji": "Toukyou wa doudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "とうきょうは おおきくて、にぎやかです。",
+    "kana": "とうきょうはおおきくて、にぎやかです。",
+    "romaji": "Toukyou wa ookikute, nigiyakadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "おもしろいですか。",
+    "kana": "おもしろいですか。",
+    "romaji": "Omoshiroidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても おもしろい まちです。",
+    "kana": "はい、とてもおもしろいまちです。",
+    "romaji": "Hai, totemo omoshiroi machidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "どちらが すきですか。",
+    "kana": "どちらがすきですか。",
+    "romaji": "Dochiraga sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わたしは しずかな まちが すきですから、ならが すきです。",
+    "kana": "わたしはしずかなまちがすきですから、ならがすきです。",
+    "romaji": "Watashi wa shizukana machiga sukidesukara, naraga sukidesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 8,
+  "no": 16,
+  "title": "りょうりと たべもの",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "この りょうりは おいしいですか。",
+    "kana": "このりょうりはおいしいですか。",
+    "romaji": "Kono ryouri wa oishiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても おいしいです。",
+    "kana": "はい、とてもおいしいです。",
+    "romaji": "Hai, totemo oishiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "からいですか。",
+    "kana": "からいですか。",
+    "romaji": "Karaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すこし からいですが、おいしいですよ。",
+    "kana": "すこしからいですが、おいしいですよ。",
+    "romaji": "Sukoshi karaidesu ga, oishiidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "あの みせは どうですか。",
+    "kana": "あのみせはどうですか。",
+    "romaji": "Ano mise wa doudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "あの みせは ゆうめいですが、たかいです。",
+    "kana": "あのみせはゆうめいですが、たかいです。",
+    "romaji": "Ano mise wa yuumeidesu ga, takaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "このへんは しずかですね。",
+    "kana": "このへんはしずかですね。",
+    "romaji": "Konohen wa shizukadesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ええ、きれいで、しずかな まちです。",
+    "kana": "ええ、きれいで、しずかなまちです。",
+    "romaji": "Ee, kireide, shizukana machidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "でんしゃで とおいですか。",
+    "kana": "でんしゃでとおいですか。",
+    "romaji": "Denshade tooidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、ちかくて、べんりです。",
+    "kana": "いいえ、ちかくて、べんりです。",
+    "romaji": "Iie, chikakute, benridesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 9,
+  "no": 17,
+  "title": "しゅみの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "なにが すきですか。",
+    "kana": "なにがすきですか。",
+    "romaji": "Naniga sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "えいがが すきです。",
+    "kana": "えいががすきです。",
+    "romaji": "Eigaga sukidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな えいがが すきですか。",
+    "kana": "どんなえいががすきですか。",
+    "romaji": "Donna eigaga sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "にほんの えいがが すきです。アニメも すきです。",
+    "kana": "にほんのえいががすきです。あにめもすきです。",
+    "romaji": "Nihonno eigaga sukidesu. anime mo sukidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "サッカーは どうですか。",
+    "kana": "さっかーはどうですか。",
+    "romaji": "Sakkaa wa doudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "サッカーも すきです。サントスさんは サッカーが じょうずですよ。",
+    "kana": "さっかーもすきです。さんとすさんはさっかーがじょうずですよ。",
+    "romaji": "Sakkaa mo sukidesu. santosu san wa sakkaa ga jouzudesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "ひらがなは わかりますか。",
+    "kana": "ひらがなはわかりますか。",
+    "romaji": "Hiragana wa wakarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかります。でも、かんじは まだ わかりません。",
+    "kana": "はい、わかります。でも、かんじはまだわかりません。",
+    "romaji": "Hai, wakarimasu. demo, kanji wa mada wakarimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "どうして べんきょうしますか。",
+    "kana": "どうしてべんきょうしますか。",
+    "romaji": "Doushite benkyoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "にほんが すきですから、べんきょうします。",
+    "kana": "にほんがすきですから、べんきょうします。",
+    "romaji": "Nihonga sukidesukara, benkyoushimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 9,
+  "no": 18,
+  "title": "まいにちの せいかつ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "まいにち テレビを みますか。",
+    "kana": "まいにちてれびをみますか。",
+    "romaji": "Mainichi terebi wo mimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、みません。いそがしいですから。",
+    "kana": "いいえ、みません。いそがしいですから。",
+    "romaji": "Iie, mimasen. isogashiidesukara."
+   },
+   {
+    "sp": "A",
+    "jp": "おかねが ありますか。",
+    "kana": "おかねがありますか。",
+    "romaji": "Okanega arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、あまり ありません。",
+    "kana": "いいえ、あまりありません。",
+    "romaji": "Iie, amari arimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "どうして？",
+    "kana": "どうして？",
+    "romaji": "Doushite?"
+   },
+   {
+    "sp": "B",
+    "jp": "まいにち かいものを しますから、おかねが ありません。",
+    "kana": "まいにちかいものをしますから、おかねがありません。",
+    "romaji": "Mainichi kaimono wo shimasukara, okanega arimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんごが わかりますか。",
+    "kana": "にほんごがわかりますか。",
+    "romaji": "Nihongoga wakarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すこし わかります。でも、まだ むずかしいです。",
+    "kana": "すこしわかります。でも、まだむずかしいです。",
+    "romaji": "Sukoshi wakarimasu. demo, mada muzukashiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "だいじょうぶですよ。いっしょに べんきょうしましょう。",
+    "kana": "だいじょうぶですよ。いっしょにべんきょうしましょう。",
+    "romaji": "Daijoubudesu yo. isshoni benkyoushimashou."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。",
+    "kana": "ありがとうございます。",
+    "romaji": "Arigatougozaimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 10,
+  "no": 19,
+  "title": "まちの ちず",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "このへんに スーパーが ありますか。",
+    "kana": "このへんにすーぱーがありますか。",
+    "romaji": "Konohenni suupaa ga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、あそこに あります。",
+    "kana": "はい、あそこにあります。",
+    "romaji": "Hai, asokoni arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ぎんこうも ありますか。",
+    "kana": "ぎんこうもありますか。",
+    "romaji": "Ginkoumo arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、スーパーの となりに ぎんこうが あります。",
+    "kana": "はい、すーぱーのとなりにぎんこうがあります。",
+    "romaji": "Hai, suupaa no tonarini ginkouga arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "きっさてんは どこですか。",
+    "kana": "きっさてんはどこですか。",
+    "romaji": "Kissaten wa dokodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ぎんこうの となりに きっさてんが あります。",
+    "kana": "ぎんこうのとなりにきっさてんがあります。",
+    "romaji": "Ginkouno tonarini kissatenga arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ミラーさんの うちは どこに ありますか。",
+    "kana": "みらーさんのうちはどこにありますか。",
+    "romaji": "Miraa sanno uchi wa dokoni arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "おおさかに あります。",
+    "kana": "おおさかにあります。",
+    "romaji": "Oosakani arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "おおさかの どこですか。",
+    "kana": "おおさかのどこですか。",
+    "romaji": "Oosakano dokodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "えきの ちかくです。",
+    "kana": "えきのちかくです。",
+    "romaji": "Ekino chikakudesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 10,
+  "no": 20,
+  "title": "どこに いますか",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "やまださんは どこに いますか。",
+    "kana": "やまださんはどこにいますか。",
+    "romaji": "Yamadasan wa dokoni imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "あそこに います。",
+    "kana": "あそこにいます。",
+    "romaji": "Asokoni imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "いぬも いますか。",
+    "kana": "いぬもいますか。",
+    "romaji": "Inumo imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、にわに います。",
+    "kana": "はい、にわにいます。",
+    "romaji": "Hai, niwani imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ねこは どこに いますか。",
+    "kana": "ねこはどこにいますか。",
+    "romaji": "Neko wa dokoni imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ねこは へやの なかに います。",
+    "kana": "ねこはへやのなかにいます。",
+    "romaji": "Neko wa heyano nakani imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "でんわは どこに ありますか。",
+    "kana": "でんわはどこにありますか。",
+    "romaji": "Denwa wa dokoni arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "テーブルの うえに あります。",
+    "kana": "てーぶるのうえにあります。",
+    "romaji": "Teeburu no ueni arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "かばんは？",
+    "kana": "かばんは？",
+    "romaji": "Kaban wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "いすの したに あります。",
+    "kana": "いすのしたにあります。",
+    "romaji": "Isuno shitani arimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 11,
+  "no": 21,
+  "title": "かいものリスト",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "みかんは いくつ ありますか。",
+    "kana": "みかんはいくつありますか。",
+    "romaji": "Mikan wa ikutsu arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "みっつ あります。",
+    "kana": "みっつあります。",
+    "romaji": "Mittsu arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "きってを かいましたか。",
+    "kana": "きってをかいましたか。",
+    "romaji": "Kitte wo kaimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、80えんの きってを 1まい かいました。",
+    "kana": "はい、80えんのきってを1まいかいました。",
+    "romaji": "Hai, 80 enno kitte wo 1 mai kaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "このクラスに がくせいは なんにん いますか。",
+    "kana": "このくらすにがくせいはなんにんいますか。",
+    "romaji": "Kono kurasu ni gakusei wa nannin imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "りゅうがくせいが 3にん います。",
+    "kana": "りゅうがくせいが3にんいます。",
+    "romaji": "Ryuugakuseiga 3 nin imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "1しゅうかんに なんかい えいがを みますか。",
+    "kana": "1しゅうかんになんかいえいがをみますか。",
+    "romaji": "1 shuukanni nankai eiga wo mimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "1かい みます。",
+    "kana": "1かいみます。",
+    "romaji": "1 kai mimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんから くにまで なんじかん かかりますか。",
+    "kana": "にほんからくにまでなんじかんかかりますか。",
+    "romaji": "Nihonkara kunimade nanjikan kakarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ひこうきで やく 10じかん かかります。",
+    "kana": "ひこうきでやく10じかんかかります。",
+    "romaji": "Hikoukide yaku 10 jikan kakarimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 11,
+  "no": 22,
+  "title": "りょこうの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "くにで どのくらい にほんごを べんきょうしましたか。",
+    "kana": "くにでどのくらいにほんごをべんきょうしましたか。",
+    "romaji": "Kunide donokurai nihongo wo benkyoushimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "5しゅうかん べんきょうしました。",
+    "kana": "5しゅうかんべんきょうしました。",
+    "romaji": "5 shuukan benkyoushimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "むずかしかったですか。",
+    "kana": "むずかしかったですか。",
+    "romaji": "Muzukashikattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、すこし むずかしかったです。",
+    "kana": "はい、すこしむずかしかったです。",
+    "romaji": "Hai, sukoshi muzukashikattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんまで なんじかん かかりましたか。",
+    "kana": "にほんまでなんじかんかかりましたか。",
+    "romaji": "Nihommade nanjikan kakarimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "くにから にほんまで ひこうきで 4じかん かかりました。",
+    "kana": "くにからにほんまでひこうきで4じかんかかりました。",
+    "romaji": "Kunikara nihommade hikoukide 4 jikan kakarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "たかかったですか。",
+    "kana": "たかかったですか。",
+    "romaji": "Takakattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、すこし たかかったです。",
+    "kana": "はい、すこしたかかったです。",
+    "romaji": "Hai, sukoshi takakattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "また くにへ かえりますか。",
+    "kana": "またくにへかえりますか。",
+    "romaji": "Mata kuni e kaerimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、3かげつに 1かい かえります。",
+    "kana": "はい、3かげつに1かいかえります。",
+    "romaji": "Hai, 3 kagetsuni 1 kai kaerimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 12,
+  "no": 23,
+  "title": "りょこうの かんそう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きょうとは どうでしたか。",
+    "kana": "きょうとはどうでしたか。",
+    "romaji": "Kyouto wa doudeshita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "きれいでした。とても よかったです。",
+    "kana": "きれいでした。とてもよかったです。",
+    "romaji": "Kireideshita. totemo yokattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "てんきは どうでしたか。",
+    "kana": "てんきはどうでしたか。",
+    "romaji": "Tenki wa doudeshita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すこし さむかったです。でも、たのしかったです。",
+    "kana": "すこしさむかったです。でも、たのしかったです。",
+    "romaji": "Sukoshi samukattadesu. demo, tanoshikattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "とうきょうと おおさかと どちらが おおきいですか。",
+    "kana": "とうきょうとおおさかとどちらがおおきいですか。",
+    "romaji": "Toukyouto oosakato dochiraga ookiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "とうきょうの ほうが おおきいです。",
+    "kana": "とうきょうのほうがおおきいです。",
+    "romaji": "Toukyouno houga ookiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんごと えいごと どちらが むずかしいですか。",
+    "kana": "にほんごとえいごとどちらがむずかしいですか。",
+    "romaji": "Nihongoto eigoto dochiraga muzukashiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わたしには にほんごの ほうが むずかしいです。",
+    "kana": "わたしにはにほんごのほうがむずかしいです。",
+    "romaji": "Watashini wa nihongono houga muzukashiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "スポーツで なにが いちばん すきですか。",
+    "kana": "すぽーつでなにがいちばんすきですか。",
+    "romaji": "Supootsu de naniga ichiban sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "サッカーが いちばん すきです。",
+    "kana": "さっかーがいちばんすきです。",
+    "romaji": "Sakkaa ga ichiban sukidesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 12,
+  "no": 24,
+  "title": "きのうの こと",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きのうの しけんは どうでしたか。",
+    "kana": "きのうのしけんはどうでしたか。",
+    "romaji": "Kinouno shiken wa doudeshita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "むずかしかったです。",
+    "kana": "むずかしかったです。",
+    "romaji": "Muzukashikattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "えいごの しけんも むずかしかったですか。",
+    "kana": "えいごのしけんもむずかしかったですか。",
+    "romaji": "Eigono shikemmo muzukashikattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "えいごは やさしかったです。にほんごが むずかしかったです。",
+    "kana": "えいごはやさしかったです。にほんごがむずかしかったです。",
+    "romaji": "Eigo wa yasashikattadesu. nihongoga muzukashikattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "きのうは さむかったですか。",
+    "kana": "きのうはさむかったですか。",
+    "romaji": "Kinou wa samukattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても さむかったです。",
+    "kana": "はい、とてもさむかったです。",
+    "romaji": "Hai, totemo samukattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ゆきが ふりましたか。",
+    "kana": "ゆきがふりましたか。",
+    "romaji": "Yukiga furimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、でも とても つめたかったです。",
+    "kana": "いいえ、でもとてもつめたかったです。",
+    "romaji": "Iie, demo totemo tsumetakattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "はると なつと どちらが すきですか。",
+    "kana": "はるとなつとどちらがすきですか。",
+    "romaji": "Haruto natsuto dochiraga sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はるの ほうが すきです。あたたかいですから。",
+    "kana": "はるのほうがすきです。あたたかいですから。",
+    "romaji": "Haruno houga sukidesu. atatakaidesukara."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 13,
+  "no": 25,
+  "title": "ほしいもの",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "なにが ほしいですか。",
+    "kana": "なにがほしいですか。",
+    "romaji": "Naniga hoshiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "あたらしい くるまが ほしいです。",
+    "kana": "あたらしいくるまがほしいです。",
+    "romaji": "Atarashii kurumaga hoshiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな くるまが ほしいですか。",
+    "kana": "どんなくるまがほしいですか。",
+    "romaji": "Donna kurumaga hoshiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "しろい くるまが ほしいです。",
+    "kana": "しろいくるまがほしいです。",
+    "romaji": "Shiroi kurumaga hoshiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "カメラも ほしいですか。",
+    "kana": "かめらもほしいですか。",
+    "romaji": "Kamera mo hoshiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、いい カメラを かいたいです。",
+    "kana": "はい、いいかめらをかいたいです。",
+    "romaji": "Hai, ii kamera wo kaitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "しゅうまつ どこかへ いきたいですか。",
+    "kana": "しゅうまつどこかへいきたいですか。",
+    "romaji": "Shuumatsu dokoka e ikitaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、きょうとへ あそびに いきたいです。",
+    "kana": "はい、きょうとへあそびにいきたいです。",
+    "romaji": "Hai, kyouto e asobini ikitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "わたしも いっしょに いきたいです。",
+    "kana": "わたしもいっしょにいきたいです。",
+    "romaji": "Watashimo isshoni ikitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "じゃあ、いっしょに いきましょう。",
+    "kana": "じゃあ、いっしょにいきましょう。",
+    "romaji": "Jaa, isshoni ikimashou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 13,
+  "no": 26,
+  "title": "やすみの けいかく",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "なつやすみに なにを したいですか。",
+    "kana": "なつやすみになにをしたいですか。",
+    "romaji": "Natsuyasumini nani wo shitaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "うみへ およぎに いきたいです。",
+    "kana": "うみへおよぎにいきたいです。",
+    "romaji": "Umi e oyogini ikitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "どこの うみへ いきたいですか。",
+    "kana": "どこのうみへいきたいですか。",
+    "romaji": "Dokono umi e ikitaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "おきなわへ いきたいです。",
+    "kana": "おきなわへいきたいです。",
+    "romaji": "Okinawa e ikitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。わたしは やまへ のぼりに いきたいです。",
+    "kana": "いいですね。わたしはやまへのぼりにいきたいです。",
+    "romaji": "Iidesu ne. watashi wa yama e noborini ikitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。なにが いちばん ほしいですか。",
+    "kana": "そうですか。なにがいちばんほしいですか。",
+    "romaji": "Soudesu ka. naniga ichiban hoshiidesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "あたらしい カメラが ほしいです。やまの しゃしんを とりたいですから。",
+    "kana": "あたらしいかめらがほしいです。やまのしゃしんをとりたいですから。",
+    "romaji": "Atarashii kamera ga hoshiidesu. yamano shashin wo toritaidesukara."
+   },
+   {
+    "sp": "B",
+    "jp": "いいですね。いっしょに かいに いきませんか。",
+    "kana": "いいですね。いっしょにかいにいきませんか。",
+    "romaji": "Iidesu ne. isshoni kaini ikimasen ka."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですよ。どようびは どうですか。",
+    "kana": "いいですよ。どようびはどうですか。",
+    "romaji": "Iidesu yo. doyoubi wa doudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "どようびは いいです。いきましょう。",
+    "kana": "どようびはいいです。いきましょう。",
+    "romaji": "Doyoubi wa iidesu. ikimashou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 14,
+  "no": 27,
+  "title": "しごとの おねがい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、この もんだいを よんで ください。",
+    "kana": "すみません、このもんだいをよんでください。",
+    "romaji": "Sumimasen, kono mondai wo yonde kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかりました。",
+    "kana": "はい、わかりました。",
+    "romaji": "Hai, wakarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "この かみも コピーして ください。",
+    "kana": "このかみもこぴーしてください。",
+    "romaji": "Kono kamimo kopii shite kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "なんまい コピーしますか。",
+    "kana": "なんまいこぴーしますか。",
+    "romaji": "Nammai kopii shimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "5まい おねがいします。てつだいましょうか。",
+    "kana": "5まいおねがいします。てつだいましょうか。",
+    "romaji": "5 mai onegaishimasu. tetsudaimashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。では、これを はこんで ください。",
+    "kana": "ありがとうございます。では、これをはこんでください。",
+    "romaji": "Arigatougozaimasu. de wa, kore wo hakonde kudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "ミラーさんは いま なにを していますか。",
+    "kana": "みらーさんはいまなにをしていますか。",
+    "romaji": "Miraa san wa ima nani wo shiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "レポートを かいて います。",
+    "kana": "れぽーとをかいています。",
+    "romaji": "Repooto wo kaite imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "やまださんは？",
+    "kana": "やまださんは？",
+    "romaji": "Yamadasan wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "でんわを かけて います。",
+    "kana": "でんわをかけています。",
+    "romaji": "Denwa wo kakete imasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 14,
+  "no": 28,
+  "title": "じゅぎょうで",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きょうは 14ページを よんで ください。",
+    "kana": "きょうは14ぺーじをよんでください。",
+    "romaji": "Kyou wa 14 peeji wo yonde kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい。せんせい、この かんじは どう よみますか。",
+    "kana": "はい。せんせい、このかんじはどうよみますか。",
+    "romaji": "Hai. sensei, kono kanji wa dou yomimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "「にほん」と よみます。もう いちど よんで ください。",
+    "kana": "「にほん」とよみます。もういちどよんでください。",
+    "romaji": "Nihon to yomimasu. mou ichido yonde kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "にほん。",
+    "kana": "にほん。",
+    "romaji": "Nihon."
+   },
+   {
+    "sp": "A",
+    "jp": "そうです。では、みんなで いっしょに よみましょう。",
+    "kana": "そうです。では、みんなでいっしょによみましょう。",
+    "romaji": "Soudesu. de wa, minnade isshoni yomimashou."
+   },
+   {
+    "sp": "B",
+    "jp": "せんせい、てつだいましょうか。",
+    "kana": "せんせい、てつだいましょうか。",
+    "romaji": "Sensei, tetsudaimashouka."
+   },
+   {
+    "sp": "A",
+    "jp": "ありがとうございます。では、この ほんを もって きて ください。",
+    "kana": "ありがとうございます。では、このほんをもってきてください。",
+    "romaji": "Arigatougozaimasu. de wa, kono hon wo motte kite kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい。いま だれが にほんごを べんきょうして いますか。",
+    "kana": "はい。いまだれがにほんごをべんきょうしていますか。",
+    "romaji": "Hai. ima darega nihongo wo benkyoushite imasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "ミラーさんが べんきょうして います。",
+    "kana": "みらーさんがべんきょうしています。",
+    "romaji": "Miraa sanga benkyoushite imasu."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。がんばって いますね。",
+    "kana": "そうですか。がんばっていますね。",
+    "romaji": "Soudesu ka. gambatte imasu ne."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 15,
+  "no": 29,
+  "title": "としょかんで",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ここで しゃしんを とっても いいですか。",
+    "kana": "ここでしゃしんをとってもいいですか。",
+    "romaji": "Kokode shashin wo tottemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すみません、ここでは とっては いけません。",
+    "kana": "すみません、ここではとってはいけません。",
+    "romaji": "Sumimasen, kokode wa totte wa ikemasen."
+   },
+   {
+    "sp": "A",
+    "jp": "えんぴつで かいても いいですか。",
+    "kana": "えんぴつでかいてもいいですか。",
+    "romaji": "Empitsude kaitemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、えんぴつは いいですよ。",
+    "kana": "はい、えんぴつはいいですよ。",
+    "romaji": "Hai, empitsu wa iidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "たべても いいですか。",
+    "kana": "たべてもいいですか。",
+    "romaji": "Tabetemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、としょかんでは たべては いけません。",
+    "kana": "いいえ、としょかんではたべてはいけません。",
+    "romaji": "Iie, toshokande wa tabete wa ikemasen."
+   },
+   {
+    "sp": "A",
+    "jp": "すみません、いまどこに すんで いますか。",
+    "kana": "すみません、いまどこにすんでいますか。",
+    "romaji": "Sumimasen, imadokoni sunde imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "さくらアパートに すんで います。",
+    "kana": "さくらあぱーとにすんでいます。",
+    "romaji": "Sakura apaato ni sunde imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どこで はたらいて いますか。",
+    "kana": "どこではたらいていますか。",
+    "romaji": "Dokode hataraite imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "IMCで はたらいて います。えきの ちかくです。",
+    "kana": "IMCではたらいています。えきのちかくです。",
+    "romaji": "IMC de hataraite imasu. ekino chikakudesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 15,
+  "no": 30,
+  "title": "ルールの かくにん",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ここで タバコを すっても いいですか。",
+    "kana": "ここでたばこをすってもいいですか。",
+    "romaji": "Kokode tabako wo suttemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、ここでは すっては いけません。そとで すって ください。",
+    "kana": "いいえ、ここではすってはいけません。そとですってください。",
+    "romaji": "Iie, kokode wa sutte wa ikemasen. sotode sutte kudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "おさけを のんでも いいですか。",
+    "kana": "おさけをのんでもいいですか。",
+    "romaji": "Osake wo nondemo iidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ここでは のんでは いけません。",
+    "kana": "ここではのんではいけません。",
+    "romaji": "Kokode wa nonde wa ikemasen."
+   },
+   {
+    "sp": "A",
+    "jp": "じゃあ、ジュースは？",
+    "kana": "じゃあ、じゅーすは？",
+    "romaji": "Jaa, juusu wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "ジュースは いいですよ。",
+    "kana": "じゅーすはいいですよ。",
+    "romaji": "Juusu wa iidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "あなたは いま どこに すんで いますか。",
+    "kana": "あなたはいまどこにすんでいますか。",
+    "romaji": "Anata wa ima dokoni sunde imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "とうきょうに すんで います。",
+    "kana": "とうきょうにすんでいます。",
+    "romaji": "Toukyouni sunde imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ひとりで すんで いますか。",
+    "kana": "ひとりですんでいますか。",
+    "romaji": "Hitoride sunde imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、かぞくと すんで います。",
+    "kana": "いいえ、かぞくとすんでいます。",
+    "romaji": "Iie, kazokuto sunde imasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 16,
+  "no": 31,
+  "title": "あしたの よてい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "あした なにを しますか。",
+    "kana": "あしたなにをしますか。",
+    "romaji": "Ashita nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "こうべへ いって、えいがを みて、かいものします。",
+    "kana": "こうべへいって、えいがをみて、かいものします。",
+    "romaji": "Koube e itte, eiga wo mite, kaimonoshimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "たのしそうですね。なんで いきますか。",
+    "kana": "たのしそうですね。なんでいきますか。",
+    "romaji": "Tanoshisoudesu ne. nande ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "でんしゃで いきます。えきへ いってから、きっぷを かいます。",
+    "kana": "でんしゃでいきます。えきへいってから、きっぷをかいます。",
+    "romaji": "Denshade ikimasu. eki e ittekara, kippu wo kaimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "うちへ かえってから なにを しますか。",
+    "kana": "うちへかえってからなにをしますか。",
+    "romaji": "Uchi e kaettekara nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ばんごはんを たべて、テレビを みます。",
+    "kana": "ばんごはんをたべて、てれびをみます。",
+    "romaji": "Bangohan wo tabete, terebi wo mimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "カリナさんは どんな ひとですか。",
+    "kana": "かりなさんはどんなひとですか。",
+    "romaji": "Karina san wa donna hitodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "せが たかくて、かみが ながいひとです。",
+    "kana": "せがたかくて、かみがながいひとです。",
+    "romaji": "Sega takakute, kamiga nagaihitodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "やさしいですか。",
+    "kana": "やさしいですか。",
+    "romaji": "Yasashiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、やさしくて、あたまも いいひとです。",
+    "kana": "はい、やさしくて、あたまもいいひとです。",
+    "romaji": "Hai, yasashikute, atamamo iihitodesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 16,
+  "no": 32,
+  "title": "ともだちの しょうかい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ミラーさんは どんな ひとですか。",
+    "kana": "みらーさんはどんなひとですか。",
+    "romaji": "Miraa san wa donna hitodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わかくて、げんきな ひとです。",
+    "kana": "わかくて、げんきなひとです。",
+    "romaji": "Wakakute, genkina hitodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "しごとは？",
+    "kana": "しごとは？",
+    "romaji": "Shigoto wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "えいごの せんせいです。にほんへ きてから、にほんごを べんきょうして います。",
+    "kana": "えいごのせんせいです。にほんへきてから、にほんごをべんきょうしています。",
+    "romaji": "Eigono senseidesu. nihon e kitekara, nihongo wo benkyoushite imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ともだちと でかけますか。",
+    "kana": "ともだちとでかけますか。",
+    "romaji": "Tomodachito dekakemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、よく えいがを みて、しょくじを します。",
+    "kana": "はい、よくえいがをみて、しょくじをします。",
+    "romaji": "Hai, yoku eiga wo mite, shokuji wo shimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "えいがを みてから、どこへ いきますか。",
+    "kana": "えいがをみてから、どこへいきますか。",
+    "romaji": "Eiga wo mitekara, doko e ikimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いつも レストランへ いきます。たべて、はなして、たのしいです。",
+    "kana": "いつもれすとらんへいきます。たべて、はなして、たのしいです。",
+    "romaji": "Itsumo resutoran e ikimasu. tabete, hanashite, tanoshiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。わたしも いっしょに いきたいです。",
+    "kana": "いいですね。わたしもいっしょにいきたいです。",
+    "romaji": "Iidesu ne. watashimo isshoni ikitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "では、こんど いっしょに いきましょう。",
+    "kana": "では、こんどいっしょにいきましょう。",
+    "romaji": "De wa, kondo isshoni ikimashou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 17,
+  "no": 33,
+  "title": "きそくの せつめい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ここでは タバコを すわないで ください。",
+    "kana": "ここではたばこをすわないでください。",
+    "romaji": "Kokode wa tabako wo suwanaide kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかりました。",
+    "kana": "はい、わかりました。",
+    "romaji": "Hai, wakarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "しゅくだいは かならず だしなければ なりません。",
+    "kana": "しゅくだいはかならずだしなければなりません。",
+    "romaji": "Shukudai wa kanarazu dashinakereba narimasen."
+   },
+   {
+    "sp": "B",
+    "jp": "まいにち しゅくだいが ありますか。",
+    "kana": "まいにちしゅくだいがありますか。",
+    "romaji": "Mainichi shukudaiga arimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、でも にちようびは しなくても いいです。",
+    "kana": "はい、でもにちようびはしなくてもいいです。",
+    "romaji": "Hai, demo nichiyoubi wa shinakutemo iidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "では、きょうは しなければ なりませんか。",
+    "kana": "では、きょうはしなければなりませんか。",
+    "romaji": "De wa, kyou wa shinakereba narimasen ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、きょうは しなければ なりません。",
+    "kana": "はい、きょうはしなければなりません。",
+    "romaji": "Hai, kyou wa shinakereba narimasen."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。なんじまでに だしますか。",
+    "kana": "わかりました。なんじまでにだしますか。",
+    "romaji": "Wakarimashita. nanjimadeni dashimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "あしたの 9じまでに だして ください。",
+    "kana": "あしたの9じまでにだしてください。",
+    "romaji": "Ashitano 9 jimadeni dashite kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "なまえを かかなければ なりませんか。",
+    "kana": "なまえをかかなければなりませんか。",
+    "romaji": "Namae wo kakanakereba narimasen ka."
+   },
+   {
+    "sp": "A",
+    "jp": "なまえは かかなくても いいですよ。",
+    "kana": "なまえはかかなくてもいいですよ。",
+    "romaji": "Namae wa kakanakutemo iidesu yo."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 17,
+  "no": 34,
+  "title": "かえす もの",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "としょかんの ほんを かえさなければ なりません。",
+    "kana": "としょかんのほんをかえさなければなりません。",
+    "romaji": "Toshokanno hon wo kaesanakereba narimasen."
+   },
+   {
+    "sp": "B",
+    "jp": "いつまでに かえしますか。",
+    "kana": "いつまでにかえしますか。",
+    "romaji": "Itsumadeni kaeshimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "きんようびまでです。まだ よんで いません。",
+    "kana": "きんようびまでです。まだよんでいません。",
+    "romaji": "Kinyoubimadedesu. mada yonde imasen."
+   },
+   {
+    "sp": "B",
+    "jp": "いそいで よまなければ なりませんね。",
+    "kana": "いそいでよまなければなりませんね。",
+    "romaji": "Isoide yomanakereba narimasen ne."
+   },
+   {
+    "sp": "A",
+    "jp": "はい。レポートも かかなければ なりません。",
+    "kana": "はい。れぽーともかかなければなりません。",
+    "romaji": "Hai. repooto mo kakanakereba narimasen."
+   },
+   {
+    "sp": "B",
+    "jp": "レポートは なんにちまでですか。",
+    "kana": "れぽーとはなんにちまでですか。",
+    "romaji": "Repooto wa nannichimadedesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "らいしゅうの すいようびまでです。",
+    "kana": "らいしゅうのすいようびまでです。",
+    "romaji": "Raishuuno suiyoubimadedesu."
+   },
+   {
+    "sp": "B",
+    "jp": "じかんが ありますね。ゆっくり かいても いいですよ。",
+    "kana": "じかんがありますね。ゆっくりかいてもいいですよ。",
+    "romaji": "Jikanga arimasu ne. yukkuri kaitemo iidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、でも はやく かきたいです。",
+    "kana": "はい、でもはやくかきたいです。",
+    "romaji": "Hai, demo hayaku kakitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "てつだいましょうか。",
+    "kana": "てつだいましょうか。",
+    "romaji": "Tetsudaimashouka."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 18,
+  "no": 35,
+  "title": "とくぎの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ミラーさんは なにが できますか。",
+    "kana": "みらーさんはなにができますか。",
+    "romaji": "Miraa san wa naniga dekimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "にほんごを はなすことが できます。かんじも よむことが できます。",
+    "kana": "にほんごをはなすことができます。かんじもよむことができます。",
+    "romaji": "Nihongo wo hanasukotoga dekimasu. kanjimo yomukotoga dekimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "すごいですね。りょうりは できますか。",
+    "kana": "すごいですね。りょうりはできますか。",
+    "romaji": "Sugoidesu ne. ryouri wa dekimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すこし できます。にほんりょうりを つくることが できます。",
+    "kana": "すこしできます。にほんりょうりをつくることができます。",
+    "romaji": "Sukoshi dekimasu. nihonryouri wo tsukurukotoga dekimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ここで コピーすることが できますか。",
+    "kana": "ここでこぴーすることができますか。",
+    "romaji": "Kokode kopii surukotoga dekimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、できます。きっぷも ここで かうことが できますよ。",
+    "kana": "はい、できます。きっぷもここでかうことができますよ。",
+    "romaji": "Hai, dekimasu. kippumo kokode kaukotoga dekimasu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "しゅみは なんですか。",
+    "kana": "しゅみはなんですか。",
+    "romaji": "Shumi wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わたしの しゅみは どうぶつの しゃしんを とることです。",
+    "kana": "わたしのしゅみはどうぶつのしゃしんをとることです。",
+    "romaji": "Watashino shumi wa doubutsuno shashin wo torukotodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。ねるまえに なにを しますか。",
+    "kana": "いいですね。ねるまえになにをしますか。",
+    "romaji": "Iidesu ne. nerumaeni nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ねるまえに ほんを よみます。",
+    "kana": "ねるまえにほんをよみます。",
+    "romaji": "Nerumaeni hon wo yomimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 18,
+  "no": 36,
+  "title": "まいにちの ルーティン",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "あさ おきてから なにを しますか。",
+    "kana": "あさおきてからなにをしますか。",
+    "romaji": "Asa okitekara nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "かおを あらってから、あさごはんを たべます。",
+    "kana": "かおをあらってから、あさごはんをたべます。",
+    "romaji": "Kao wo arattekara, asagohan wo tabemasu."
+   },
+   {
+    "sp": "A",
+    "jp": "がっこうへ いくまえに なにを しますか。",
+    "kana": "がっこうへいくまえになにをしますか。",
+    "romaji": "Gakkou e ikumaeni nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "でかけるまえに、かばんの なかを かくにんします。",
+    "kana": "でかけるまえに、かばんのなかをかくにんします。",
+    "romaji": "Dekakerumaeni, kabanno naka wo kakuninshimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんごを はなすことが できますか。",
+    "kana": "にほんごをはなすことができますか。",
+    "romaji": "Nihongo wo hanasukotoga dekimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すこし できます。もっと じょうずに なりたいです。",
+    "kana": "すこしできます。もっとじょうずになりたいです。",
+    "romaji": "Sukoshi dekimasu. motto jouzuni naritaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "まいにち れんしゅうすることが たいせつですよ。",
+    "kana": "まいにちれんしゅうすることがたいせつですよ。",
+    "romaji": "Mainichi renshuusurukotoga taisetsudesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、ねるまえに まいにち べんきょうします。",
+    "kana": "はい、ねるまえにまいにちべんきょうします。",
+    "romaji": "Hai, nerumaeni mainichi benkyoushimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "あなたの しゅみは なんですか。",
+    "kana": "あなたのしゅみはなんですか。",
+    "romaji": "Anatano shumi wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "おんがくを きくことです。まいにち きいて います。",
+    "kana": "おんがくをきくことです。まいにちきいています。",
+    "romaji": "Ongaku wo kikukotodesu. mainichi kiite imasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 19,
+  "no": 37,
+  "title": "けいけんの はなし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "おきなわへ いったことが ありますか。",
+    "kana": "おきなわへいったことがありますか。",
+    "romaji": "Okinawa e ittakotoga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、いちど いったことが あります。",
+    "kana": "はい、いちどいったことがあります。",
+    "romaji": "Hai, ichido ittakotoga arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どうでしたか。",
+    "kana": "どうでしたか。",
+    "romaji": "Doudeshita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "うみが きれいで、たのしかったです。",
+    "kana": "うみがきれいで、たのしかったです。",
+    "romaji": "Umiga kireide, tanoshikattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ふじさんへ のぼったことが ありますか。",
+    "kana": "ふじさんへのぼったことがありますか。",
+    "romaji": "Fujisan e nobottakotoga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、まだ ありません。のぼってみたいです。",
+    "kana": "いいえ、まだありません。のぼってみたいです。",
+    "romaji": "Iie, mada arimasen. nobottemitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "やすみの ひは なにを しますか。",
+    "kana": "やすみのひはなにをしますか。",
+    "romaji": "Yasumino hi wa nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "まいばん テレビを みたり、ほんを よんだり します。",
+    "kana": "まいばんてれびをみたり、ほんをよんだりします。",
+    "romaji": "Maiban terebi wo mitari, hon wo yondari shimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "テレーザちゃんは おおきく なりましたね。",
+    "kana": "てれーざちゃんはおおきくなりましたね。",
+    "romaji": "Tereeza chan wa ookiku narimashita ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ええ、せが たかく なりました。もう 9さいです。",
+    "kana": "ええ、せがたかくなりました。もう9さいです。",
+    "romaji": "Ee, sega takaku narimashita. mou 9 saidesu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 19,
+  "no": 38,
+  "title": "にほんの せいかつ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "にほんの たべものを たべたことが ありますか。",
+    "kana": "にほんのたべものをたべたことがありますか。",
+    "romaji": "Nihonno tabemono wo tabetakotoga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、すしや てんぷらを たべたことが あります。",
+    "kana": "はい、すしやてんぷらをたべたことがあります。",
+    "romaji": "Hai, sushiya tempura wo tabetakotoga arimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんごの しんぶんを よんだことが ありますか。",
+    "kana": "にほんごのしんぶんをよんだことがありますか。",
+    "romaji": "Nihongono shimbun wo yondakotoga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、まだ ありません。かんじが むずかしいですから。",
+    "kana": "いいえ、まだありません。かんじがむずかしいですから。",
+    "romaji": "Iie, mada arimasen. kanjiga muzukashiidesukara."
+   },
+   {
+    "sp": "A",
+    "jp": "まいにち なにを していますか。",
+    "kana": "まいにちなにをしていますか。",
+    "romaji": "Mainichi nani wo shiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "にほんごを べんきょうしたり、まちを さんぽしたり しています。",
+    "kana": "にほんごをべんきょうしたり、まちをさんぽしたりしています。",
+    "romaji": "Nihongo wo benkyoushitari, machi wo samposhitari shiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんご、じょうずに なりましたね。",
+    "kana": "にほんご、じょうずになりましたね。",
+    "romaji": "Nihongo, jouzuni narimashita ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。まだまだですが、すこしずつ じょうずに なっています。",
+    "kana": "ありがとうございます。まだまだですが、すこしずつじょうずになっています。",
+    "romaji": "Arigatougozaimasu. madamadadesu ga, sukoshizutsu jouzuni natteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "これからも がんばって ください。",
+    "kana": "これからもがんばってください。",
+    "romaji": "Korekaramo gambatte kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、もっと がんばります。",
+    "kana": "はい、もっとがんばります。",
+    "romaji": "Hai, motto gambarimasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 20,
+  "no": 39,
+  "title": "ともだちとの かいわ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "らいしゅう とうきょうへ いく？",
+    "kana": "らいしゅうとうきょうへいく？",
+    "romaji": "Raishuu toukyou e iku?"
+   },
+   {
+    "sp": "B",
+    "jp": "うん、かいぎが ある。",
+    "kana": "うん、かいぎがある。",
+    "romaji": "Un, kaigiga aru."
+   },
+   {
+    "sp": "A",
+    "jp": "まいにち いそがしい？",
+    "kana": "まいにちいそがしい？",
+    "romaji": "Mainichi isogashii?"
+   },
+   {
+    "sp": "B",
+    "jp": "うん、ちょっと いそがしい。しごとが おおい。",
+    "kana": "うん、ちょっといそがしい。しごとがおおい。",
+    "romaji": "Un, chotto isogashii. shigotoga ooi."
+   },
+   {
+    "sp": "A",
+    "jp": "あした ひま？",
+    "kana": "あしたひま？",
+    "romaji": "Ashita hima?"
+   },
+   {
+    "sp": "B",
+    "jp": "あした？ ちょっと……しやくしょへ いかなければ ならない。",
+    "kana": "あした？ちょっと……しやくしょへいかなければならない。",
+    "romaji": "Ashita? chotto...... shiyakusho e ikanakereba naranai."
+   },
+   {
+    "sp": "A",
+    "jp": "そう。じゃあ、こんど あそぼう。",
+    "kana": "そう。じゃあ、こんどあそぼう。",
+    "romaji": "Sou. jaa, kondo asobou."
+   },
+   {
+    "sp": "B",
+    "jp": "うん、らいしゅうは ひまだ。",
+    "kana": "うん、らいしゅうはひまだ。",
+    "romaji": "Un, raishuu wa himada."
+   },
+   {
+    "sp": "A",
+    "jp": "じゃあ、らいしゅうの どようびは？",
+    "kana": "じゃあ、らいしゅうのどようびは？",
+    "romaji": "Jaa, raishuuno doyoubi wa?"
+   },
+   {
+    "sp": "B",
+    "jp": "どようびは いい。いっしょに いこう。",
+    "kana": "どようびはいい。いっしょにいこう。",
+    "romaji": "Doyoubi wa ii. isshoni ikou."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 20,
+  "no": 40,
+  "title": "にっき ふうに",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "きょう なにを した？",
+    "kana": "きょうなにをした？",
+    "romaji": "Kyou nani wo shita?"
+   },
+   {
+    "sp": "B",
+    "jp": "としょかんで ほんを よんだ。",
+    "kana": "としょかんでほんをよんだ。",
+    "romaji": "Toshokande hon wo yonda."
+   },
+   {
+    "sp": "A",
+    "jp": "むずかしい ほん？",
+    "kana": "むずかしいほん？",
+    "romaji": "Muzukashii hon?"
+   },
+   {
+    "sp": "B",
+    "jp": "うん、でも おもしろい。にほんごの べんきょうを しなければ ならないから。",
+    "kana": "うん、でもおもしろい。にほんごのべんきょうをしなければならないから。",
+    "romaji": "Un, demo omoshiroi. nihongono benkyou wo shinakereba naranaikara."
+   },
+   {
+    "sp": "A",
+    "jp": "しけんが ある？",
+    "kana": "しけんがある？",
+    "romaji": "Shikenga aru?"
+   },
+   {
+    "sp": "B",
+    "jp": "らいしゅう しけんが ある。まいにち べんきょうしなければ ならない。",
+    "kana": "らいしゅうしけんがある。まいにちべんきょうしなければならない。",
+    "romaji": "Raishuu shikenga aru. mainichi benkyoushinakereba naranai."
+   },
+   {
+    "sp": "A",
+    "jp": "がんばってね。てつだおうか？",
+    "kana": "がんばってね。てつだおうか？",
+    "romaji": "Gambattene. tetsudaouka?"
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとう。じゃあ、いっしょに べんきょうしよう。",
+    "kana": "ありがとう。じゃあ、いっしょにべんきょうしよう。",
+    "romaji": "Arigatou. jaa, isshoni benkyoushiyou."
+   },
+   {
+    "sp": "A",
+    "jp": "いいよ。なんじに くる？",
+    "kana": "いいよ。なんじにくる？",
+    "romaji": "Iiyo. nanjini kuru?"
+   },
+   {
+    "sp": "B",
+    "jp": "3じごろ いく。",
+    "kana": "3じごろいく。",
+    "romaji": "3 jigoro iku."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 21,
+  "no": 41,
+  "title": "よそうと いけん",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "あした あめが ふると おもいますか。",
+    "kana": "あしたあめがふるとおもいますか。",
+    "romaji": "Ashita amega furuto omoimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、ふると おもいます。てんきよほうで そう いっていました。",
+    "kana": "はい、ふるとおもいます。てんきよほうでそういっていました。",
+    "romaji": "Hai, furuto omoimasu. tenkiyohoude sou itteimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "じゃあ、かさを もっていったほうが いいですね。",
+    "kana": "じゃあ、かさをもっていったほうがいいですね。",
+    "romaji": "Jaa, kasa wo motteittahouga iidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。ミラーさんは どこへ いったと おもいますか。",
+    "kana": "そうですね。みらーさんはどこへいったとおもいますか。",
+    "romaji": "Soudesu ne. miraa san wa doko e ittato omoimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "かいしゃへ いったと おもいます。",
+    "kana": "かいしゃへいったとおもいます。",
+    "romaji": "Kaisha e ittato omoimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "かちょうに なにか いいましたか。",
+    "kana": "かちょうになにかいいましたか。",
+    "romaji": "Kachouni nanika iimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、らいしゅう やすむと いいました。",
+    "kana": "はい、らいしゅうやすむといいました。",
+    "romaji": "Hai, raishuu yasumuto iimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。あした パーティーに きますよね？",
+    "kana": "そうですか。あしたぱーてぃーにきますよね？",
+    "romaji": "Soudesu ka. ashita paatii ni kimasuyone?"
+   },
+   {
+    "sp": "A",
+    "jp": "はい、たぶん いくと おもいます。",
+    "kana": "はい、たぶんいくとおもいます。",
+    "romaji": "Hai, tabun ikuto omoimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "たのしみに して います。",
+    "kana": "たのしみにしています。",
+    "romaji": "Tanoshimini shite imasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 21,
+  "no": 42,
+  "title": "きかんの かんがえ",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "にほんごの べんきょうは たいへんだと おもいますか。",
+    "kana": "にほんごのべんきょうはたいへんだとおもいますか。",
+    "romaji": "Nihongono benkyou wa taihendato omoimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、むずかしいと おもいます。でも、たのしいとも おもいます。",
+    "kana": "はい、むずかしいとおもいます。でも、たのしいともおもいます。",
+    "romaji": "Hai, muzukashiito omoimasu. demo, tanoshiitomo omoimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですね。まいにち べんきょうすることが たいせつだと おもいます。",
+    "kana": "そうですね。まいにちべんきょうすることがたいせつだとおもいます。",
+    "romaji": "Soudesu ne. mainichi benkyousurukotoga taisetsudato omoimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "せんせいは なにか いいましたか。",
+    "kana": "せんせいはなにかいいましたか。",
+    "romaji": "Sensei wa nanika iimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "もっと かいわを れんしゅうして ください、と いいました。",
+    "kana": "もっとかいわをれんしゅうしてください、といいました。",
+    "romaji": "Motto kaiwa wo renshuushite kudasai, to iimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。うまは やくに たつと おもいますか。",
+    "kana": "そうですか。うまはやくにたつとおもいますか。",
+    "romaji": "Soudesu ka. uma wa yakuni tatsuto omoimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、にほんでは うまは むかし やくに たったと おもいます。",
+    "kana": "はい、にほんではうまはむかしやくにたったとおもいます。",
+    "romaji": "Hai, nihonde wa uma wa mukashi yakuni tattato omoimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。あした かいぎに くるでしょう？",
+    "kana": "そうですね。あしたかいぎにくるでしょう？",
+    "romaji": "Soudesu ne. ashita kaigini kurudeshou?"
+   },
+   {
+    "sp": "A",
+    "jp": "はい、たぶん くると おもいます。",
+    "kana": "はい、たぶんくるとおもいます。",
+    "romaji": "Hai, tabun kuruto omoimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。では、またあした。",
+    "kana": "わかりました。では、またあした。",
+    "romaji": "Wakarimashita. de wa, mataashita."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 22,
+  "no": 43,
+  "title": "ほんと ざっし",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "これは おんなのひとが よむ ざっしですか。",
+    "kana": "これはおんなのひとがよむざっしですか。",
+    "romaji": "Kore wa onnanohitoga yomu zasshidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、おんなのひとに にんきが ある ざっしです。",
+    "kana": "はい、おんなのひとににんきがあるざっしです。",
+    "romaji": "Hai, onnanohitoni ninkiga aru zasshidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ははが よく つくる りょうりは なんですか。",
+    "kana": "ははがよくつくるりょうりはなんですか。",
+    "romaji": "Hahaga yoku tsukuru ryouri wa nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "カレーです。からだに いい りょうりだと おもいます。",
+    "kana": "かれーです。からだにいいりょうりだとおもいます。",
+    "romaji": "Karee desu. karadani ii ryouridato omoimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "パソコンを いれる かばんを さがして いますか。",
+    "kana": "ぱそこんをいれるかばんをさがしていますか。",
+    "romaji": "Pasokon wo ireru kaban wo sagashite imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、おおきくて じょうぶな かばんが ほしいです。",
+    "kana": "はい、おおきくてじょうぶなかばんがほしいです。",
+    "romaji": "Hai, ookikute joubuna kabanga hoshiidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "あの みせに いい かばんが ありますよ。",
+    "kana": "あのみせにいいかばんがありますよ。",
+    "romaji": "Ano miseni ii kabanga arimasu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。いっしょに みに いきませんか。",
+    "kana": "そうですか。いっしょにみにいきませんか。",
+    "romaji": "Soudesu ka. isshoni mini ikimasen ka."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですよ。テレビを みる じかんが ありますか。",
+    "kana": "いいですよ。てれびをみるじかんがありますか。",
+    "romaji": "Iidesu yo. terebi wo miru jikanga arimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、さいきん しごとが いそがしくて、みる じかんが ありません。",
+    "kana": "いいえ、さいきんしごとがいそがしくて、みるじかんがありません。",
+    "romaji": "Iie, saikin shigotoga isogashikute, miru jikanga arimasen."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 22,
+  "no": 44,
+  "title": "ひとと もの",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "にほんごが わかる ひとが いますか。",
+    "kana": "にほんごがわかるひとがいますか。",
+    "romaji": "Nihongoga wakaru hitoga imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、あそこに にほんごが はなせる ひとが います。",
+    "kana": "はい、あそこににほんごがはなせるひとがいます。",
+    "romaji": "Hai, asokoni nihongoga hanaseru hitoga imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな ひとですか。",
+    "kana": "どんなひとですか。",
+    "romaji": "Donna hitodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "あかい ぼうしを かぶって いる ひとです。",
+    "kana": "あかいぼうしをかぶっているひとです。",
+    "romaji": "Akai boushi wo kabutte iru hitodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "ほんを よむ ひとが すきですか。",
+    "kana": "ほんをよむひとがすきですか。",
+    "romaji": "Hon wo yomu hitoga sukidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、本が すきな ひとは しんせつな ひとが おおいと おもいます。",
+    "kana": "はい、ほんがすきなひとはしんせつなひとがおおいとおもいます。",
+    "romaji": "Hai, hon ga sukina hito wa shinsetsuna hitoga ooito omoimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "きのう かった ほんは おもしろいですか。",
+    "kana": "きのうかったほんはおもしろいですか。",
+    "romaji": "Kinou katta hon wa omoshiroidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても おもしろい ほんです。せんせいが すすめた ほんです。",
+    "kana": "はい、とてもおもしろいほんです。せんせいがすすめたほんです。",
+    "romaji": "Hai, totemo omoshiroi hondesu. senseiga susumeta hondesu."
+   },
+   {
+    "sp": "A",
+    "jp": "わたしも よんでみたいです。",
+    "kana": "わたしもよんでみたいです。",
+    "romaji": "Watashimo yondemitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "じゃあ、よんだら かしますよ。",
+    "kana": "じゃあ、よんだらかしますよ。",
+    "romaji": "Jaa, yondara kashimasu yo."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 23,
+  "no": 45,
+  "title": "きそくと じょうきょう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "みちを わたる とき、くるまに きを つけますか。",
+    "kana": "みちをわたるとき、くるまにきをつけますか。",
+    "romaji": "Michi wo wataru toki, kurumani ki wo tsukemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、かならず みぎと ひだりを みます。",
+    "kana": "はい、かならずみぎとひだりをみます。",
+    "romaji": "Hai, kanarazu migito hidari wo mimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "うちへ かえった とき、なにを いいますか。",
+    "kana": "うちへかえったとき、なにをいいますか。",
+    "romaji": "Uchi e kaetta toki, nani wo iimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "「ただいま」と いいます。そして てを あらいます。",
+    "kana": "「ただいま」といいます。そしててをあらいます。",
+    "romaji": "Tadaima to iimasu. soshite te wo araimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ねむい とき、どうしますか。",
+    "kana": "ねむいとき、どうしますか。",
+    "romaji": "Nemui toki, doushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "コーヒーを のみます。それでも ねむい とき、すこし ねます。",
+    "kana": "こーひーをのみます。それでもねむいとき、すこしねます。",
+    "romaji": "Koohii wo nomimasu. soredemo nemui toki, sukoshi nemasu."
+   },
+   {
+    "sp": "A",
+    "jp": "これを まわすと、どうなりますか。",
+    "kana": "これをまわすと、どうなりますか。",
+    "romaji": "Kore wo mawasuto, dounarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "おとが おおきく なります。",
+    "kana": "おとがおおきくなります。",
+    "romaji": "Otoga ookiku narimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "このボタンを おすと？",
+    "kana": "このぼたんをおすと？",
+    "romaji": "Kono botan wo osuto?"
+   },
+   {
+    "sp": "B",
+    "jp": "でんきが きえます。",
+    "kana": "でんきがきえます。",
+    "romaji": "Denkiga kiemasu."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 23,
+  "no": 46,
+  "title": "けいけんと しゅうかん",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ひまな とき、なにを しますか。",
+    "kana": "ひまなとき、なにをしますか。",
+    "romaji": "Himana toki, nani wo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "おんがくを きいたり、えを かいたり します。",
+    "kana": "おんがくをきいたり、えをかいたりします。",
+    "romaji": "Ongaku wo kiitari, e wo kaitari shimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "かなしい とき、どうしますか。",
+    "kana": "かなしいとき、どうしますか。",
+    "romaji": "Kanashii toki, doushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ともだちと はなします。はなすと きもちが よく なります。",
+    "kana": "ともだちとはなします。はなすときもちがよくなります。",
+    "romaji": "Tomodachito hanashimasu. hanasuto kimochiga yoku narimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "26さいの とき、けっこんしましたか。",
+    "kana": "26さいのとき、けっこんしましたか。",
+    "romaji": "26 saino toki, kekkonshimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、まだです。けっこんしたい ひとが いる とき、けっこんしたいです。",
+    "kana": "いいえ、まだです。けっこんしたいひとがいるとき、けっこんしたいです。",
+    "romaji": "Iie, madadesu. kekkonshitai hitoga iru toki, kekkonshitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "はるに なると、さくらが さきますね。",
+    "kana": "はるになると、さくらがさきますね。",
+    "romaji": "Haruni naruto, sakuraga sakimasu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ええ、きれいですね。さくらを みると、しあわせな きもちに なります。",
+    "kana": "ええ、きれいですね。さくらをみると、しあわせなきもちになります。",
+    "romaji": "Ee, kireidesu ne. sakura wo miruto, shiawasena kimochini narimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "にほんへ きた とき、びっくりしましたか。",
+    "kana": "にほんへきたとき、びっくりしましたか。",
+    "romaji": "Nihon e kita toki, bikkurishimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、たくさんの ひとが いて、おどろきました。",
+    "kana": "はい、たくさんのひとがいて、おどろきました。",
+    "romaji": "Hai, takusanno hitoga ite, odorokimashita."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 24,
+  "no": 47,
+  "title": "プレゼントと おれい",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ミラーさんは わたしに ワインを くれました。",
+    "kana": "みらーさんはわたしにわいんをくれました。",
+    "romaji": "Miraa san wa watashini wain wo kuremashita."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。どんな ワインですか。",
+    "kana": "そうですか。どんなわいんですか。",
+    "romaji": "Soudesu ka. donna wain desu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "フランスの ワインです。たかそうな ワインでした。",
+    "kana": "ふらんすのわいんです。たかそうなわいんでした。",
+    "romaji": "Furansu no wain desu. takasouna wain deshita."
+   },
+   {
+    "sp": "B",
+    "jp": "やまださんに なにかして もらいましたか。",
+    "kana": "やまださんになにかしてもらいましたか。",
+    "romaji": "Yamadasanni nanikashite moraimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、りょこうの しゃしんを みせて もらいました。",
+    "kana": "はい、りょこうのしゃしんをみせてもらいました。",
+    "romaji": "Hai, ryokouno shashin wo misete moraimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "やまださんは やさしい ひとですね。",
+    "kana": "やまださんはやさしいひとですね。",
+    "romaji": "Yamadasan wa yasashii hitodesu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "ええ。わたしも なにか して あげたいです。",
+    "kana": "ええ。わたしもなにかしてあげたいです。",
+    "romaji": "Ee. watashimo nanika shite agetaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "カリナさんに CDを かして あげましたか。",
+    "kana": "かりなさんにCDをかしてあげましたか。",
+    "romaji": "Karina sanni CD wo kashite agemashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、かして あげました。",
+    "kana": "はい、かしてあげました。",
+    "romaji": "Hai, kashite agemashita."
+   },
+   {
+    "sp": "B",
+    "jp": "カリナさんは よろこんで いましたか。",
+    "kana": "かりなさんはよろこんでいましたか。",
+    "romaji": "Karina san wa yorokonde imashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、とても よろこんで いました。",
+    "kana": "はい、とてもよろこんでいました。",
+    "romaji": "Hai, totemo yorokonde imashita."
+   }
+  ]
+ },
+ {
+  "file": "f1",
+  "lesson": 24,
+  "no": 48,
+  "title": "おたがいに たすけあう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "だれかに にほんごを おしえて もらいましたか。",
+    "kana": "だれかににほんごをおしえてもらいましたか。",
+    "romaji": "Darekani nihongo wo oshiete moraimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、やまだせんせいに おしえて もらいました。",
+    "kana": "はい、やまだせんせいにおしえてもらいました。",
+    "romaji": "Hai, yamadasenseini oshiete moraimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "せんせいは やさしく おしえて くれましたか。",
+    "kana": "せんせいはやさしくおしえてくれましたか。",
+    "romaji": "Sensei wa yasashiku oshiete kuremashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかりやすく おしえて くれました。",
+    "kana": "はい、わかりやすくおしえてくれました。",
+    "romaji": "Hai, wakariyasuku oshiete kuremashita."
+   },
+   {
+    "sp": "A",
+    "jp": "あなたは ともだちに なにか して あげましたか。",
+    "kana": "あなたはともだちになにかしてあげましたか。",
+    "romaji": "Anata wa tomodachini nanika shite agemashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、ともだちの にもつを はこんで あげました。",
+    "kana": "はい、ともだちのにもつをはこんであげました。",
+    "romaji": "Hai, tomodachino nimotsu wo hakonde agemashita."
+   },
+   {
+    "sp": "A",
+    "jp": "ともだちは よろこびましたか。",
+    "kana": "ともだちはよろこびましたか。",
+    "romaji": "Tomodachi wa yorokobimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい。わたしも ともだちに りょうりを つくって もらいました。",
+    "kana": "はい。わたしもともだちにりょうりをつくってもらいました。",
+    "romaji": "Hai. watashimo tomodachini ryouri wo tsukutte moraimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。おたがいに たすけあって いるんですね。",
+    "kana": "いいですね。おたがいにたすけあっているんですね。",
+    "romaji": "Iidesu ne. otagaini tasukeatte irundesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "ええ、そうです。たすけあうことが たいせつだと おもいます。",
+    "kana": "ええ、そうです。たすけあうことがたいせつだとおもいます。",
+    "romaji": "Ee, soudesu. tasukeaukotoga taisetsudato omoimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 25,
+  "no": 1,
+  "title": "週末の計画",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "来週の土曜日、どこかへ行きますか。",
+    "kana": "らいしゅうのどようび、どこかへいきますか。",
+    "romaji": "Raishuu no doyoubi, dokoka e iki masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "雨が降ったら、どこも行かないと思います。",
+    "kana": "あめがふったら、どこもいかないとおもいます。",
+    "romaji": "Ame ga futtara, dokomo ika naito omoi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "晴れたら何をするつもりですか。",
+    "kana": "はれたらなにをするつもりですか。",
+    "romaji": "Hare tara nani wo surutsumoridesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "晴れたら、友だちと山に登りに行きます。",
+    "kana": "はれたら、ともだちとやまにのぼりにいきます。",
+    "romaji": "Hare tara, tomo dachito yama ni nobori ni iki masu."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。何時間ぐらいかかりますか。",
+    "kana": "いいですね。なんじかんぐらいかかりますか。",
+    "romaji": "Iidesu ne. nanjikan guraikakarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "3時間ぐらいかかると思いますが、疲れても最後まで歩くつもりです。",
+    "kana": "3じかんぐらいかかるとおもいますが、つかれてもさいごまであるくつもりです。",
+    "romaji": "3 jikan guraikakaruto omoi masu ga, tsukare temo saigo made aruku tsumoridesu."
+   },
+   {
+    "sp": "A",
+    "jp": "すごいですね。がんばってください。",
+    "kana": "すごいですね。がんばってください。",
+    "romaji": "Sugoidesu ne. gambattekudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。天気がよければいいのですが……。",
+    "kana": "ありがとうございます。てんきがよければいいのですが……。",
+    "romaji": "Arigatougozaimasu. tenki gayokerebaiinodesu ga......."
+   },
+   {
+    "sp": "A",
+    "jp": "天気予報では晴れるそうですよ。",
+    "kana": "てんきよほうでははれるそうですよ。",
+    "romaji": "Tenkiyohou de wa hare rusoudesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "それはよかったです。楽しみにしています。",
+    "kana": "それはよかったです。たのしみにしています。",
+    "romaji": "Sorehayokattadesu. tanoshimi nishiteimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 25,
+  "no": 2,
+  "title": "試験の準備",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "来週、日本語の試験があるんですか。",
+    "kana": "らいしゅう、にほんごのしけんがあるんですか。",
+    "romaji": "Raishuu, nihongo no shiken gaarundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、でも勉強しても、なかなか覚えられないんです。",
+    "kana": "はい、でもべんきょうしても、なかなかおぼえられないんです。",
+    "romaji": "Hai, demo benkyou shitemo, nakanaka oboe rarenaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな勉強をしていますか。",
+    "kana": "どんなべんきょうをしていますか。",
+    "romaji": "Donna benkyou woshiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "毎日単語を覚えています。でも、朝になったら忘れてしまいます。",
+    "kana": "まいにちたんごをおぼえています。でも、あさになったらわすれてしまいます。",
+    "romaji": "Mainichi tango wo oboe teimasu. demo, asa ninattara wasure teshimaimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "声に出して練習したらどうですか。",
+    "kana": "こえにだしてれんしゅうしたらどうですか。",
+    "romaji": "Koe ni dashi te renshuu shitaradoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。書くだけじゃだめなんですね。",
+    "kana": "そうですね。かくだけじゃだめなんですね。",
+    "romaji": "Soudesu ne. kaku dakejadamenandesu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "試験に合格したら、どうしますか。",
+    "kana": "しけんにごうかくしたら、どうしますか。",
+    "romaji": "Shiken ni goukaku shitara, doushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "合格したら、友だちとパーティーをしたいです。",
+    "kana": "ごうかくしたら、ともだちとぱーてぃーをしたいです。",
+    "romaji": "Goukaku shitara, tomo dachito paatii woshitaidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "うまくいくといいですね。応援しています。",
+    "kana": "うまくいくといいですね。おうえんしています。",
+    "romaji": "Umakuikutoiidesu ne. ouen shiteimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。一生懸命やってみます。",
+    "kana": "ありがとうございます。いっしょうけんめいやってみます。",
+    "romaji": "Arigatougozaimasu. isshoukemmei yattemimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 26,
+  "no": 3,
+  "title": "道案内",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "すみません、さくら大学へ行きたいんですが、どこで降りたらいいですか。",
+    "kana": "すみません、さくらだいがくへいきたいんですが、どこでおりたらいいですか。",
+    "romaji": "Sumimasen, sakura daigaku e iki taindesu ga, dokode ori taraiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "さくら大学ですか。次の駅で降りたらいいですよ。",
+    "kana": "さくらだいがくですか。つぎのえきでおりたらいいですよ。",
+    "romaji": "Sakura daigaku desu ka. tsugino eki de ori taraiidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "この電車で行けるんですか。",
+    "kana": "このでんしゃでいけるんですか。",
+    "romaji": "Kono densha de ike rundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、でも急行は止まらないんです。各駅停車に乗ってください。",
+    "kana": "はい、でもきゅうこうはとまらないんです。かくえきていしゃにのってください。",
+    "romaji": "Hai, demo kyuukou wa toma ranaindesu. kakuekiteisha ni notte kudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "そうなんですか。知りませんでした。ありがとうございます。",
+    "kana": "そうなんですか。しりませんでした。ありがとうございます。",
+    "romaji": "Sounandesu ka. shiri masendeshita. arigatougozaimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "大学の前にバス停があるので、バスも使えますよ。",
+    "kana": "だいがくのまえにばすていがあるので、ばすもつかえますよ。",
+    "romaji": "Daigaku no mae ni basu tei gaarunode, basu mo tsukae masu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "バスのほうが便利なんですか。",
+    "kana": "ばすのほうがべんりなんですか。",
+    "romaji": "Basu nohouga benri nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "歩くと15分ぐらいかかるんですが、バスなら5分です。",
+    "kana": "あるくと15ふんぐらいかかるんですが、ばすなら5ふんです。",
+    "romaji": "Aruku to 15 fun guraikakarundesu ga, basu nara 5 fun desu."
+   },
+   {
+    "sp": "A",
+    "jp": "じゃあ、バスで行きます。どこから乗ればいいですか。",
+    "kana": "じゃあ、ばすでいきます。どこからのればいいですか。",
+    "romaji": "Jaa, basu de iki masu. dokokara nore baiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "東口を出たら、すぐ右に乗り場がありますよ。",
+    "kana": "ひがしぐちをでたら、すぐみぎにのりばがありますよ。",
+    "romaji": "Higashiguchi wo deta ra, sugu migi ni noriba gaarimasu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 26,
+  "no": 4,
+  "title": "体の具合",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "今日、顔色が悪いですよ。どうかしましたか。",
+    "kana": "きょう、かおいろがわるいですよ。どうかしましたか。",
+    "romaji": "Kyou, kaoiro ga warui desu yo. doukashimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "昨日から頭が痛いんです。熱もあるみたいで。",
+    "kana": "きのうからあたまがいたいんです。ねつもあるみたいで。",
+    "romaji": "Kinou kara atama ga itai ndesu. netsu moarumitaide."
+   },
+   {
+    "sp": "A",
+    "jp": "それは大変ですね。病院へ行ったほうがいいですよ。",
+    "kana": "それはたいへんですね。びょういんへいったほうがいいですよ。",
+    "romaji": "Sore wa taihen desu ne. byouin e itta hougaiidesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "行きたいんですが、仕事が忙しくて……。",
+    "kana": "いきたいんですが、しごとがいそがしくて……。",
+    "romaji": "Iki taindesu ga, shigoto ga isogashiku te......."
+   },
+   {
+    "sp": "A",
+    "jp": "資料が欲しいんですが、送っていただけませんか。",
+    "kana": "しりょうがほしいんですが、おくっていただけませんか。",
+    "romaji": "Shiryou ga hoshii ndesu ga, okutteitadakemasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろんです。今日の午後に送ります。",
+    "kana": "もちろんです。きょうのごごにおくります。",
+    "romaji": "Mochirondesu. kyou no gogo ni okuri masu."
+   },
+   {
+    "sp": "A",
+    "jp": "無理しないでください。お大事に。",
+    "kana": "むりしないでください。おだいじに。",
+    "romaji": "Muri shinaidekudasai. o daiji ni."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。薬を飲んで早く寝ます。",
+    "kana": "ありがとうございます。くすりをのんではやくねます。",
+    "romaji": "Arigatougozaimasu. kusuri wo non de hayaku nema su."
+   },
+   {
+    "sp": "A",
+    "jp": "何か手伝えることがあれば、言ってください。",
+    "kana": "なにかてつだえることがあれば、いってください。",
+    "romaji": "Nanika tetsudae rukotogaareba, itte kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "優しいですね。大丈夫になったらまた連絡します。",
+    "kana": "やさしいですね。だいじょうぶになったらまたれんらくします。",
+    "romaji": "Yasashii desu ne. daijoubu ninattaramata renraku shimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 27,
+  "no": 5,
+  "title": "新しい部屋",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "新しいアパートはどうですか。",
+    "kana": "あたらしいあぱーとはどうですか。",
+    "romaji": "Atarashii apaato hadoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "とても気に入っています。2階から富士山が見えるんです。",
+    "kana": "とてもきにいっています。2かいからふじさんがみえるんです。",
+    "romaji": "Totemo kiniitteimasu. 2 kai kara fujisan ga mie rundesu."
+   },
+   {
+    "sp": "A",
+    "jp": "それはすごい！広さはどうですか。",
+    "kana": "それはすごい！ひろさはどうですか。",
+    "romaji": "Sorehasugoi! hirosa hadoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "一人で住むには十分な広さです。料理も作れるし、友だちも呼べます。",
+    "kana": "ひとりですむにはじゅうぶんなひろさです。りょうりもつくれるし、ともだちもよべます。",
+    "romaji": "Hitori de sumu ni wa juubun na hirosa desu. ryouri mo tsukure rushi, tomo dachimo yobe masu."
+   },
+   {
+    "sp": "A",
+    "jp": "駅からは遠いですか。",
+    "kana": "えきからはとおいですか。",
+    "romaji": "Eki kara wa tooi desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "歩いて10分です。自転車が使えるので、問題ないですよ。",
+    "kana": "あるいて10ふんです。じてんしゃがつかえるので、もんだいないですよ。",
+    "romaji": "Arui te 10 fun desu. jitensha ga tsukae runode, mondai naidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "近くにスーパーはありますか。",
+    "kana": "ちかくにすーぱーはありますか。",
+    "romaji": "Chikaku ni suupaa haarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、近くに大きいスーパーがあって、何でも買えます。",
+    "kana": "はい、ちかくにおおきいすーぱーがあって、なんでもかえます。",
+    "romaji": "Hai, chikaku ni ookii suupaa gaatte, nande mo kae masu."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。私も引っ越したいなあ。",
+    "kana": "いいですね。わたしもひっこしたいなあ。",
+    "romaji": "Iidesu ne. watashi mo hikkoshi tainaa."
+   },
+   {
+    "sp": "B",
+    "jp": "今、近くに空き部屋があるみたいですよ。不動産屋に聞いてみたら？",
+    "kana": "いま、ちかくにあきべやがあるみたいですよ。ふどうさんやにきいてみたら？",
+    "romaji": "Ima, chikaku ni akibeya gaarumitaidesu yo. fudousanya ni kii temitara?"
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 27,
+  "no": 6,
+  "title": "趣味と特技",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "何か楽器が弾けますか。",
+    "kana": "なにかがっきがひけますか。",
+    "romaji": "Nanika gakki ga hike masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ギターが弾けます。ピアノは弾けないんですが。",
+    "kana": "ぎたーがひけます。ぴあのはひけないんですが。",
+    "romaji": "Gitaa ga hike masu. piano wa hike naindesu ga."
+   },
+   {
+    "sp": "A",
+    "jp": "すごいですね。どのくらい練習しましたか。",
+    "kana": "すごいですね。どのくらいれんしゅうしましたか。",
+    "romaji": "Sugoidesu ne. donokurai renshuu shimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "3年ぐらい練習しました。でも、サッカーはしますが、野球はしません。",
+    "kana": "3ねんぐらいれんしゅうしました。でも、さっかーはしますが、やきゅうはしません。",
+    "romaji": "3 nen gurai renshuu shimashita. demo, sakkaa hashimasu ga, yakyuu hashimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "スポーツはあまりしないんですか。",
+    "kana": "すぽーつはあまりしないんですか。",
+    "romaji": "Supootsu haamarishinaindesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "泳ぐことはできますが、あまり好きじゃないんです。",
+    "kana": "およぐことはできますが、あまりすきじゃないんです。",
+    "romaji": "Oyogu kotohadekimasu ga, amari suki janaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "料理はできますか。",
+    "kana": "りょうりはできますか。",
+    "romaji": "Ryouri hadekimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "簡単な料理は作れます。日本語もひらがなしかわかりませんでしたが、今は漢字も読めます。",
+    "kana": "かんたんなりょうりはつくれます。にほんごもひらがなしかわかりませんでしたが、いまはかんじもよめます。",
+    "romaji": "Kantan na ryouri wa tsukure masu. nihongo mohiraganashikawakarimasendeshita ga, ima wa kanji mo yome masu."
+   },
+   {
+    "sp": "A",
+    "jp": "日本語の勉強をがんばっているんですね。",
+    "kana": "にほんごのべんきょうをがんばっているんですね。",
+    "romaji": "Nihongo no benkyou wogambatteirundesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、日本語が話せるようになりたいんです。",
+    "kana": "はい、にほんごがはなせるようになりたいんです。",
+    "romaji": "Hai, nihongo ga hanase ruyouninaritaindesu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 28,
+  "no": 7,
+  "title": "カフェでの会話",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "いつもどうやって日本語を勉強していますか。",
+    "kana": "いつもどうやってにほんごをべんきょうしていますか。",
+    "romaji": "Itsumodouyatte nihongo wo benkyou shiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "音楽を聴きながら単語を覚えています。",
+    "kana": "おんがくをききながらたんごをおぼえています。",
+    "romaji": "Ongaku wo kiki nagara tango wo oboe teimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "歩きながらでも勉強できるんですか。",
+    "kana": "あるきながらでもべんきょうできるんですか。",
+    "romaji": "Aruki nagarademo benkyou dekirundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、スマホで音声を聞きながら通学しています。",
+    "kana": "はい、すまほでおんせいをききながらつうがくしています。",
+    "romaji": "Hai, sumaho de onsei wo kiki nagara tsuugaku shiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "このカフェはいいですね。よく来るんですか。",
+    "kana": "このかふぇはいいですね。よくくるんですか。",
+    "romaji": "Kono kafe haiidesu ne. yoku kuru ndesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、静かだし、広いし、いつもここで勉強しています。",
+    "kana": "はい、しずかだし、ひろいし、いつもここでべんきょうしています。",
+    "romaji": "Hai, shizuka dashi, hiroi shi, itsumokokode benkyou shiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "コーヒーもおいしいし、値段も安いし、いいですね。",
+    "kana": "こーひーもおいしいし、ねだんもやすいし、いいですね。",
+    "romaji": "Koohii mooishiishi, nedan mo yasui shi, iidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "どうして日本のアニメが好きなんですか。",
+    "kana": "どうしてにっぽんのあにめがすきなんですか。",
+    "romaji": "Doushite nippon no anime ga suki nandesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "話もおもしろいし、音楽もすてきですから。",
+    "kana": "はなしもおもしろいし、おんがくもすてきですから。",
+    "romaji": "Hanashi moomoshiroishi, ongaku mosutekidesukara."
+   },
+   {
+    "sp": "B",
+    "jp": "私も最近見始めました。一緒に見に行きませんか。",
+    "kana": "わたしもさいきんみはじめました。いっしょにみにいきませんか。",
+    "romaji": "Watashi mo saikin mihajime mashita. isshoni miniiki masen ka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 28,
+  "no": 8,
+  "title": "休日の過ごし方",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "休みの日は何をして過ごしますか。",
+    "kana": "やすみのにちはなにをしてすごしますか。",
+    "romaji": "Yasumi no nichi wa nani wo shite sugo shimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "絵を描いています。音楽を聞きながら描くのが好きで。",
+    "kana": "えをえがいています。おんがくをききながらえがくのがすきで。",
+    "romaji": "E wo egai teimasu. ongaku wo kiki nagara egaku noga suki de."
+   },
+   {
+    "sp": "A",
+    "jp": "上手ですか。",
+    "kana": "じょうずですか。",
+    "romaji": "Jouzu desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "上手じゃないですが、楽しいので続けています。",
+    "kana": "じょうずじゃないですが、たのしいのでつづけています。",
+    "romaji": "Jouzu janaidesu ga, tanoshii node tsuzuke teimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ほかにはどんな趣味がありますか。",
+    "kana": "ほかにはどんなしゅみがありますか。",
+    "romaji": "Hokanihadonna shumi gaarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "鈴木さんはピアノも弾けるし、歌も歌えるし、それにダンスもできます。",
+    "kana": "すずきさんはぴあのもひけるし、うたもうたえるし、それにだんすもできます。",
+    "romaji": "Suzuki san wa piano mo hike rushi, uta mo utae rushi, soreni dansu modekimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "すごい人ですね。私は何もできません。",
+    "kana": "すごいにんですね。わたしはなにもできません。",
+    "romaji": "Sugoi nin desu ne. watashi wa nanimo dekimasen."
+   },
+   {
+    "sp": "B",
+    "jp": "そんなことないですよ。料理が上手だし、親切だし……。",
+    "kana": "そんなことないですよ。りょうりがじょうずだし、しんせつだし……。",
+    "romaji": "Sonnakotonaidesu yo. ryouri ga jouzu dashi, shinsetsu dashi......."
+   },
+   {
+    "sp": "A",
+    "jp": "ありがとうございます。恥ずかしいです。",
+    "kana": "ありがとうございます。はずかしいです。",
+    "romaji": "Arigatougozaimasu. hazukashii desu."
+   },
+   {
+    "sp": "B",
+    "jp": "お互いに得意なことが違っていいと思いますよ。",
+    "kana": "おたがいにとくいなことがちがっていいとおもいますよ。",
+    "romaji": "O tagaini tokui nakotoga chigatteiito omoi masu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 29,
+  "no": 9,
+  "title": "失敗談",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "どうしたんですか。元気がないですね。",
+    "kana": "どうしたんですか。げんきがないですね。",
+    "romaji": "Doushitandesu ka. genki ganaidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "さいふを落としてしまったんです。",
+    "kana": "さいふをおとしてしまったんです。",
+    "romaji": "Saifu wo oto shiteshimattandesu."
+   },
+   {
+    "sp": "A",
+    "jp": "それは大変！見つかりましたか。",
+    "kana": "それはたいへん！みつかりましたか。",
+    "romaji": "Sore wa taihen! mitsu karimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、まだです。駅に電話したんですが……。",
+    "kana": "いいえ、まだです。えきにでんわしたんですが……。",
+    "romaji": "Iie, madadesu. eki ni denwa shitandesu ga......."
+   },
+   {
+    "sp": "A",
+    "jp": "駅員さんに届けてみましたか。",
+    "kana": "えきいんさんにとどけてみましたか。",
+    "romaji": "Ekiin sanni todoke temimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、でも届いていないと言われてしまいました。",
+    "kana": "はい、でもとどいていないといわれてしまいました。",
+    "romaji": "Hai, demo todoi teinaito iwa reteshimaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "クレジットカードはどうしますか。",
+    "kana": "くれじっとかーどはどうしますか。",
+    "romaji": "Kurejittokaado hadoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "すぐに止めました。でも現金がなくなってしまって困っています。",
+    "kana": "すぐにとめました。でもげんきんがなくなってしまってこまっています。",
+    "romaji": "Suguni tome mashita. demo genkin ganakunatteshimatte komatteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "少し貸しましょうか。",
+    "kana": "すこしかしましょうか。",
+    "romaji": "Sukoshi kashi mashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。助かります。見つかったら返しますね。",
+    "kana": "ありがとうございます。たすかります。みつかったらかえしますね。",
+    "romaji": "Arigatougozaimasu. tasuka rimasu. mitsu kattara kaeshi masu ne."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 29,
+  "no": 10,
+  "title": "読書について",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "最近、何か本を読んでいますか。",
+    "kana": "さいきん、なにかほんをよんでいますか。",
+    "romaji": "Saikin, nanika hon wo yonde imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、『源氏物語』を全部読んでしまいました。",
+    "kana": "はい、『げんじものがたり』をぜんぶよんでしまいました。",
+    "romaji": "Hai, 『 genjimonogatari 』 wo zembu yonde shimaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "すごいですね！長くなかったですか。",
+    "kana": "すごいですね！ながくなかったですか。",
+    "romaji": "Sugoidesu ne! nagaku nakattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "長かったですが、おもしろくて止まれませんでした。",
+    "kana": "ながかったですが、おもしろくてとまれませんでした。",
+    "romaji": "Nagaka ttadesu ga, omoshirokute toma remasendeshita."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな本が好きですか。",
+    "kana": "どんなほんがすきですか。",
+    "romaji": "Donna hon ga suki desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "歴史の本が好きです。でも、漫画も読んでしまいます。",
+    "kana": "れきしのほんがすきです。でも、まんがもよんでしまいます。",
+    "romaji": "Rekishi no hon ga suki desu. demo, manga mo yonde shimaimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "漫画も読みますか。おすすめはありますか。",
+    "kana": "まんがもよみますか。おすすめはありますか。",
+    "romaji": "Manga mo yomi masu ka. osusumehaarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい！ぜひ貸しましょうか。",
+    "kana": "はい！ぜひかしましょうか。",
+    "romaji": "Hai! zehi kashi mashouka."
+   },
+   {
+    "sp": "A",
+    "jp": "ぜひ！ありがとうございます。",
+    "kana": "ぜひ！ありがとうございます。",
+    "romaji": "Zehi! arigatougozaimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "返すときでいいですよ。急がないでください。",
+    "kana": "かえすときでいいですよ。いそがないでください。",
+    "romaji": "Kaesu tokideiidesu yo. isoga naidekudasai."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 30,
+  "no": 11,
+  "title": "パーティーの準備",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "パーティーの準備はできていますか。",
+    "kana": "ぱーてぃーのじゅんびはできていますか。",
+    "romaji": "Paatii no jumbi hadekiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、カレンダーに今月の予定が書いてあります。",
+    "kana": "はい、かれんだーにこんげつのよていがかいてあります。",
+    "romaji": "Hai, karendaa ni kongetsu no yotei ga kai tearimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "飲み物はどうしますか。",
+    "kana": "のみものはどうしますか。",
+    "romaji": "Nomimono hadoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もう買っておきました。冷蔵庫に入れてあります。",
+    "kana": "もうかっておきました。れいぞうこにいれてあります。",
+    "romaji": "Mou katteokimashita. reizouko ni ire tearimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "いすはどうしますか。",
+    "kana": "いすはどうしますか。",
+    "romaji": "Isuhadoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "食事が終わったら、椅子をこの部屋に置いておきます。",
+    "kana": "しょくじがおわったら、いすをこのへやにおいておきます。",
+    "romaji": "Shokuji ga owa ttara, isu wokono heya ni oi teokimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "料理はいつ作りますか。",
+    "kana": "りょうりはいつつくりますか。",
+    "romaji": "Ryouri haitsu tsukuri masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "今夜のうちに作っておくつもりです。",
+    "kana": "こんやのうちにつくっておくつもりです。",
+    "romaji": "Konya nouchini tsukutteokutsumoridesu."
+   },
+   {
+    "sp": "A",
+    "jp": "写真はどこにしまいましたか。",
+    "kana": "しゃしんはどこにしまいましたか。",
+    "romaji": "Shashin hadokonishimaimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "写真は引き出しにしまってあります。",
+    "kana": "しゃしんはひきだしにしまってあります。",
+    "romaji": "Shashin wa hikidashi nishimattearimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "何か手伝えることはありますか。",
+    "kana": "なにかてつだえることはありますか。",
+    "romaji": "Nanika tetsudae rukotohaarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "飾りつけを手伝ってもらえますか。",
+    "kana": "かざりつけをてつだってもらえますか。",
+    "romaji": "Kazari tsuke wo tetsudattemoraemasu ka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 31,
+  "no": 12,
+  "title": "将来の計画",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "卒業したら、何をするつもりですか。",
+    "kana": "そつぎょうしたら、なにをするつもりですか。",
+    "romaji": "Sotsugyou shitara, nani wo surutsumoridesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "外国で働こうと思っています。",
+    "kana": "がいこくではたらこうとおもっています。",
+    "romaji": "Gaikoku de hatarako uto omotte imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どこへ行きたいですか。",
+    "kana": "どこへいきたいですか。",
+    "romaji": "Doko e iki taidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ずっと日本に住むつもりでしたが、今はカナダに行こうかと思っています。",
+    "kana": "ずっとにっぽんにすむつもりでしたが、いまはかなだにいこうかとおもっています。",
+    "romaji": "Zutto nippon ni sumu tsumorideshita ga, ima wa kanada ni iko ukato omotte imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どうしてカナダですか。",
+    "kana": "どうしてかなだですか。",
+    "romaji": "Doushite kanada desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "英語と日本語が使える仕事がしたいんです。",
+    "kana": "えいごとにほんごがつかえるしごとがしたいんです。",
+    "romaji": "Eigo to nihongo ga tsukae ru shigoto gashitaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "いつ出発する予定ですか。",
+    "kana": "いつしゅっぱつするよていですか。",
+    "romaji": "Itsu shuppatsu suru yotei desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "来年の春に行く予定です。それまでに英語をもっと勉強しておこうと思います。",
+    "kana": "らいねんのはるにいくよていです。それまでにえいごをもっとべんきょうしておこうとおもいます。",
+    "romaji": "Rainen no haru ni iku yotei desu. soremadeni eigo womotto benkyou shiteokouto omoi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "それはいい計画ですね。",
+    "kana": "それはいいけいかくですね。",
+    "romaji": "Sorehaii keikaku desu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "友だちと一緒に行こうと誘ったんですが、まだ返事がないんです。",
+    "kana": "ともだちといっしょにいこうとさそったんですが、まだへんじがないんです。",
+    "romaji": "Tomo dachito isshoni iko uto sasottandesu ga, mada henji ganaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "きっと行くと思いますよ。",
+    "kana": "きっといくとおもいますよ。",
+    "romaji": "Kitto iku to omoi masu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 31,
+  "no": 13,
+  "title": "買い物に行こう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "今日の午後、買い物に行こうか。",
+    "kana": "きょうのごご、かいものにいこうか。",
+    "romaji": "Kyou no gogo, kaimono ni iko uka."
+   },
+   {
+    "sp": "B",
+    "jp": "いいね。何を買うの？",
+    "kana": "いいね。なにをかうの？",
+    "romaji": "Iine. nani wo kau no?"
+   },
+   {
+    "sp": "A",
+    "jp": "部長は店へ行く予定だから、私たちも一緒に行こう。",
+    "kana": "ぶちょうはみせへいくよていだから、わたしたちもいっしょにいこう。",
+    "romaji": "Buchou wa mise e iku yotei dakara, watashitachi mo isshoni iko u."
+   },
+   {
+    "sp": "B",
+    "jp": "レポートはまだまとめていないんだけど……。",
+    "kana": "れぽーとはまだまとめていないんだけど……。",
+    "romaji": "Repooto hamadamatometeinaindakedo......."
+   },
+   {
+    "sp": "A",
+    "jp": "大丈夫。早く終わらせよう。",
+    "kana": "だいじょうぶ。はやくおわらせよう。",
+    "romaji": "Daijoubu. hayaku owa raseyou."
+   },
+   {
+    "sp": "B",
+    "jp": "うん、がんばろう。何時に行く？",
+    "kana": "うん、がんばろう。なんじにいく？",
+    "romaji": "Un, gambarou. nanji ni iku?"
+   },
+   {
+    "sp": "A",
+    "jp": "3時ごろはどう？",
+    "kana": "3ときごろはどう？",
+    "romaji": "3 toki gorohadou?"
+   },
+   {
+    "sp": "B",
+    "jp": "OK、3時に駅で会おう。",
+    "kana": "OK、3ときにえきであおう。",
+    "romaji": "OK, 3 tokini eki de ao u."
+   },
+   {
+    "sp": "A",
+    "jp": "じゃあ、後で！",
+    "kana": "じゃあ、あとで！",
+    "romaji": "Jaa, atode!"
+   },
+   {
+    "sp": "B",
+    "jp": "うん、またね！",
+    "kana": "うん、またね！",
+    "romaji": "Un, matane!"
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 32,
+  "no": 14,
+  "title": "健康アドバイス",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "最近、体の調子が悪いんです。",
+    "kana": "さいきん、からだのちょうしがわるいんです。",
+    "romaji": "Saikin, karada no choushi ga warui ndesu."
+   },
+   {
+    "sp": "B",
+    "jp": "それは大変ですね。病院へ行ったほうがいいですよ。",
+    "kana": "それはたいへんですね。びょういんへいったほうがいいですよ。",
+    "romaji": "Sore wa taihen desu ne. byouin e itta hougaiidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですね。でも、忙しくて……。",
+    "kana": "そうですね。でも、いそがしくて……。",
+    "romaji": "Soudesu ne. demo, isogashiku te......."
+   },
+   {
+    "sp": "B",
+    "jp": "無理をすると、もっと悪くなるかもしれませんよ。",
+    "kana": "むりをすると、もっとわるくなるかもしれませんよ。",
+    "romaji": "Muri wosuruto, motto waruku narukamoshiremasen yo."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですね。今夜は早く寝たほうがいいですか。",
+    "kana": "そうですね。こんやははやくねたほうがいいですか。",
+    "romaji": "Soudesu ne. konya wa hayaku neta hougaiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、薬も飲んだほうがいいでしょう。",
+    "kana": "はい、くすりものんだほうがいいでしょう。",
+    "romaji": "Hai, kusuri mo non dahougaiideshou."
+   },
+   {
+    "sp": "A",
+    "jp": "明日の会議、出られないかもしれません。",
+    "kana": "あしたのかいぎ、でられないかもしれません。",
+    "romaji": "Ashita no kaigi, dera renaikamoshiremasen."
+   },
+   {
+    "sp": "B",
+    "jp": "それは心配ですね。今夜はゆっくり休めるでしょうか。",
+    "kana": "それはしんぱいですね。こんやはゆっくりやすめるでしょうか。",
+    "romaji": "Sore wa shimpai desu ne. konya hayukkuri yasume rudeshou ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、今日は早退してもいいと言われました。",
+    "kana": "はい、こんにちはそうたいしてもいいといわれました。",
+    "romaji": "Hai, konnichi wa soutai shitemoiito iwa remashita."
+   },
+   {
+    "sp": "B",
+    "jp": "よかったです。お大事に。",
+    "kana": "よかったです。おだいじに。",
+    "romaji": "Yokattadesu. o daiji ni."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 32,
+  "no": 15,
+  "title": "天気と予定",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "今夜、橋が見えるでしょうか。",
+    "kana": "こんや、はしがみえるでしょうか。",
+    "romaji": "Konya, hashi ga mie rudeshou ka."
+   },
+   {
+    "sp": "B",
+    "jp": "天気予報では晴れると言っていましたよ。",
+    "kana": "てんきよほうでははれるといっていましたよ。",
+    "romaji": "Tenkiyohou de wa hare ruto itte imashita yo."
+   },
+   {
+    "sp": "A",
+    "jp": "彼はパーティーに来るでしょうか。",
+    "kana": "かれはぱーてぃーにくるでしょうか。",
+    "romaji": "Kare wa paatii ni kuru deshou ka."
+   },
+   {
+    "sp": "B",
+    "jp": "来るかもしれませんが、仕事があるかもしれません。",
+    "kana": "くるかもしれませんが、しごとがあるかもしれません。",
+    "romaji": "Kuru kamoshiremasen ga, shigoto gaarukamoshiremasen."
+   },
+   {
+    "sp": "A",
+    "jp": "連絡してみましたか。",
+    "kana": "れんらくしてみましたか。",
+    "romaji": "Renraku shitemimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "メッセージを送りましたが、まだ返事がないんです。",
+    "kana": "めっせーじをおくりましたが、まだへんじがないんです。",
+    "romaji": "Messeeji wo okuri mashita ga, mada henji ganaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "もう少し待ったほうがいいですね。",
+    "kana": "もうすこしまったほうがいいですね。",
+    "romaji": "Mou sukoshi mattahougaiidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。あと1時間ぐらい待ってみます。",
+    "kana": "そうですね。あと1じかんぐらいまってみます。",
+    "romaji": "Soudesu ne. ato 1 jikan gurai mattemimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "来なかったら、料理が残ってしまいますね。",
+    "kana": "こなかったら、りょうりがのこってしまいますね。",
+    "romaji": "Kona kattara, ryouri ga nokotteshimaimasu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "持って帰ってもらえばいいですよ。",
+    "kana": "もってかえってもらえばいいですよ。",
+    "romaji": "Motte kaettemoraebaiidesu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 33,
+  "no": 16,
+  "title": "伝言をお願い",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "田中さんに10分ほど遅れると伝えていただけませんか。",
+    "kana": "たなかさんに10ふんほどおくれるとつたえていただけませんか。",
+    "romaji": "Tanaka sanni 10 fun hodo okure ruto tsutae teitadakemasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。田中さんは昨日5時に来ると言っていましたよ。",
+    "kana": "わかりました。たなかさんはきのう5ときにくるといっていましたよ。",
+    "romaji": "Wakarimashita. tanaka san wa kinou 5 tokini kuru to itte imashita yo."
+   },
+   {
+    "sp": "A",
+    "jp": "そうでしたね。急いで向かいます。",
+    "kana": "そうでしたね。いそいでむかいます。",
+    "romaji": "Soudeshita ne. isoi de mukai masu."
+   },
+   {
+    "sp": "B",
+    "jp": "あそこに「車を止めるな」と書いてありますよ。",
+    "kana": "あそこに「くるまをやめるな」とかいてありますよ。",
+    "romaji": "Asokoni kuruma wo yameru na to kai tearimasu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "あ、本当だ。気がつきませんでした。",
+    "kana": "あ、ほんとうだ。きがつきませんでした。",
+    "romaji": "A, hontou da. kiga tsukimasendeshita."
+   },
+   {
+    "sp": "B",
+    "jp": "このマークは止まれという意味ですか。",
+    "kana": "このまーくはとまれといういみですか。",
+    "romaji": "Kono maaku wa toma retoiu imi desu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "そうですね。交通ルールは大切ですね。",
+    "kana": "そうですね。こうつうるーるはたいせつですね。",
+    "romaji": "Soudesu ne. koutsuu ruuru wa taisetsu desu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "日本語の標識は読めますか。",
+    "kana": "にほんごのひょうしきはよめますか。",
+    "romaji": "Nihongo no hyoushiki wa yome masu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "ひらがなとカタカナは読めますが、漢字はまだ難しいです。",
+    "kana": "ひらがなとかたかなはよめますが、かんじはまだむずかしいです。",
+    "romaji": "Hiraganato katakana wa yome masu ga, kanji hamada muzukashii desu."
+   },
+   {
+    "sp": "B",
+    "jp": "少しずつ覚えていけば大丈夫ですよ。",
+    "kana": "すこしずつおぼえていけばだいじょうぶですよ。",
+    "romaji": "Sukoshi zutsu oboe teikeba daijoubu desu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 34,
+  "no": 17,
+  "title": "料理を教えてもらう",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "この料理、どうやって作るんですか。",
+    "kana": "このりょうり、どうやってつくるんですか。",
+    "romaji": "Kono ryouri, douyatte tsukuru ndesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "説明書の通りに作れば大丈夫ですよ。",
+    "kana": "せつめいしょのとうりにつくればだいじょうぶですよ。",
+    "romaji": "Setsumeisho no touri ni tsukure ba daijoubu desu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "まず何からしますか。",
+    "kana": "まずなにからしますか。",
+    "romaji": "Mazu nanika rashimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "仕事が終わった後で、材料を切ります。",
+    "kana": "しごとがおわったあとで、ざいりょうをきります。",
+    "romaji": "Shigoto ga owa tta atode, zairyou wo kiri masu."
+   },
+   {
+    "sp": "A",
+    "jp": "傘を持って出かけますか。今日は雨みたいですね。",
+    "kana": "かさをもってでかけますか。こんにちはあめみたいですね。",
+    "romaji": "Kasa wo motte deka kemasu ka. konnichi wa ame mitaidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。傘を持って行ったほうがいいですね。",
+    "kana": "そうですね。かさをもっていったほうがいいですね。",
+    "romaji": "Soudesu ne. kasa wo motte itta hougaiidesu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "調味料はどのくらい入れますか。",
+    "kana": "ちょうみりょうはどのくらいいれますか。",
+    "romaji": "Choumiryou hadonokurai ire masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "私が言ったとおりに入れてみてください。",
+    "kana": "わたしがいったとおりにいれてみてください。",
+    "romaji": "Watashi ga itta toorini ire temitekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "日曜日はどこにも行かないで、うちにいますか。",
+    "kana": "にちようびはどこにもいかないで、うちにいますか。",
+    "romaji": "Nichiyoubi hadokonimo ika naide, uchiniimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、ゆっくり家で過ごすつもりです。",
+    "kana": "はい、ゆっくりいえですごすつもりです。",
+    "romaji": "Hai, yukkuri ie de sugo sutsumoridesu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 35,
+  "no": 18,
+  "title": "アドバイスを求める",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "東京スカイツリーに登りたいんですが、どうすればいいですか。",
+    "kana": "とうきょうすかいつりーにのぼりたいんですが、どうすればいいですか。",
+    "romaji": "Toukyou sukaitsurii ni nobori taindesu ga, dousurebaiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "説明書を読めば、使い方がわかります。",
+    "kana": "せつめいしょをよめば、つかいかたがわかります。",
+    "romaji": "Setsumeisho wo yome ba, tsukaikata gawakarimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "早く行かないと混んでしまいますか。",
+    "kana": "はやくいかないとこんでしまいますか。",
+    "romaji": "Hayaku ika naito kon deshimaimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "6時に起きなければ、電車に乗り遅れますよ。",
+    "kana": "6ときにおきなければ、でんしゃにのりおくれますよ。",
+    "romaji": "6 tokini oki nakereba, densha ni nori okure masu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "もみじを見たいんですが、どこがいいですか。",
+    "kana": "もみじをみたいんですが、どこがいいですか。",
+    "romaji": "Momiji wo mita indesu ga, dokogaiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もみじなら、日光がいいですよ。",
+    "kana": "もみじなら、にっこうがいいですよ。",
+    "romaji": "Momijinara, nikkou gaiidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "体の調子がよければ行けますが、まだ少し心配です。",
+    "kana": "からだのちょうしがよければいけますが、まだすこししんぱいです。",
+    "romaji": "Karada no choushi gayokereba ike masu ga, mada sukoshi shimpai desu."
+   },
+   {
+    "sp": "B",
+    "jp": "もう少し休めば、きっとよくなりますよ。",
+    "kana": "もうすこしやすめば、きっとよくなりますよ。",
+    "romaji": "Mou sukoshi yasume ba, kittoyokunarimasu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "では、来週行こうと思います。",
+    "kana": "では、らいしゅういこうとおもいます。",
+    "romaji": "De wa, raishuu iko uto omoi masu."
+   },
+   {
+    "sp": "B",
+    "jp": "ぜひ楽しんできてください。",
+    "kana": "ぜひたのしんできてください。",
+    "romaji": "Zehi tanoshi ndekitekudasai."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 36,
+  "no": 19,
+  "title": "目標を話す",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "日本語の勉強、順調ですか。",
+    "kana": "にほんごのべんきょう、じゅんちょうですか。",
+    "romaji": "Nihongo no benkyou, junchou desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "テレビの日本語がかなりわかるようになりました。",
+    "kana": "てれびのにほんごがかなりわかるようになりました。",
+    "romaji": "Terebi no nihongo gakanariwakaruyouninarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "すごいですね！どんな勉強をしましたか。",
+    "kana": "すごいですね！どんなべんきょうをしましたか。",
+    "romaji": "Sugoidesu ne! donna benkyou woshimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "日本語が話せるように、毎日練習しています。",
+    "kana": "にほんごがはなせるように、まいにちれんしゅうしています。",
+    "romaji": "Nihongo ga hanase ruyouni, mainichi renshuu shiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "何か工夫していることはありますか。",
+    "kana": "なにかくふうしていることはありますか。",
+    "romaji": "Nanika kufuu shiteirukotohaarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "できるだけ10時までに家へ帰るようにしています。",
+    "kana": "できるだけ10ときまでにいえへかえるようにしています。",
+    "romaji": "Dekirudake 10 toki madeni ie e kaeru younishiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "健康管理も大切ですね。",
+    "kana": "けんこうかんりもたいせつですね。",
+    "romaji": "Kenkoukanri mo taisetsu desu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、もっと野菜を食べるようにしてください、と先生に言われました。",
+    "kana": "はい、もっとやさいをたべるようにしてください、とせんせいにいわれました。",
+    "romaji": "Hai, motto yasai wo tabe ruyounishitekudasai, to sensei ni iwa remashita."
+   },
+   {
+    "sp": "A",
+    "jp": "食生活も変えているんですか。",
+    "kana": "しょくせいかつもかえているんですか。",
+    "romaji": "Shokuseikatsu mo kae teirundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "少しずつですが、意識するようにしています。",
+    "kana": "すこしずつですが、いしきするようにしています。",
+    "romaji": "Sukoshi zutsudesu ga, ishiki suruyounishiteimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 37,
+  "no": 20,
+  "title": "職場でのできごと",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "昨日、何かいいことがありましたか。",
+    "kana": "きのう、なにかいいことがありましたか。",
+    "romaji": "Kinou, nanika iikotogaarimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、部長にほめられました。プレゼンがよかったと言われて。",
+    "kana": "はい、ぶちょうにほめられました。ぷれぜんがよかったといわれて。",
+    "romaji": "Hai, buchou nihomeraremashita. purezen gayokattato iwa rete."
+   },
+   {
+    "sp": "A",
+    "jp": "よかったですね。どんなプレゼンをしたんですか。",
+    "kana": "よかったですね。どんなぷれぜんをしたんですか。",
+    "romaji": "Yokattadesu ne. donna purezen woshitandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "新しい商品の説明をしました。",
+    "kana": "あたらしいしょうひんのせつめいをしました。",
+    "romaji": "Atarashii shouhin no setsumei woshimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "大阪で展覧会が開かれると聞きましたが、知っていますか。",
+    "kana": "おおさかでてんらんかいがひらかれるとききましたが、しっていますか。",
+    "romaji": "Oosaka de tenrankai ga hiraka reruto kiki mashita ga, shitte imasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、来月から始まるそうです。",
+    "kana": "はい、らいげつからはじまるそうです。",
+    "romaji": "Hai, raigetsu kara hajima rusoudesu."
+   },
+   {
+    "sp": "A",
+    "jp": "日本の車はいろいろな国へ輸出されていますね。",
+    "kana": "にっぽんのくるまはいろいろなくにへゆしゅつされていますね。",
+    "romaji": "Nippon no kuruma hairoirona kuni e yushutsu sareteimasu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。この美術館は来月壊されるそうで、残念です。",
+    "kana": "そうですね。このびじゅつかんはらいげつこわされるそうで、ざんねんです。",
+    "romaji": "Soudesu ne. kono bijutsukan wa raigetsu kowasa rerusoude, zannen desu."
+   },
+   {
+    "sp": "A",
+    "jp": "え、本当ですか！行ってみたいです。",
+    "kana": "え、ほんとうですか！いってみたいです。",
+    "romaji": "E, hontou desu ka! itte mitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "今週末に一緒に行きましょうか。",
+    "kana": "こんしゅうまつにいっしょにいきましょうか。",
+    "romaji": "Konshuumatsu ni isshoni iki mashouka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 37,
+  "no": 21,
+  "title": "迷惑を受けた話",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "どうしたんですか。怒っていますか。",
+    "kana": "どうしたんですか。いかっていますか。",
+    "romaji": "Doushitandesu ka. ikatteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "誰かに自転車を取られてしまったんです。",
+    "kana": "だれかにじてんしゃをとられてしまったんです。",
+    "romaji": "Dareka ni jitensha wo tora reteshimattandesu."
+   },
+   {
+    "sp": "A",
+    "jp": "それは大変！警察に届けましたか。",
+    "kana": "それはたいへん！けいさつにとどけましたか。",
+    "romaji": "Sore wa taihen! keisatsu ni todoke mashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、今朝届けました。でも、見つかるかどうか……。",
+    "kana": "はい、けさとどけました。でも、みつかるかどうか……。",
+    "romaji": "Hai, kesa todoke mashita. demo, mitsu karukadouka......."
+   },
+   {
+    "sp": "A",
+    "jp": "気をつけていたのに、残念でしたね。",
+    "kana": "きをつけていたのに、ざんねんでしたね。",
+    "romaji": "Ki wo tsuketeitanoni, zannen deshita ne."
+   },
+   {
+    "sp": "B",
+    "jp": "鍵をかけていたのに取られてしまって……。",
+    "kana": "かぎをかけていたのにとられてしまって……。",
+    "romaji": "Kagi wokaketeitanoni tora reteshimatte......."
+   },
+   {
+    "sp": "A",
+    "jp": "最近この辺りで自転車が盗まれているらしいです。",
+    "kana": "さいきんこのあたりでじてんしゃがぬすまれているらしいです。",
+    "romaji": "Saikin kono atari de jitensha ga nusuma reteirurashiidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "え、そうなんですか。知りませんでした。",
+    "kana": "え、そうなんですか。しりませんでした。",
+    "romaji": "E, sounandesu ka. shiri masendeshita."
+   },
+   {
+    "sp": "A",
+    "jp": "新しい自転車を買うつもりですか。",
+    "kana": "あたらしいじてんしゃをかうつもりですか。",
+    "romaji": "Atarashii jitensha wo kau tsumoridesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "しばらくバスで通勤しようと思っています。",
+    "kana": "しばらくばすでつうきんしようとおもっています。",
+    "romaji": "Shibaraku basu de tsuukin shiyouto omotte imasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 38,
+  "no": 22,
+  "title": "趣味の話",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "趣味は何ですか。",
+    "kana": "しゅみはなんですか。",
+    "romaji": "Shumi wa nande suka."
+   },
+   {
+    "sp": "B",
+    "jp": "クラシック音楽を聴くのが好きです。",
+    "kana": "くらしっくおんがくをきくのがすきです。",
+    "romaji": "Kurashikku ongaku wo kiku noga suki desu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな音楽が好きなんですか。",
+    "kana": "どんなおんがくがすきなんですか。",
+    "romaji": "Donna ongaku ga suki nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ピアノ曲がとくに好きです。一人でこの荷物を運ぶのは無理ですね。",
+    "kana": "ぴあのまがとくにすきです。ひとりでこのにもつをはこぶのはむりですね。",
+    "romaji": "Piano magato kuni suki desu. hitori dekono nimotsu wo hakobu no wa muri desu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "手伝いましょうか。",
+    "kana": "てつだいましょうか。",
+    "romaji": "Tetsudai mashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。助かります。",
+    "kana": "ありがとうございます。たすかります。",
+    "romaji": "Arigatougozaimasu. tasuka rimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "電気を消すのを忘れましたか。",
+    "kana": "でんきをけすのをわすれましたか。",
+    "romaji": "Denki wo kesu no wo wasure mashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "あ、忘れてしまいました。戻らなければなりませんね。",
+    "kana": "あ、わすれてしまいました。もどらなければなりませんね。",
+    "romaji": "A, wasure teshimaimashita. modora nakerebanarimasen ne."
+   },
+   {
+    "sp": "A",
+    "jp": "近花が生まれたのは北海道の小さな村です。",
+    "kana": "きんはながうまれたのはほっかいどうのちいさなむらです。",
+    "romaji": "Kin hana ga umare tano wa hokkaidou no chiisa na mura desu."
+   },
+   {
+    "sp": "B",
+    "jp": "そうなんですか。北海道は寒いですね。",
+    "kana": "そうなんですか。ほっかいどうはさむいですね。",
+    "romaji": "Sounandesu ka. hokkaidou wa samui desu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "でも自然がきれいで、大好きな場所です。",
+    "kana": "でもしぜんがきれいで、だいすきなばしょです。",
+    "romaji": "Demo shizen gakireide, daisuki na basho desu."
+   },
+   {
+    "sp": "B",
+    "jp": "いつか行ってみたいです。",
+    "kana": "いつかいってみたいです。",
+    "romaji": "Itsuka itte mitaidesu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 39,
+  "no": 23,
+  "title": "仕事と体調",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "昨日メールを読んで、安心しました。",
+    "kana": "きのうめーるをよんで、あんしんしました。",
+    "romaji": "Kinou meeru wo yonde, anshinshi mashita."
+   },
+   {
+    "sp": "B",
+    "jp": "よかったです。心配をかけてしまいましたね。",
+    "kana": "よかったです。しんぱいをかけてしまいましたね。",
+    "romaji": "Yokattadesu. shimpai wokaketeshimaimashita ne."
+   },
+   {
+    "sp": "A",
+    "jp": "病院へ行くので、5時に帰ってもいいですか。",
+    "kana": "びょういんへいくので、5ときにかえってもいいですか。",
+    "romaji": "Byouin e iku node, 5 tokini kaettemoiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろんです。大事にしてください。",
+    "kana": "もちろんです。だいじにしてください。",
+    "romaji": "Mochirondesu. daiji nishitekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "最近地震で人が大勢亡くなりましたね。",
+    "kana": "さいきんじしんでにんがおおぜいなくなりましたね。",
+    "romaji": "Saikin jishin de nin ga oozei naku narimashita ne."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、とても悲しいニュースでした。",
+    "kana": "はい、とてもかなしいにゅーすでした。",
+    "romaji": "Hai, totemo kanashii nyuusu deshita."
+   },
+   {
+    "sp": "A",
+    "jp": "被害を受けた地域の人たちのことが心配です。",
+    "kana": "ひがいをうけたちいきのにんたちのことがしんぱいです。",
+    "romaji": "Higai wo uke ta chiiki no nin tachinokotoga shimpai desu."
+   },
+   {
+    "sp": "B",
+    "jp": "私たちも何かできることをしたいですね。",
+    "kana": "わたしたちもなにかできることをしたいですね。",
+    "romaji": "Watashitachi mo nanika dekirukotowoshitaidesu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "募金を集めているところがあるそうです。",
+    "kana": "ぼきんをあつめているところがあるそうです。",
+    "romaji": "Bokin wo atsume teirutokorogaarusoudesu."
+   },
+   {
+    "sp": "B",
+    "jp": "ぜひ参加しましょう。",
+    "kana": "ぜひさんかしましょう。",
+    "romaji": "Zehi sanka shimashou."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 40,
+  "no": 24,
+  "title": "確認する場面",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "どんな問題が試験に出るか、わかりますか。",
+    "kana": "どんなもんだいがしけんにでるか、わかりますか。",
+    "romaji": "Donna mondai ga shiken ni deru ka, wakarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりませんが、文法と読解が多いと思います。",
+    "kana": "わかりませんが、ぶんぽうとどくかいがおおいとおもいます。",
+    "romaji": "Wakarimasen ga, bumpou to dokukai ga ooi to omoi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "会議室が使えるかどうか、確かめてください。",
+    "kana": "かいぎしつがつかえるかどうか、たしかめてください。",
+    "romaji": "Kaigishitsu ga tsukae rukadouka, tashika metekudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、今すぐ確認します。",
+    "kana": "はい、いますぐかくにんします。",
+    "romaji": "Hai, imasu gu kakuninshi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "このくつを履いてみてもいいですか。",
+    "kana": "このくつをはいてみてもいいですか。",
+    "romaji": "Konokutsu wo hai temitemoiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "どうぞ。サイズはいくつですか。",
+    "kana": "どうぞ。さいずはいくつですか。",
+    "romaji": "Douzo. saizu haikutsudesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "25センチです。少し小さいかもしれません。",
+    "kana": "25せんちです。すこしちーさいかもしれません。",
+    "romaji": "25 senchi desu. sukoshi chiisai kamoshiremasen."
+   },
+   {
+    "sp": "B",
+    "jp": "別のサイズもありますよ。試してみますか。",
+    "kana": "べつのさいずもありますよ。ためしてみますか。",
+    "romaji": "Betsuno saizu moarimasu yo. tameshi temimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、お願いします。",
+    "kana": "はい、おねがいします。",
+    "romaji": "Hai, o negai shimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "こちらはいかがですか。",
+    "kana": "こちらはいかがですか。",
+    "romaji": "Kochirahaikagadesu ka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 41,
+  "no": 25,
+  "title": "お礼を伝える",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "先日は旅行の写真を見せていただきまして、ありがとうございました。",
+    "kana": "せんじつはりょこうのしゃしんをみせていただきまして、ありがとうございました。",
+    "romaji": "Senjitsu wa ryokou no shashin wo mise teitadakimashite, arigatougozaimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ、楽しんでいただけてよかったです。",
+    "kana": "いいえ、たのしんでいただけてよかったです。",
+    "romaji": "Iie, tanoshi ndeitadaketeyokattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "社長がお土産をくださいました。",
+    "kana": "しゃちょうがおみやげをくださいました。",
+    "romaji": "Shachou gao miyage wokudasaimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "それはご丁寧ですね。何をいただいたんですか。",
+    "kana": "それはごていねいですね。なにをいただいたんですか。",
+    "romaji": "Sorehago teinei desu ne. nani wo itadaitandesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "きれいなお菓子をいただきました。",
+    "kana": "きれいなおかしをいただきました。",
+    "romaji": "Kireinao kashi woitadakimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "先生に旅行の写真を見せていただきましたか。",
+    "kana": "せんせいにりょこうのしゃしんをみせていただきましたか。",
+    "romaji": "Sensei ni ryokou no shashin wo mise teitadakimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、先生が私に旅行の写真を見せてくださいました。",
+    "kana": "はい、せんせいがわたしにりょこうのしゃしんをみせてくださいました。",
+    "romaji": "Hai, sensei ga watashi ni ryokou no shashin wo mise tekudasaimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "先生は優しいですね。",
+    "kana": "せんせいはやさしいですね。",
+    "romaji": "Sensei wa yasashii desu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "ひらがなで書いてくださいませんか、とお願いしました。",
+    "kana": "ひらがなでかいてくださいませんか、とおねがいしました。",
+    "romaji": "Hiraganade kai tekudasaimasen ka, too negai shimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "先生はすぐに書いてくださいましたか？",
+    "kana": "せんせいはすぐにかいてくださいましたか？",
+    "romaji": "Sensei hasuguni kai tekudasaimashita ka?"
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 42,
+  "no": 26,
+  "title": "目的を話す",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "どうしてそんなに一生懸命働いているんですか。",
+    "kana": "どうしてそんなにいっしょうけんめいはたらいているんですか。",
+    "romaji": "Doushitesonnani isshoukemmei hatarai teirundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "家を買うために、一生懸命働いています。",
+    "kana": "いえをかうために、いっしょうけんめいはたらいています。",
+    "romaji": "Ie wo kau tameni, isshoukemmei hatarai teimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "貯金はどのくらいしていますか。",
+    "kana": "ちょきんはどのくらいしていますか。",
+    "romaji": "Chokin hadonokuraishiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "毎月少しずつ貯めています。家を建てるのに2000万円かかるんです。",
+    "kana": "まいつきすこしずつためています。いえをたてるのに2000まんえんかかるんです。",
+    "romaji": "Maitsuki sukoshi zutsu tame teimasu. ie wo tate runoni 2000 manen kakarundesu."
+   },
+   {
+    "sp": "A",
+    "jp": "大変ですね。いつごろ買えそうですか。",
+    "kana": "たいへんですね。いつごろかえそうですか。",
+    "romaji": "Taihen desu ne. itsugoro kae soudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "5年後には買えると思っています。",
+    "kana": "5ねんごにはかえるとおもっています。",
+    "romaji": "5 nengo ni wa kae ruto omotte imasu."
+   },
+   {
+    "sp": "A",
+    "jp": "このかばんは絵を運ぶのに使いますか。",
+    "kana": "このかばんはえをはこぶのにつかいますか。",
+    "romaji": "Konokaban wa e wo hakobu noni tsukai masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、大きいし、丈夫だし、とても便利なんです。",
+    "kana": "はい、おおきいし、じょうぶだし、とてもべんりなんです。",
+    "romaji": "Hai, ookii shi, joubu dashi, totemo benri nandesu."
+   },
+   {
+    "sp": "A",
+    "jp": "夢に向かってがんばっているんですね。",
+    "kana": "ゆめにむかってがんばっているんですね。",
+    "romaji": "Yume ni muka ttegambatteirundesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、あきらめずに続けます。",
+    "kana": "はい、あきらめずにつづけます。",
+    "romaji": "Hai, akiramezuni tsuzuke masu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 43,
+  "no": 27,
+  "title": "様子を伝える",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "あの料理、おいしそうですね。",
+    "kana": "あのりょうり、おいしそうですね。",
+    "romaji": "Ano ryouri, oishisoudesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "でも、見た目と違って、まずそうです。食べてみましたか。",
+    "kana": "でも、みためとちがって、まずそうです。たべてみましたか。",
+    "romaji": "Demo, mitame to chigatte, mazusoudesu. tabete mimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "まだです。何が入っているか聞いてみましょうか。",
+    "kana": "まだです。なにがいっっているかきいてみましょうか。",
+    "romaji": "Madadesu. nani ga itteiruka kii temimashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "ともひが消えそうです。もっと飲み物を買ってきます。",
+    "kana": "ともひがきえそうです。もっとのみものをかってきます。",
+    "romaji": "Tomohiga kie soudesu. motto nomimono wo kattekimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "一緒に行きますよ。何が必要ですか。",
+    "kana": "いっしょにいきますよ。なにがひつようですか。",
+    "romaji": "Isshoni iki masu yo. nani ga hitsuyou desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ジュースと水があれば十分です。",
+    "kana": "じゅーすとみずがあればじゅうぶんです。",
+    "romaji": "Juusu to mizu gaareba juubun desu."
+   },
+   {
+    "sp": "A",
+    "jp": "あの子、眠そうですね。",
+    "kana": "あのこ、ねむそうですね。",
+    "romaji": "Ano ko, nemuso udesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "今日は朝から練習していたから、疲れたんでしょう。",
+    "kana": "こんにちはあさかられんしゅうしていたから、つかれたんでしょう。",
+    "romaji": "Konnichi wa asa kara renshuu shiteitakara, tsukare tandeshou."
+   },
+   {
+    "sp": "A",
+    "jp": "もう少ししたら休憩しましょうか。",
+    "kana": "もうすこししたらきゅうけいしましょうか。",
+    "romaji": "Mou sukoshi shitara kyuukei shimashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうしましょう。みんなも疲れてきたそうですし。",
+    "kana": "そうしましょう。みんなもつかれてきたそうですし。",
+    "romaji": "Soushimashou. minnamo tsukare tekitasoudesu shi."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 44,
+  "no": 28,
+  "title": "買い物での会話",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "この薬は飲みやすいですか。",
+    "kana": "このくすりはのみやすいですか。",
+    "romaji": "Kono kusuri wa nomi yasuidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、小さくて飲みやすいです。錠剤ではなく粉ですか。",
+    "kana": "はい、ちーさくてのみやすいです。じょうざいではなくこなですか。",
+    "romaji": "Hai, chiisaku te nomi yasuidesu. jouzai dehanaku kona desu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "粉です。水と一緒に飲んでください。",
+    "kana": "こなです。みずといっしょにのんでください。",
+    "romaji": "Kona desu. mizu to isshoni non dekudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "昨日、買い物しすぎました。財布がからっぽです。",
+    "kana": "きのう、かいものしすぎました。さいふがからっぽです。",
+    "romaji": "Kinou, kaimono shisugimashita. saifu gakarappodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "何を買ったんですか。",
+    "kana": "なにをかったんですか。",
+    "romaji": "Nani wo kattandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "服を4枚も買ってしまいました。",
+    "kana": "ふくを4まいもかってしまいました。",
+    "romaji": "Fuku wo 4 mai mo katteshimaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "ランチは何にしますか。",
+    "kana": "らんちはなににしますか。",
+    "romaji": "Ranchi wa nani nishimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ご飯はカレーライスにします。",
+    "kana": "ごめしはかれーらいすにします。",
+    "romaji": "Go meshi wa kareeraisu nishimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "私も同じにします。この天気は変わりやすいですね。",
+    "kana": "わたしもおなじにします。このてんきはかわりやすいですね。",
+    "romaji": "Watashi mo onaji nishimasu. kono tenki wa kawari yasuidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。傘を持ってきてよかったです。",
+    "kana": "そうですね。かさをもってきてよかったです。",
+    "romaji": "Soudesu ne. kasa wo mottekiteyokattadesu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 45,
+  "no": 29,
+  "title": "クレームと対応",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "電車に遅れる場合は、連絡してください。",
+    "kana": "でんしゃにおくれるばあいは、れんらくしてください。",
+    "romaji": "Densha ni okure ru baai wa, renraku shitekudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかりました。何時に着けばいいですか。",
+    "kana": "はい、わかりました。なんじにつけばいいですか。",
+    "romaji": "Hai, wakarimashita. nanji ni tsuke baiidesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "9時までに来てください。遅れる場合はすぐに電話を。",
+    "kana": "9ときまでにきてください。おくれるばあいはすぐにでんわを。",
+    "romaji": "9 toki madeni kite kudasai. okure ru baai hasuguni denwa wo."
+   },
+   {
+    "sp": "B",
+    "jp": "一生懸命勉強したのに、試験の点が悪かったです。",
+    "kana": "いっしょうけんめいべんきょうしたのに、しけんのてんがわるかったです。",
+    "romaji": "Isshoukemmei benkyou shitanoni, shiken no ten ga waruka ttadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "それは残念でしたね。何が難しかったですか。",
+    "kana": "それはざんねんでしたね。なにがむずかしかったですか。",
+    "romaji": "Sore wa zannen deshita ne. nani ga muzukashika ttadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "文法は大丈夫でしたが、聴解が難しかったです。",
+    "kana": "ぶんぽうはだいじょうぶでしたが、ちょうかいがむずかしかったです。",
+    "romaji": "Bumpou wa daijoubu deshita ga, choukai ga muzukashika ttadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "聴解の練習をもっとしたらどうですか。",
+    "kana": "ちょうかいのれんしゅうをもっとしたらどうですか。",
+    "romaji": "Choukai no renshuu womottoshitaradoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。ポッドキャストを聞いてみます。",
+    "kana": "そうですね。ぽっどきゃすとをきいてみます。",
+    "romaji": "Soudesu ne. poddokyasuto wo kii temimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "毎日少しずつやれば、きっと上手になります。",
+    "kana": "まいにちすこしずつやれば、きっとじょうずになります。",
+    "romaji": "Mainichi sukoshi zutsuyareba, kitto jouzu ninarimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。次は合格できるようにがんばります。",
+    "kana": "ありがとうございます。つぎはごうかくできるようにがんばります。",
+    "romaji": "Arigatougozaimasu. tsugi wa goukaku dekiruyounigambarimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 46,
+  "no": 30,
+  "title": "タイミングを話す",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "いまから試合が始まるところです。",
+    "kana": "いまからしあいがはじまるところです。",
+    "romaji": "Imakara shiai ga hajima rutokorodesu."
+   },
+   {
+    "sp": "B",
+    "jp": "ちょうどよかった。間に合いましたね。",
+    "kana": "ちょうどよかった。まにあいましたね。",
+    "romaji": "Choudoyokatta. maniai mashita ne."
+   },
+   {
+    "sp": "A",
+    "jp": "さっき昼ごはんを食べたところです。",
+    "kana": "さっきひるごはんをたべたところです。",
+    "romaji": "Sakki hiru gohan wo tabeta tokorodesu."
+   },
+   {
+    "sp": "B",
+    "jp": "あ、私は今から食べに行くところです。",
+    "kana": "あ、わたしはいまからたべにいくところです。",
+    "romaji": "A, watashi wa imaka ra tabe ni iku tokorodesu."
+   },
+   {
+    "sp": "A",
+    "jp": "一緒に行きましょうか。",
+    "kana": "いっしょにいきましょうか。",
+    "romaji": "Isshoni iki mashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。でも、もう決めたので大丈夫です。",
+    "kana": "ありがとうございます。でも、もうきめたのでだいじょうぶです。",
+    "romaji": "Arigatougozaimasu. demo, mou kime tanode daijoubu desu."
+   },
+   {
+    "sp": "A",
+    "jp": "荷物は明日届くはずですか。",
+    "kana": "にもつはあしたとどくはずですか。",
+    "romaji": "Nimotsu wa ashita todoku hazudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、午前中に届くはずです。",
+    "kana": "はい、ごぜんちゅうにとどくはずです。",
+    "romaji": "Hai, gozenchuu ni todoku hazudesu."
+   },
+   {
+    "sp": "A",
+    "jp": "もし届かなかったらどうしますか。",
+    "kana": "もしとどかなかったらどうしますか。",
+    "romaji": "Moshi todoka nakattaradoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "お店に問い合わせるつもりです。",
+    "kana": "おみせにといあわせるつもりです。",
+    "romaji": "O mise ni toiawase rutsumoridesu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 47,
+  "no": 31,
+  "title": "ニュースや噂",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "外は雪が降るそうですよ。",
+    "kana": "そとはゆきがふるそうですよ。",
+    "romaji": "Soto wa yuki ga furu soudesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "本当ですか。防寒対策をしていきましょう。",
+    "kana": "ほんとうですか。ぼうかんたいさくをしていきましょう。",
+    "romaji": "Hontou desu ka. boukantaisaku woshiteikimashou."
+   },
+   {
+    "sp": "A",
+    "jp": "コンサートが始まるようです。",
+    "kana": "こんさーとがはじまるようです。",
+    "romaji": "Konsaato ga hajima ruyoudesu."
+   },
+   {
+    "sp": "B",
+    "jp": "早く席につきましょう。",
+    "kana": "はやくせきにつきましょう。",
+    "romaji": "Hayaku seki nitsukimashou."
+   },
+   {
+    "sp": "A",
+    "jp": "あのレストランは閉まるそうですね。",
+    "kana": "あのれすとらんはしまるそうですね。",
+    "romaji": "Ano resutoran wa shima rusoudesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "残念です。よく行っていたのに。",
+    "kana": "ざんねんです。よくいっていたのに。",
+    "romaji": "Zannen desu. yoku itte itanoni."
+   },
+   {
+    "sp": "A",
+    "jp": "新しいお店ができるようですよ。",
+    "kana": "あたらしいおみせができるようですよ。",
+    "romaji": "Atarashii o mise gadekiruyoudesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "どんなお店ですか。",
+    "kana": "どんなおみせですか。",
+    "romaji": "Donnao mise desu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "イタリアンレストランができるそうです。",
+    "kana": "いたりあんれすとらんができるそうです。",
+    "romaji": "Itarianresutoran gadekirusoudesu."
+   },
+   {
+    "sp": "B",
+    "jp": "それは楽しみですね。開店したら行ってみましょう。",
+    "kana": "それはたのしみですね。かいてんしたらいってみましょう。",
+    "romaji": "Sore wa tanoshimi desu ne. kaiten shitara itte mimashou."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 48,
+  "no": 32,
+  "title": "仕事の指示",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "部長はミラーさんをアメリカへ出張させました。",
+    "kana": "ぶちょうはみらーさんをあめりかへしゅっちょうさせました。",
+    "romaji": "Buchou wa miraa san wo amerika e shutchou sasemashita."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですか。いつ行かれるんですか。",
+    "kana": "そうですか。いついかれるんですか。",
+    "romaji": "Soudesu ka. itsu ika rerundesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "来週だそうです。私は子どもに本を読ませます。",
+    "kana": "らいしゅうだそうです。わたしはこどもにほんをよませます。",
+    "romaji": "Raishuu dasoudesu. watashi wa kodomo ni hon wo yoma semasu."
+   },
+   {
+    "sp": "B",
+    "jp": "お子さんはよく読むんですか。",
+    "kana": "おこさんはよくよむんですか。",
+    "romaji": "O ko sanhayoku yomu ndesu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、毎晩読む習慣があります。子どもに好きな仕事をさせたいんです。",
+    "kana": "はい、まいばんよむしゅうかんがあります。こどもにすきなしごとをさせたいんです。",
+    "romaji": "Hai, maiban yomu shuukan gaarimasu. kodomo ni suki na shigoto wosasetaindesu."
+   },
+   {
+    "sp": "B",
+    "jp": "それは大切な考え方ですね。",
+    "kana": "それはたいせつなかんがえかたですね。",
+    "romaji": "Sore wa taisetsu na kangaekata desu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "すみませんが、明日休ませていただけませんか。",
+    "kana": "すみませんが、あしたやすませていただけませんか。",
+    "romaji": "Sumimasen ga, ashita yasuma seteitadakemasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "何かありましたか。",
+    "kana": "なにかありましたか。",
+    "romaji": "Nanika arimashita ka."
+   },
+   {
+    "sp": "A",
+    "jp": "家族の病院に付き添わなければならないんです。",
+    "kana": "かぞくのびょういんにつきそえわなければならないんです。",
+    "romaji": "Kazoku no byouin ni tsuki soe wanakerebanaranaindesu."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。お大事に。",
+    "kana": "わかりました。おだいじに。",
+    "romaji": "Wakarimashita. o daiji ni."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 49,
+  "no": 33,
+  "title": "会社での敬語",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "部長はもうお出かけになりましたか。",
+    "kana": "ぶちょうはもうおでかけになりましたか。",
+    "romaji": "Buchou hamouo deka keninarimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、先ほどお出かけになりました。",
+    "kana": "はい、さきほどおでかけになりました。",
+    "romaji": "Hai, saki hodoo deka keninarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "グウ先生は何時に来られましたか。",
+    "kana": "ぐうせんせいはなんじにこられましたか。",
+    "romaji": "Guu sensei wa nanji ni kora remashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "先生はさっき来られました。",
+    "kana": "せんせいはさっきこられました。",
+    "romaji": "Sensei hasakki kora remashita."
+   },
+   {
+    "sp": "A",
+    "jp": "部長は今どちらにいらっしゃいますか。",
+    "kana": "ぶちょうはいまどちらにいらっしゃいますか。",
+    "romaji": "Buchou wa ima dochiraniirasshaimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "部長は会議室にいらっしゃいます。",
+    "kana": "ぶちょうはかいぎしつにいらっしゃいます。",
+    "romaji": "Buchou wa kaigishitsu niirasshaimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "後ほどご連絡しようと思っていたんですが……。",
+    "kana": "のちほどごれんらくしようとおもっていたんですが……。",
+    "romaji": "Nochi hodogo renraku shiyouto omotte itandesu ga......."
+   },
+   {
+    "sp": "B",
+    "jp": "お伝えしましょうか。",
+    "kana": "おつたえしましょうか。",
+    "romaji": "O tsutae shimashouka."
+   },
+   {
+    "sp": "A",
+    "jp": "お手数ですが、3時に戻るとお伝えください。",
+    "kana": "おてすうですが、3ときにもどるとおつたえください。",
+    "romaji": "O tesuu desu ga, 3 tokini modoru too tsutae kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "かしこまりました。",
+    "kana": "かしこまりました。",
+    "romaji": "Kashikomarimashita."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": 50,
+  "no": 34,
+  "title": "丁寧な対応",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "わたくしがコーヒーをお入れします。",
+    "kana": "わたくしがこーひーをおいれします。",
+    "romaji": "Watakushiga koohii woo ire shimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。ご丁寧に。",
+    "kana": "ありがとうございます。ごていねいに。",
+    "romaji": "Arigatougozaimasu. go teinei ni."
+   },
+   {
+    "sp": "A",
+    "jp": "わたくしが今日の予定をご説明します。",
+    "kana": "わたくしがきょうのよていをごせつめいします。",
+    "romaji": "Watakushiga kyou no yotei wogo setsumeishi masu."
+   },
+   {
+    "sp": "B",
+    "jp": "よろしくお願いします。",
+    "kana": "よろしくおねがいします。",
+    "romaji": "Yoroshikuo negai shimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "また3時にお宅へ伺います。",
+    "kana": "また3ときにおたくへうかがいます。",
+    "romaji": "Mata 3 tokini o taku e ukagai masu."
+   },
+   {
+    "sp": "B",
+    "jp": "お待ちしております。",
+    "kana": "おまちしております。",
+    "romaji": "O machi shiteorimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "わたくしはミラーと申します。",
+    "kana": "わたくしはみらーともうします。",
+    "romaji": "Watakushi wa miraa to moushi masu."
+   },
+   {
+    "sp": "B",
+    "jp": "初めまして。どうぞよろしくお願いいたします。",
+    "kana": "はじめまして。どうぞよろしくおねがいいたします。",
+    "romaji": "Hajime mashite. douzoyoroshikuo negai itashimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "こちらこそ、よろしくお願いいたします。何かご不明な点はございますか。",
+    "kana": "こちらこそ、よろしくおねがいいたします。なにかごふめいなてんはございますか。",
+    "romaji": "Kochirakoso, yoroshikuo negai itashimasu. nanika go fumei na ten hagozaimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "今のところ大丈夫です。何かあればご連絡いたします。",
+    "kana": "いまのところだいじょうぶです。なにかあればごれんらくいたします。",
+    "romaji": "Ima notokoro daijoubu desu. nanika arebago renraku itashimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 35,
+  "title": "旅行の計画（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "来月、京都へ旅行に行こうと思っているんですが、どうすればいいですか。",
+    "kana": "らいげつ、きょうとへりょこうにいこうとおもっているんですが、どうすればいいですか。",
+    "romaji": "Raigetsu, kyouto e ryokou ni iko uto omotte irundesu ga, dousurebaiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "京都なら、まず新幹線のチケットを予約しておいたほうがいいですよ。",
+    "kana": "きょうとなら、まずしんかんせんのちけっとをよやくしておいたほうがいいですよ。",
+    "romaji": "Kyouto nara, mazu shinkansen no chiketto wo yoyaku shiteoitahougaiidesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "宿泊はどこがいいでしょうか。",
+    "kana": "しゅくはくはどこがいいでしょうか。",
+    "romaji": "Shukuhaku hadokogaiideshou ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もみじなら日光がいいですが、京都なら嵐山がきれいです。",
+    "kana": "もみじならにっこうがいいですが、きょうとならあらしやまがきれいです。",
+    "romaji": "Momijinara nikkou gaiidesu ga, kyouto nara arashiyama gakireidesu."
+   },
+   {
+    "sp": "A",
+    "jp": "行ったことがありますか。",
+    "kana": "いったことがありますか。",
+    "romaji": "Itta kotogaarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、去年行きました。日本語が話せるようになってから、旅行がもっと楽しくなりました。",
+    "kana": "はい、きょねんいきました。にほんごがはなせるようになってから、りょこうがもっとたのしくなりました。",
+    "romaji": "Hai, kyonen iki mashita. nihongo ga hanase ruyouninattekara, ryokou gamotto tanoshiku narimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "いいですね。もし天気が悪かったら、どうしますか。",
+    "kana": "いいですね。もしてんきがわるかったら、どうしますか。",
+    "romaji": "Iidesu ne. moshi tenki ga waruka ttara, doushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "雨が降っても、寺社の中は見られますから大丈夫です。",
+    "kana": "あめがふっても、じしゃのなかはみられますからだいじょうぶです。",
+    "romaji": "Ame ga futtemo, jisha no naka wa mira remasukara daijoubu desu."
+   },
+   {
+    "sp": "A",
+    "jp": "来週、旅行の計画をまとめるつもりです。",
+    "kana": "らいしゅう、りょこうのけいかくをまとめるつもりです。",
+    "romaji": "Raishuu, ryokou no keikaku womatomerutsumoridesu."
+   },
+   {
+    "sp": "B",
+    "jp": "準備が終わったら、教えてください。一緒に相談しましょう。",
+    "kana": "じゅんびがおわったら、おしえてください。いっしょにそうだんしましょう。",
+    "romaji": "Jumbi ga owa ttara, oshie tekudasai. isshoni soudan shimashou."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 36,
+  "title": "仕事の悩み（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "最近、仕事が大変そうですね。",
+    "kana": "さいきん、しごとがたいへんそうですね。",
+    "romaji": "Saikin, shigoto ga taihen soudesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、残業が多くて疲れてしまいました。",
+    "kana": "はい、ざんぎょうがおおくてつかれてしまいました。",
+    "romaji": "Hai, zangyou ga ooku te tsukare teshimaimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "上司に相談したほうがいいですよ。",
+    "kana": "じょうしにそうだんしたほうがいいですよ。",
+    "romaji": "Joushi ni soudan shitahougaiidesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "部長に話そうとしたんですが、いつも忙しそうで……。",
+    "kana": "ぶちょうにはなそうとしたんですが、いつもいそがしそうで……。",
+    "romaji": "Buchou ni hanaso utoshitandesu ga, itsumo isogashiso ude......."
+   },
+   {
+    "sp": "A",
+    "jp": "メールで伝えてみたらどうですか。",
+    "kana": "めーるでつたえてみたらどうですか。",
+    "romaji": "Meeru de tsutae temitaradoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。もう少し早く帰れるようになりたいんです。",
+    "kana": "そうですね。もうすこしはやくかえれるようになりたいんです。",
+    "romaji": "Soudesu ne. mou sukoshi hayaku kaere ruyouninaritaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "体を大事にしなければなりませんよ。",
+    "kana": "からだをだいじにしなければなりませんよ。",
+    "romaji": "Karada wo daiji nishinakerebanarimasen yo."
+   },
+   {
+    "sp": "B",
+    "jp": "わかっています。でも、やることが多くて……。",
+    "kana": "わかっています。でも、やることがおおくて……。",
+    "romaji": "Wakatteimasu. demo, yarukotoga ooku te......."
+   },
+   {
+    "sp": "A",
+    "jp": "できることから少しずつ変えていけばいいですよ。",
+    "kana": "できることからすこしずつかえていけばいいですよ。",
+    "romaji": "Dekirukotokara sukoshi zutsu kae teikebaiidesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。前向きに考えるようにします。",
+    "kana": "ありがとうございます。まえむきにかんがえるようにします。",
+    "romaji": "Arigatougozaimasu. maemuki ni kangae ruyounishimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 37,
+  "title": "友人との相談（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "新しいスマートフォンを買おうと思っているんだけど……。",
+    "kana": "あたらしいすまーとふぉんをかおうとおもっているんだけど……。",
+    "romaji": "Atarashii sumaatofon wo kao uto omotte irundakedo......."
+   },
+   {
+    "sp": "B",
+    "jp": "どんなのを探しているの？",
+    "kana": "どんなのをさがしているの？",
+    "romaji": "Donnano wo sagashi teiruno?"
+   },
+   {
+    "sp": "A",
+    "jp": "写真がきれいに撮れるものがいいんだけど。",
+    "kana": "しゃしんがきれいにとれるものがいいんだけど。",
+    "romaji": "Shashin gakireini tore rumonogaiindakedo."
+   },
+   {
+    "sp": "B",
+    "jp": "このモデルは写真もきれいだし、バッテリーも長持ちするし、おすすめだよ。",
+    "kana": "このもでるはしゃしんもきれいだし、ばってりーもながもちするし、おすすめだよ。",
+    "romaji": "Kono moderu wa shashin mokireidashi, batterii mo nagamochi surushi, osusumedayo."
+   },
+   {
+    "sp": "A",
+    "jp": "値段はどうかな。",
+    "kana": "ねだんはどうかな。",
+    "romaji": "Nedan hadoukana."
+   },
+   {
+    "sp": "B",
+    "jp": "少し高いけど、長く使えるから、結果的には安いと思うよ。",
+    "kana": "すこしたかいけど、ながくつかえるから、けっかてきにはやすいとおもうよ。",
+    "romaji": "Sukoshi takai kedo, nagaku tsukae rukara, kekkateki ni wa yasui to omou yo."
+   },
+   {
+    "sp": "A",
+    "jp": "試してみてもいいかな。",
+    "kana": "ためしてみてもいいかな。",
+    "romaji": "Tameshi temitemoiikana."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろん。お店で実際に使ってみたほうがいいよ。",
+    "kana": "もちろん。おみせでじっさいにつかってみたほうがいいよ。",
+    "romaji": "Mochiron. o mise de jissaini tsukatte mitahougaiiyo."
+   },
+   {
+    "sp": "A",
+    "jp": "一緒に見に行ってくれる？",
+    "kana": "いっしょにみにいってくれる？",
+    "romaji": "Isshoni miniittekureru?"
+   },
+   {
+    "sp": "B",
+    "jp": "いいよ！土曜日はどう？",
+    "kana": "いいよ！どようびはどう？",
+    "romaji": "Iiyo! doyoubi hadou?"
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 38,
+  "title": "先生との面談（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "先生、日本語の勉強について相談があるんですが……。",
+    "kana": "せんせい、にほんごのべんきょうについてそうだんがあるんですが……。",
+    "romaji": "Sensei, nihongo no benkyou nitsuite soudan gaarundesu ga......."
+   },
+   {
+    "sp": "B",
+    "jp": "どうぞ。どんなことでしょうか。",
+    "kana": "どうぞ。どんなことでしょうか。",
+    "romaji": "Douzo. donnakotodeshou ka."
+   },
+   {
+    "sp": "A",
+    "jp": "会話は少しできるようになりましたが、作文がまだ難しいんです。",
+    "kana": "かいわはすこしできるようになりましたが、さくぶんがまだむずかしいんです。",
+    "romaji": "Kaiwa wa sukoshi dekiruyouninarimashita ga, sakubun gamada muzukashii ndesu."
+   },
+   {
+    "sp": "B",
+    "jp": "毎日短い日記を書くようにしてみてください。",
+    "kana": "まいにちみじかいにっきをかくようにしてみてください。",
+    "romaji": "Mainichi mijikai nikki wo kaku younishitemitekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "日記ですか。難しいですが、やってみます。",
+    "kana": "にっきですか。むずかしいですが、やってみます。",
+    "romaji": "Nikki desu ka. muzukashii desu ga, yattemimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "最初は3行でも大丈夫ですよ。続けることが大切です。",
+    "kana": "さいしょは3ぎょうでもだいじょうぶですよ。つづけることがたいせつです。",
+    "romaji": "Saisho wa 3 gyou demo daijoubu desu yo. tsuzuke rukotoga taisetsu desu."
+   },
+   {
+    "sp": "A",
+    "jp": "書いたら、見ていただけますか。",
+    "kana": "かいたら、みていただけますか。",
+    "romaji": "Kai tara, mite itadakemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろんです。持ってきてください。",
+    "kana": "もちろんです。もってきてください。",
+    "romaji": "Mochirondesu. mottekitekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "ありがとうございます。先生に見ていただけると心強いです。",
+    "kana": "ありがとうございます。せんせいにみていただけるとこころづよいです。",
+    "romaji": "Arigatougozaimasu. sensei ni mite itadakeruto kokorozuyoi desu."
+   },
+   {
+    "sp": "B",
+    "jp": "一緒に上手になりましょう。",
+    "kana": "いっしょにじょうずになりましょう。",
+    "romaji": "Isshoni jouzu ninarimashou."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 39,
+  "title": "病院での会話（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "いつ頃から具合が悪いんですか。",
+    "kana": "いつごろからぐあいがわるいんですか。",
+    "romaji": "Itsu goro kara guai ga warui ndesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "3日前から熱があるんです。薬を飲んだんですが、よくならなくて……。",
+    "kana": "3にちまえからねつがあるんです。くすりをのんだんですが、よくならなくて……。",
+    "romaji": "3 nichimae kara netsu gaarundesu. kusuri wo non dandesu ga, yokunaranakute......."
+   },
+   {
+    "sp": "A",
+    "jp": "どのくらいの熱ですか。",
+    "kana": "どのくらいのねつですか。",
+    "romaji": "Donokuraino netsu desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "38度ぐらいです。体も痛くて、食欲もありません。",
+    "kana": "38どぐらいです。からだもいたくて、しょくよくもありません。",
+    "romaji": "38 do guraidesu. karada mo itaku te, shokuyoku moarimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "食事は取れていますか。",
+    "kana": "しょくじはとれていますか。",
+    "romaji": "Shokuji wa tore teimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "ほとんど食べられていません。水は飲んでいます。",
+    "kana": "ほとんどたべられていません。みずはのんでいます。",
+    "romaji": "Hotondo tabe rareteimasen. mizu wa non deimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "血液検査をしてみましょう。少し待っていてください。",
+    "kana": "けつえきけんさをしてみましょう。すこしまっていてください。",
+    "romaji": "Ketsuekikensa woshitemimashou. sukoshi matteitekudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、わかりました。入院する必要がありますか。",
+    "kana": "はい、わかりました。にゅういんするひつようがありますか。",
+    "romaji": "Hai, wakarimashita. nyuuin suru hitsuyou gaarimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "検査結果が出てから判断します。",
+    "kana": "けんさけっかがでてからはんだんします。",
+    "romaji": "Kensakekka ga dete kara handan shimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。よろしくお願いいたします。",
+    "kana": "わかりました。よろしくおねがいいたします。",
+    "romaji": "Wakarimashita. yoroshikuo negai itashimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 40,
+  "title": "ビジネスの場面（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "わたくしはミラーと申します。ABC商事の者です。",
+    "kana": "わたくしはみらーともうします。ABCしょうじのものです。",
+    "romaji": "Watakushi wa miraa to moushi masu. ABC shouji no mono desu."
+   },
+   {
+    "sp": "B",
+    "jp": "初めまして。お電話でお話しした田中です。",
+    "kana": "はじめまして。おでんわでおはなししたたなかです。",
+    "romaji": "Hajime mashite. o denwa deo hanashi shita tanaka desu."
+   },
+   {
+    "sp": "A",
+    "jp": "本日はお時間をいただきまして、ありがとうございます。",
+    "kana": "ほんじつはおじかんをいただきまして、ありがとうございます。",
+    "romaji": "Honjitsu hao jikan woitadakimashite, arigatougozaimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "とんでもございません。わたくしが今日の予定をご説明します。",
+    "kana": "とんでもございません。わたくしがきょうのよていをごせつめいします。",
+    "romaji": "Tondemogozaimasen. watakushiga kyou no yotei wogo setsumeishi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "よろしくお願いいたします。",
+    "kana": "よろしくおねがいいたします。",
+    "romaji": "Yoroshikuo negai itashimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "まず、会社の概要をご説明し、その後に商品についてご案内します。",
+    "kana": "まず、かいしゃのがいようをごせつめいし、そののちにしょうひんについてごあんないします。",
+    "romaji": "Mazu, kaisha no gaiyou wogo setsumeishi, sono nochini shouhin nitsuitego annai shimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "資料があれば送っていただけませんか。",
+    "kana": "しりょうがあればおくっていただけませんか。",
+    "romaji": "Shiryou gaareba okutteitadakemasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "かしこまりました。後ほど送らせていただきます。",
+    "kana": "かしこまりました。のちほどおくらせていただきます。",
+    "romaji": "Kashikomarimashita. nochi hodo okura seteitadakimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ご丁寧にありがとうございます。",
+    "kana": "ごていねいにありがとうございます。",
+    "romaji": "Go teinei niarigatougozaimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "何かご不明な点がございましたら、いつでもご連絡ください。",
+    "kana": "なにかごふめいなてんがございましたら、いつでもごれんらくください。",
+    "romaji": "Nanika go fumei na ten gagozaimashitara, itsudemogo renraku kudasai."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 41,
+  "title": "環境問題を話し合う（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "最近、環境問題についてどう思いますか。",
+    "kana": "さいきん、かんきょうもんだいについてどうおもいますか。",
+    "romaji": "Saikin, kankyoumondai nitsuitedou omoi masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "深刻な問題ですよね。私たちにできることをしなければならないと思います。",
+    "kana": "しんこくなもんだいですよね。わたしたちにできることをしなければならないとおもいます。",
+    "romaji": "Shinkoku na mondai desuyone. watashitachi nidekirukotowoshinakerebanaranaito omoi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "具体的にはどんなことをしていますか。",
+    "kana": "ぐたいてきにはどんなことをしていますか。",
+    "romaji": "Gutaiteki nihadonnakotowoshiteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "買い物袋を持参するようにしていますし、ゴミの分別も気をつけています。",
+    "kana": "かいものふくろをじさんするようにしていますし、ごみのふんべつもきをつけています。",
+    "romaji": "Kaimono fukuro wo jisan suruyounishiteimasu shi, gomi no fumbetsu mo ki wo tsuketeimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "電気の節約もしたほうがいいですよね。",
+    "kana": "でんきのせつやくもしたほうがいいですよね。",
+    "romaji": "Denki no setsuyaku moshitahougaiidesuyone."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、できるだけ早く電気を消すようにしています。",
+    "kana": "はい、できるだけはやくでんきをけすようにしています。",
+    "romaji": "Hai, dekirudake hayaku denki wo kesu younishiteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "若い人たちにも意識してもらえるといいですね。",
+    "kana": "わかいにんたちにもいしきしてもらえるといいですね。",
+    "romaji": "Wakai nin tachinimo ishiki shitemoraerutoiidesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "学校で環境教育が行われるようになってきたそうですよ。",
+    "kana": "がっこうでかんきょうきょういくがおこなわれるようになってきたそうですよ。",
+    "romaji": "Gakkou de kankyou kyouiku ga okonawa reruyouninattekitasoudesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "いい変化ですね。将来がよくなるといいです。",
+    "kana": "いいへんかですね。しょうらいがよくなるといいです。",
+    "romaji": "Ii henka desu ne. shourai gayokunarutoiidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "私たち一人一人が行動すれば、きっと変わります。",
+    "kana": "わたしたちひとりひとりがこうどうすれば、きっとかわります。",
+    "romaji": "Watashitachi hitorihitori ga koudou sureba, kitto kawari masu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 42,
+  "title": "アルバイトの面接（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "アルバイトの面接に来ましたミラーと申します。",
+    "kana": "あるばいとのめんせつにきましたみらーともうします。",
+    "romaji": "Arubaito no mensetsu ni kima shita miraa to moushi masu."
+   },
+   {
+    "sp": "B",
+    "jp": "ようこそ。座ってください。日本語はどのくらい話せますか。",
+    "kana": "ようこそ。すわってください。にほんごはどのくらいはなせますか。",
+    "romaji": "Youkoso. suwattekudasai. nihongo hadonokurai hanase masu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "N4レベルで、日常会話はできます。敬語はまだ勉強中です。",
+    "kana": "N4れべるで、にちじょうかいわはできます。けいごはまだべんきょうちゅうです。",
+    "romaji": "N4 reberu de, nichijoukaiwa hadekimasu. keigo hamada benkyouchuu desu."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。週に何日働けますか。",
+    "kana": "わかりました。しゅうになんにちはたらけますか。",
+    "romaji": "Wakarimashita. shuu ni nannichi hatarake masu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "週3日から4日働けます。土日も大丈夫です。",
+    "kana": "しゅう3にちから4にちはたらけます。どにちもだいじょうぶです。",
+    "romaji": "Shuu 3 nichi kara 4 nichi hatarake masu. donichi mo daijoubu desu."
+   },
+   {
+    "sp": "B",
+    "jp": "以前にアルバイトをしたことがありますか。",
+    "kana": "いぜんにあるばいとをしたことがありますか。",
+    "romaji": "Izen ni arubaito woshitakotogaarimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、母国でレストランで働いたことがあります。",
+    "kana": "はい、ぼこくでれすとらんではたらいたことがあります。",
+    "romaji": "Hai, bokoku de resutoran de hatarai takotogaarimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "それはいいですね。接客は得意ですか。",
+    "kana": "それはいいですね。せっきゃくはとくいですか。",
+    "romaji": "Sorehaiidesu ne. sekkyaku wa tokui desu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "好きですし、日本語をもっと上手にしたいので、ぜひやってみたいです。",
+    "kana": "すきですし、にほんごをもっとじょうずにしたいので、ぜひやってみたいです。",
+    "romaji": "Suki desu shi, nihongo womotto jouzu nishitainode, zehiyattemitaidesu."
+   },
+   {
+    "sp": "B",
+    "jp": "では、来週から来ていただけますか。",
+    "kana": "では、らいしゅうからきていただけますか。",
+    "romaji": "De wa, raishuu kara kite itadakemasu ka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 43,
+  "title": "近所のトラブル（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "ちょっとよろしいですか。夜、音楽の音が大きいんですが……。",
+    "kana": "ちょっとよろしいですか。よる、おんがくのおとがおおきいんですが……。",
+    "romaji": "Chottoyoroshiidesu ka. yoru, ongaku no oto ga ookii ndesu ga......."
+   },
+   {
+    "sp": "B",
+    "jp": "あ、すみません。気がつきませんでした。",
+    "kana": "あ、すみません。きがつきませんでした。",
+    "romaji": "A, sumimasen. kiga tsukimasendeshita."
+   },
+   {
+    "sp": "A",
+    "jp": "夜10時以降は少し小さくしていただけませんか。",
+    "kana": "よる10じいこうはすこしちーさくしていただけませんか。",
+    "romaji": "Yoru 10 jiikou wa sukoshi chiisaku shiteitadakemasen ka."
+   },
+   {
+    "sp": "B",
+    "jp": "わかりました。これからは気をつけます。",
+    "kana": "わかりました。これからはきをつけます。",
+    "romaji": "Wakarimashita. korekara wa ki wo tsukemasu."
+   },
+   {
+    "sp": "A",
+    "jp": "ありがとうございます。助かります。",
+    "kana": "ありがとうございます。たすかります。",
+    "romaji": "Arigatougozaimasu. tasuka rimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "ご迷惑をおかけして申し訳ありませんでした。",
+    "kana": "ごめいわくをおかけしてもうしわけありませんでした。",
+    "romaji": "Go meiwaku wookakeshite moushiwake arimasendeshita."
+   },
+   {
+    "sp": "A",
+    "jp": "いいえ、大丈夫です。言わなければよかったかな……。",
+    "kana": "いいえ、だいじょうぶです。いわなければよかったかな……。",
+    "romaji": "Iie, daijoubu desu. iwa nakerebayokattakana......."
+   },
+   {
+    "sp": "B",
+    "jp": "いいえ！言ってもらってよかったです。知らなかったので。",
+    "kana": "いいえ！いってもらってよかったです。しらなかったので。",
+    "romaji": "Iie! itte moratteyokattadesu. shira nakattanode."
+   },
+   {
+    "sp": "A",
+    "jp": "これからも何かあれば、遠慮なく言ってください。",
+    "kana": "これからもなにかあれば、えんりょなくいってください。",
+    "romaji": "Korekaramo nanika areba, enryo naku itte kudasai."
+   },
+   {
+    "sp": "B",
+    "jp": "こちらこそ。よろしくお願いします。",
+    "kana": "こちらこそ。よろしくおねがいします。",
+    "romaji": "Kochirakoso. yoroshikuo negai shimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 44,
+  "title": "SNSについて話す（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "SNSはよく使いますか。",
+    "kana": "SNSはよくつかいますか。",
+    "romaji": "SNS hayoku tsukai masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "毎日使っています。写真を投稿するのが好きで。",
+    "kana": "まいにちつかっています。しゃしんをとうこうするのがすきで。",
+    "romaji": "Mainichi tsukatte imasu. shashin wo toukou surunoga suki de."
+   },
+   {
+    "sp": "A",
+    "jp": "フォロワーはどのくらいいますか。",
+    "kana": "ふぉろわーはどのくらいいますか。",
+    "romaji": "Forowaa hadonokuraiimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "最近増えてきました。でも、使いすぎてしまうのが問題で……。",
+    "kana": "さいきんふえてきました。でも、つかいすぎてしまうのがもんだいで……。",
+    "romaji": "Saikin fue tekimashita. demo, tsukai sugiteshimaunoga mondai de......."
+   },
+   {
+    "sp": "A",
+    "jp": "確かに、スマホを使いすぎると目が疲れますね。",
+    "kana": "たしかに、すまほをつかいすぎるとめがつかれますね。",
+    "romaji": "Tashikani, sumaho wo tsukai sugiruto me ga tsukare masu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "夜はなるべく見ないようにしているんですが、ついつい見てしまいます。",
+    "kana": "よるはなるべくみないようにしているんですが、ついついみてしまいます。",
+    "romaji": "Yoru hanarubeku mina iyounishiteirundesu ga, tsuitsui mite shimaimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "使う時間を決めたほうがいいですよ。",
+    "kana": "つかうじかんをきめたほうがいいですよ。",
+    "romaji": "Tsukau jikan wo kime tahougaiidesu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。寝る前に見るのをやめるようにします。",
+    "kana": "そうですね。ねるまえにみるのをやめるようにします。",
+    "romaji": "Soudesu ne. neru mae ni miru nowoyameruyounishimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "睡眠も大事ですからね。",
+    "kana": "すいみんもだいじですからね。",
+    "romaji": "Suimin mo daiji desukarane."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、生活リズムを整えなければなりませんね。",
+    "kana": "はい、せいかつりずむをととのえなければなりませんね。",
+    "romaji": "Hai, seikatsu rizumu wo totonoe nakerebanarimasen ne."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 45,
+  "title": "卒業後の進路（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "卒業後はどうするつもりですか。",
+    "kana": "そつぎょうごはどうするつもりですか。",
+    "romaji": "Sotsugyougo hadousurutsumoridesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "大学院に進もうかと思っているんですが、まだ悩んでいます。",
+    "kana": "だいがくいんにすすもうかとおもっているんですが、まだなやんでいます。",
+    "romaji": "Daigakuin ni susumo ukato omotte irundesu ga, mada nayan deimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんなことを研究したいですか。",
+    "kana": "どんなことをけんきゅうしたいですか。",
+    "romaji": "Donnakoto wo kenkyuu shitaidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "環境問題に関係する研究をしたいんです。",
+    "kana": "かんきょうもんだいにかんけいするけんきゅうをしたいんです。",
+    "romaji": "Kankyoumondai ni kankei suru kenkyuu woshitaindesu."
+   },
+   {
+    "sp": "A",
+    "jp": "それは大切なテーマですね。指導教員は決まっていますか。",
+    "kana": "それはたいせつなてーまですね。しどうきょういんはきまっていますか。",
+    "romaji": "Sore wa taisetsu na teema desu ne. shidou kyouin wa kima tteimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "まだです。どの先生に相談したらいいかわからなくて……。",
+    "kana": "まだです。どのせんせいにそうだんしたらいいかわからなくて……。",
+    "romaji": "Madadesu. dono sensei ni soudan shitaraiikawakaranakute......."
+   },
+   {
+    "sp": "A",
+    "jp": "まず学科の事務室で聞いてみたらどうですか。",
+    "kana": "まずがっかのじむしつできいてみたらどうですか。",
+    "romaji": "Mazu gakka no jimushitsu de kii temitaradoudesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "そうですね。行ってみます。合格できるかどうか不安ですが。",
+    "kana": "そうですね。いってみます。ごうかくできるかどうかふあんですが。",
+    "romaji": "Soudesu ne. itte mimasu. goukaku dekirukadouka fuan desu ga."
+   },
+   {
+    "sp": "A",
+    "jp": "一生懸命準備すれば、きっと大丈夫ですよ。",
+    "kana": "いっしょうけんめいじゅんびすれば、きっとだいじょうぶですよ。",
+    "romaji": "Isshoukemmei jumbi sureba, kitto daijoubu desu yo."
+   },
+   {
+    "sp": "B",
+    "jp": "ありがとうございます。あきらめずにがんばります。",
+    "kana": "ありがとうございます。あきらめずにがんばります。",
+    "romaji": "Arigatougozaimasu. akiramezunigambarimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 46,
+  "title": "料理教室で（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "今日は何を作りますか。",
+    "kana": "こんにちはなにをつくりますか。",
+    "romaji": "Konnichi wa nani wo tsukuri masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "天ぷらを作ります。作り方はわかりますか。",
+    "kana": "てんぷらをつくります。つくりかたはわかりますか。",
+    "romaji": "Tempura wo tsukuri masu. tsukurikata hawakarimasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "少しわかりますが、油の温度が難しそうで……。",
+    "kana": "すこしわかりますが、あぶらのおんどがむつかしそうで……。",
+    "romaji": "Sukoshi wakarimasu ga, abura no ondo ga mutsukashiso ude......."
+   },
+   {
+    "sp": "B",
+    "jp": "説明書の通りにすれば大丈夫ですよ。最初は少し難しいですが。",
+    "kana": "せつめいしょのとうりにすればだいじょうぶですよ。さいしょはすこしむずかしいですが。",
+    "romaji": "Setsumeisho no touri nisureba daijoubu desu yo. saisho wa sukoshi muzukashii desu ga."
+   },
+   {
+    "sp": "A",
+    "jp": "材料はどこにありますか。",
+    "kana": "ざいりょうはどこにありますか。",
+    "romaji": "Zairyou hadokoniarimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "冷蔵庫に入れてあります。先ほど準備しておきました。",
+    "kana": "れいぞうこにいれてあります。さきほどじゅんびしておきました。",
+    "romaji": "Reizouko ni ire tearimasu. saki hodo jumbi shiteokimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "揚げすぎた場合はどうしますか。",
+    "kana": "あげすぎたばあいはどうしますか。",
+    "romaji": "Age sugita baai hadoushimasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "少し焦げても味は大丈夫ですよ。気にしないでください。",
+    "kana": "すこしこげてもあじはだいじょうぶですよ。きにしないでください。",
+    "romaji": "Sukoshi koge temo aji wa daijoubu desu yo. kini shinaidekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "食べやすく切っておいたほうがいいですか。",
+    "kana": "たべやすくきっておいたほうがいいですか。",
+    "romaji": "Tabe yasuku kitteoitahougaiidesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、一口大に切っておくといいですよ。",
+    "kana": "はい、ひとくちだいにきっておくといいですよ。",
+    "romaji": "Hai, hitokuchidai ni kitteokutoiidesu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 47,
+  "title": "美術館で（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "この絵はどう思いますか。",
+    "kana": "このえはどうおもいますか。",
+    "romaji": "Kono e hadou omoi masu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "きれいですね。誰が描いたか知っていますか。",
+    "kana": "きれいですね。だれがえがいたかしっていますか。",
+    "romaji": "Kireidesu ne. darega egai taka shitte imasu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "説明には江戸時代の画家が描いたと書いてあります。",
+    "kana": "せつめいにはえどじだいのがかがえがいたとかいてあります。",
+    "romaji": "Setsumei ni wa edojidai no gaka ga egai tato kai tearimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "この美術館は来月工事が始まるそうですね。",
+    "kana": "このびじゅつかんはらいげつこうじがはじまるそうですね。",
+    "romaji": "Kono bijutsukan wa raigetsu kouji ga hajima rusoudesu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "そうなんです。工事が終わったら、また来ましょう。",
+    "kana": "そうなんです。こうじがおわったら、またきましょう。",
+    "romaji": "Sounandesu. kouji ga owa ttara, mata kima shou."
+   },
+   {
+    "sp": "B",
+    "jp": "ここには何度来ても新しい発見がありますね。",
+    "kana": "ここにはなんどきてもあたらしいはっけんがありますね。",
+    "romaji": "Kokoni wa nando kite mo atarashii hakken gaarimasu ne."
+   },
+   {
+    "sp": "A",
+    "jp": "日本の文化について、もっと知りたくなりました。",
+    "kana": "にっぽんのぶんかについて、もっとしりたくなりました。",
+    "romaji": "Nippon no bunka nitsuite, motto shiri takunarimashita."
+   },
+   {
+    "sp": "B",
+    "jp": "博物館にも面白い展示があるようですよ。",
+    "kana": "はくぶつかんにもおもしろいてんじがあるようですよ。",
+    "romaji": "Hakubutsukan nimo omoshiroi tenji gaaruyoudesu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "今度連れて行っていただけますか。",
+    "kana": "こんどつれていっていただけますか。",
+    "romaji": "Kondo tsure te itte itadakemasu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "もちろん！次の週末はいかがですか。",
+    "kana": "もちろん！つぎのしゅうまつはいかがですか。",
+    "romaji": "Mochiron! tsugino shuumatsu haikagadesu ka."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 48,
+  "title": "スポーツ観戦（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "いまからサッカーの試合が始まるところですね。",
+    "kana": "いまからさっかーのしあいがはじまるところですね。",
+    "romaji": "Imakara sakkaa no shiai ga hajima rutokorodesu ne."
+   },
+   {
+    "sp": "B",
+    "jp": "そうです。日本チームが勝つと思いますか。",
+    "kana": "そうです。にっぽんちーむがかつとおもいますか。",
+    "romaji": "Soudesu. nippon chiimu ga katsu to omoi masu ka."
+   },
+   {
+    "sp": "A",
+    "jp": "勝てるかもしれませんが、相手も強いので難しいでしょう。",
+    "kana": "かてるかもしれませんが、あいてもつよいのでむずかしいでしょう。",
+    "romaji": "Kate rukamoshiremasen ga, aite mo tsuyoi node muzukashii deshou."
+   },
+   {
+    "sp": "B",
+    "jp": "試合の結果が出たら、すぐ教えてください。",
+    "kana": "しあいのけっかがでたら、すぐおしえてください。",
+    "romaji": "Shiai no kekka ga deta ra, sugu oshie tekudasai."
+   },
+   {
+    "sp": "A",
+    "jp": "わかりました。スポーツが好きなんですか。",
+    "kana": "わかりました。すぽーつがすきなんですか。",
+    "romaji": "Wakarimashita. supootsu ga suki nandesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、サッカーはしますが、野球はしません。",
+    "kana": "はい、さっかーはしますが、やきゅうはしません。",
+    "romaji": "Hai, sakkaa hashimasu ga, yakyuu hashimasen."
+   },
+   {
+    "sp": "A",
+    "jp": "学生のころから続けているんですか。",
+    "kana": "がくせいのころからつづけているんですか。",
+    "romaji": "Gakusei nokorokara tsuzuke teirundesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、10歳のときから続けています。体を動かすのが好きで。",
+    "kana": "はい、10としのときからつづけています。からだをうごかすのがすきで。",
+    "romaji": "Hai, 10 toshi notokikara tsuzuke teimasu. karada wo ugoka sunoga suki de."
+   },
+   {
+    "sp": "A",
+    "jp": "運動不足の私には尊敬します。",
+    "kana": "うんどうぶそくのわたしにはそんけいします。",
+    "romaji": "Undoubusoku no watashi ni wa sonkei shimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "一緒にやってみませんか。楽しいですよ。",
+    "kana": "いっしょにやってみませんか。たのしいですよ。",
+    "romaji": "Isshoni yattemimasen ka. tanoshii desu yo."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 49,
+  "title": "引越しの準備（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "来月、引越しするって本当ですか。",
+    "kana": "らいげつ、ひっこしするってほんとうですか。",
+    "romaji": "Raigetsu, hikkoshi surutte hontou desu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、もう荷物は段ボールに入れてあります。",
+    "kana": "はい、もうにもつはだんぼーるにいれてあります。",
+    "romaji": "Hai, mou nimotsu wa dambooru ni ire tearimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "大変でしたね。荷物が多そうで……。",
+    "kana": "たいへんでしたね。にもつがおおそうで……。",
+    "romaji": "Taihen deshita ne. nimotsu ga ooso ude......."
+   },
+   {
+    "sp": "B",
+    "jp": "本が多くて、捨てるのがもったいなくて……。",
+    "kana": "ほんがおおくて、すてるのがもったいなくて……。",
+    "romaji": "Hon ga ooku te, sute runogamottainakute......."
+   },
+   {
+    "sp": "A",
+    "jp": "本を運ぶのは重いですよね。手伝いましょうか。",
+    "kana": "ほんをはこぶのはおもいですよね。てつだいましょうか。",
+    "romaji": "Hon wo hakobu no wa omoi desuyone. tetsudai mashouka."
+   },
+   {
+    "sp": "B",
+    "jp": "本当ですか！助かります。",
+    "kana": "ほんとうですか！たすかります。",
+    "romaji": "Hontou desu ka! tasuka rimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "引越し業者はもう頼みましたか。",
+    "kana": "ひっこしぎょうしゃはもうたのみましたか。",
+    "romaji": "Hikkoshi gyousha hamou tanomi mashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "はい、来週の土曜日に来てもらうことになっています。",
+    "kana": "はい、らいしゅうのどようびにきてもらうことになっています。",
+    "romaji": "Hai, raishuu no doyoubi ni kite moraukotoninatteimasu."
+   },
+   {
+    "sp": "A",
+    "jp": "新しい部屋はどんなところですか。",
+    "kana": "あたらしいへやはどんなところですか。",
+    "romaji": "Atarashii heya hadonnatokorodesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "駅から近いし、日当たりもいいし、気に入っています。",
+    "kana": "えきからちかいし、ひあたりもいいし、きにいっています。",
+    "romaji": "Eki kara chikai shi, hiatari moiishi, kiniitteimasu."
+   }
+  ]
+ },
+ {
+  "file": "f2",
+  "lesson": "sogo",
+  "no": 50,
+  "title": "日本語上達の秘訣（総合）",
+  "lines": [
+   {
+    "sp": "A",
+    "jp": "日本語がとても上手ですね。どうやって勉強しましたか。",
+    "kana": "にほんごがとてもじょうずですね。どうやってべんきょうしましたか。",
+    "romaji": "Nihongo gatotemo jouzu desu ne. douyatte benkyou shimashita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "毎日少しずつ続けることが大切だと思います。",
+    "kana": "まいにちすこしずつつづけることがたいせつだとおもいます。",
+    "romaji": "Mainichi sukoshi zutsu tsuzuke rukotoga taisetsu dato omoi masu."
+   },
+   {
+    "sp": "A",
+    "jp": "どんな方法が一番効果的でしたか。",
+    "kana": "どんなほうほうがいちばんこうかてきでしたか。",
+    "romaji": "Donna houhou ga ichibankoukateki deshita ka."
+   },
+   {
+    "sp": "B",
+    "jp": "日本人の友だちと話すようにしたことが一番よかったです。",
+    "kana": "にほんじんのともだちとはなすようにしたことがいちばんよかったです。",
+    "romaji": "Nihonjin no tomo dachito hanasu younishitakotoga ichiban yokattadesu."
+   },
+   {
+    "sp": "A",
+    "jp": "間違えるのが恥ずかしくなかったですか。",
+    "kana": "まちがえるのがはずかしくなかったですか。",
+    "romaji": "Machigae runoga hazukashiku nakattadesu ka."
+   },
+   {
+    "sp": "B",
+    "jp": "最初は恥ずかしかったですが、間違えても笑ってくれたので、だんだん平気になりました。",
+    "kana": "さいしょははずかしかったですが、まちがえてもわらってくれたので、だんだんへいきになりました。",
+    "romaji": "Saisho wa hazukashika ttadesu ga, machigae temo warattekuretanode, dandan heiki ninarimashita."
+   },
+   {
+    "sp": "A",
+    "jp": "私もそうしてみます。",
+    "kana": "わたしもそうしてみます。",
+    "romaji": "Watashi mosoushitemimasu."
+   },
+   {
+    "sp": "B",
+    "jp": "日本語が話せるようになれば、もっと楽しくなりますよ。",
+    "kana": "にほんごがはなせるようになれば、もっとたのしくなりますよ。",
+    "romaji": "Nihongo ga hanase ruyouninareba, motto tanoshiku narimasu yo."
+   },
+   {
+    "sp": "A",
+    "jp": "はい、あきらめずに続けます。",
+    "kana": "はい、あきらめずにつづけます。",
+    "romaji": "Hai, akiramezuni tsuzuke masu."
+   },
+   {
+    "sp": "B",
+    "jp": "応援しています。一緒にがんばりましょう！",
+    "kana": "おうえんしています。いっしょにがんばりましょう！",
+    "romaji": "Ouen shiteimasu. isshoni gambarimashou!"
+   }
+  ]
+ }
+]

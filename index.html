@@ -110,6 +110,9 @@
   .login-btn{width:100%; padding:14px; border:none; border-radius:14px; background:var(--accent); color:#fff; font-size:15px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px rgba(212,61,81,.35)}
   .login-btn:disabled{opacity:.6}
   .login-err{font-size:12px; color:#c02626; margin:0 0 10px}
+  .lang-row{display:flex; gap:8px; justify-content:center; margin:0 0 14px}
+  .lang-opt{border:1.5px solid var(--line); background:var(--bg); border-radius:99px; padding:7px 14px; font-size:13px; cursor:pointer; font-weight:600; font-family:inherit}
+  .lang-opt.on{border-color:var(--accent); background:var(--accent-soft); color:var(--accent)}
 </style>
 </head>
 <body>
@@ -117,6 +120,7 @@
   <header>
     <div class="logo">🎧 Shadowing <span>N4</span></div>
     <div style="display:flex; gap:8px; align-items:center">
+      <button class="user-chip" id="lang-btn" onclick="toggleLang()" title="Bahasa / ဘာသာစကား">🇮🇩</button>
       <button class="user-chip hidden" id="user-chip" onclick="confirmLogout()">👤 <span id="chip-name"></span></button>
       <div class="badge">JLPT N4</div>
     </div>
@@ -125,18 +129,18 @@
   <!-- HOME -->
   <div id="view-home">
     <div class="progress-card">
-      <h2>Kemajuan Belajar Anda</h2>
-      <div class="progress-num"><span id="p-done">0</span> / <span id="p-total">0</span> kalimat</div>
+      <h2 id="t-progress">Kemajuan Belajar Anda</h2>
+      <div class="progress-num"><span id="p-done">0</span> / <span id="p-total">0</span> <span id="t-unit">kalimat</span></div>
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
     </div>
     <div class="lesson-card" onclick="showLessonSetup()">
       <div class="big">▶️</div>
       <div>
-        <h2>Pelajaran Otomatis</h2>
-        <p>Audio diputar otomatis: Indonesia → Jepang. Pilih durasi (10–45 menit), urutan acak, mode tanpa teks.</p>
+        <h2 id="t-lesson-title">Pelajaran Otomatis</h2>
+        <p id="t-lesson-desc">Audio diputar otomatis: Indonesia → Jepang. Pilih durasi (10–45 menit), urutan acak, mode tanpa teks.</p>
       </div>
     </div>
-    <div class="guide">
+    <div class="guide" id="t-guide">
       <b>Cara latihan shadowing 🗣️</b>
       1. Dengarkan audio bahasa Jepang.<br>
       2. Tirukan ucapannya <u>bersamaan</u> dengan audio (seperti bayangan).<br>
@@ -162,7 +166,7 @@
       <h2 id="practice-cat"></h2>
     </div>
     <div class="practice">
-      <div class="step-label">Dengarkan & Tirukan</div>
+      <div class="step-label" id="t-step">Dengarkan & Tirukan</div>
       <div class="jp-big" id="pr-jp"></div>
       <div class="kana" id="pr-kana"></div>
       <div class="romaji" id="pr-romaji"></div>
@@ -177,15 +181,15 @@
         <button class="btn-play" id="btn-play" onclick="playAudio()">▶</button>
         <button class="btn-mini" id="btn-loop" onclick="toggleLoop()" title="Ulangi otomatis">🔁</button>
       </div>
-      <div class="hint">🐢 = pelan &nbsp;|&nbsp; 🔁 = putar berulang</div>
+      <div class="hint" id="t-hint">🐢 = pelan &nbsp;|&nbsp; 🔁 = putar berulang</div>
       <div class="rec-row">
         <button class="btn-rec rec-start" id="btn-rec" onclick="toggleRec()">🎙️ Rekam suara saya</button>
         <button class="btn-rec rec-play hidden" id="btn-recplay" onclick="playRec()">▶ Putar rekaman</button>
       </div>
       <div class="nav-row">
-        <button onclick="prevSentence()">← Sebelumnya</button>
+        <button id="btn-prev" onclick="prevSentence()">← Sebelumnya</button>
         <button class="btn-done undone" id="btn-done" onclick="toggleDone()">✓ Selesai</button>
-        <button onclick="nextSentence()">Berikutnya →</button>
+        <button id="btn-next" onclick="nextSentence()">Berikutnya →</button>
       </div>
       <div class="counter" id="pr-counter"></div>
     </div>
@@ -198,11 +202,11 @@
       <h2>▶️ Pelajaran Otomatis</h2>
     </div>
     <div class="set-card">
-      <h3>📚 Kategori</h3>
+      <h3 id="t-set-cat">📚 Kategori</h3>
       <select id="ls-cat" class="opt-select"><option value="">Semua kategori</option></select>
     </div>
     <div class="set-card">
-      <h3>⏱️ Durasi</h3>
+      <h3 id="t-set-dur">⏱️ Durasi</h3>
       <div class="opt-row" id="ls-dur">
         <button class="opt" data-v="10">10 menit</button>
         <button class="opt" data-v="20">20 menit</button>
@@ -210,15 +214,16 @@
         <button class="opt" data-v="45">45 menit</button>
       </div>
     </div>
-    <div class="set-card">
-      <h3>🔀 Urutan</h3>
+    <!-- 教師要望: 順番は常にランダム固定（覚えてしまうのを防ぐ）のため非表示 -->
+    <div class="set-card hidden">
+      <h3 id="t-set-order">🔀 Urutan</h3>
       <div class="opt-row" id="ls-order">
-        <button class="opt on" data-v="seq">Berurutan (1→2→3)</button>
-        <button class="opt" data-v="rand">Acak (1→3→2…)</button>
+        <button class="opt" data-v="seq">Berurutan (1→2→3)</button>
+        <button class="opt on" data-v="rand">Acak (1→3→2…)</button>
       </div>
     </div>
     <div class="set-card">
-      <h3>🔊 Pola audio</h3>
+      <h3 id="t-set-pattern">🔊 Pola audio</h3>
       <div class="opt-row" id="ls-pattern">
         <button class="opt on" data-v="idjpidjp">🇮🇩→🇯🇵→🇮🇩→🇯🇵</button>
         <button class="opt" data-v="idjp">🇮🇩→🇯🇵</button>
@@ -227,20 +232,21 @@
       </div>
     </div>
     <div class="set-card">
-      <h3>⏸️ Jeda menirukan</h3>
+      <h3 id="t-set-gap">⏸️ Jeda menirukan</h3>
       <div class="opt-row" id="ls-gap">
         <button class="opt on" data-v="1">Ada (untuk mengulang ucapan)</button>
         <button class="opt" data-v="0">Tidak ada</button>
       </div>
     </div>
-    <div class="set-card">
-      <h3>👁️ Teks</h3>
+    <!-- 教師要望: スクリプトは常に非表示固定（👁ボタンで一時表示のみ可）のため非表示 -->
+    <div class="set-card hidden">
+      <h3 id="t-set-text">👁️ Teks</h3>
       <div class="opt-row" id="ls-text">
-        <button class="opt on" data-v="1">Tampilkan teks</button>
-        <button class="opt" data-v="0">Hanya audio (tanpa teks)</button>
+        <button class="opt" data-v="1">Tampilkan teks</button>
+        <button class="opt on" data-v="0">Hanya audio (tanpa teks)</button>
       </div>
     </div>
-    <button class="btn-start" onclick="startLesson()">▶ Mulai Pelajaran</button>
+    <button class="btn-start" id="t-start" onclick="startLesson()">▶ Mulai Pelajaran</button>
   </div>
 
   <!-- LESSON PLAY -->
@@ -251,7 +257,7 @@
     </div>
     <div class="lesson-play">
       <div class="timer" id="l-timer">30:00</div>
-      <div class="timer-label">sisa waktu</div>
+      <div class="timer-label" id="t-timer-label">sisa waktu</div>
       <div class="phase" id="l-phase"></div>
       <div class="l-text" id="l-textbox">
         <div class="l-jp" id="l-jp"></div>
@@ -269,11 +275,11 @@
   <div id="view-lesson-done" class="hidden">
     <div class="lesson-play">
       <div class="fin">🎉</div>
-      <h2 style="margin:0 0 8px">Pelajaran selesai!</h2>
+      <h2 style="margin:0 0 8px" id="t-fin-title">Pelajaran selesai!</h2>
       <p style="color:var(--sub); font-size:14px" id="ld-summary"></p>
       <div class="l-ctrl">
-        <button class="btn-rec rec-start" onclick="showLessonSetup()">🔁 Sekali lagi</button>
-        <button class="btn-rec rec-play" onclick="showHome()">🏠 Beranda</button>
+        <button class="btn-rec rec-start" id="t-again" onclick="showLessonSetup()">🔁 Sekali lagi</button>
+        <button class="btn-rec rec-play" id="t-home" onclick="showHome()">🏠 Beranda</button>
       </div>
     </div>
   </div>
@@ -285,7 +291,11 @@
   <form class="login-card" onsubmit="doLogin(event)">
     <div class="ic">🎧</div>
     <h2>Shadowing <span>N4</span></h2>
-    <p>Masuk untuk mulai belajar</p>
+    <p id="t-login-sub">Masuk untuk mulai belajar</p>
+    <div class="lang-row">
+      <button type="button" class="lang-opt" id="lang-id" onclick="setLang('id')">🇮🇩 Indonesia</button>
+      <button type="button" class="lang-opt" id="lang-my" onclick="setLang('my')">🇲🇲 မြန်မာ</button>
+    </div>
     <input id="li-id" placeholder="ID Pengguna" autocomplete="username" autocapitalize="none">
     <input id="li-pin" type="password" inputmode="numeric" placeholder="PIN" autocomplete="current-password">
     <div id="li-err" class="login-err hidden"></div>
@@ -302,6 +312,129 @@ const LS_PROGRESS = 'shadowing_n4_progress';
 const LS_CUSTOM = 'shadowing_n4_custom_data';
 const LS_SESSION = 'shadowing_n4_session';
 const LS_QUEUE = 'shadowing_n4_event_queue';
+const LS_LANG = 'shadowing_n4_lang';
+
+/* ================= LANGUAGE (id / my) ================= */
+let LANG = localStorage.getItem(LS_LANG) || 'id';
+if (LANG !== 'id' && LANG !== 'my') LANG = 'id';
+const STR = {
+  id: {
+    flag: '🇮🇩',
+    loginSub: 'Masuk untuk mulai belajar',
+    idPh: 'ID Pengguna', pinPh: 'PIN', masuk: 'Masuk',
+    errLogin: 'ID atau PIN salah.',
+    errConn: 'Tidak dapat terhubung. Periksa koneksi internet Anda.',
+    logout: n => 'Keluar dari akun ' + n + '?',
+    progress: 'Kemajuan Belajar Anda', unit: 'kalimat',
+    lessonTitle: 'Pelajaran Otomatis',
+    lessonDesc: 'Audio diputar otomatis: Indonesia → Jepang. Pilih durasi (10–45 menit), urutan acak, mode tanpa teks.',
+    guide: '<b>Cara latihan shadowing 🗣️</b>1. Dengarkan audio bahasa Jepang.<br>2. Tirukan ucapannya <u>bersamaan</u> dengan audio (seperti bayangan).<br>3. Rekam suara Anda dan bandingkan.<br>4. Ulangi sampai lancar, lalu tandai ✓ Selesai.',
+    doneBadge: n => '✓ ' + n + ' selesai',
+    step: 'Dengarkan & Tirukan', arti: 'Arti',
+    hint: '🐢 = pelan &nbsp;|&nbsp; 🔁 = putar berulang',
+    rec: '🎙️ Rekam suara saya', recAgain: '🎙️ Rekam lagi', recStop: '⏹ Berhenti',
+    recPlay: '▶ Putar rekaman', micErr: 'Mikrofon tidak dapat diakses: ',
+    prev: '← Sebelumnya', next: 'Berikutnya →',
+    done: '✓ Selesai', doneAlready: '✓ Sudah selesai',
+    counter: (i, n) => 'Kalimat ' + i + ' / ' + n,
+    setCat: '📚 Kategori', allCat: n => 'Semua kategori (' + n + ' kalimat)',
+    setDur: '⏱️ Durasi', menit: 'menit',
+    setOrder: '🔀 Urutan', seq: 'Berurutan (1→2→3)', rand: 'Acak (1→3→2…)',
+    setPattern: '🔊 Pola audio',
+    setGap: '⏸️ Jeda menirukan', gapY: 'Ada (untuk mengulang ucapan)', gapN: 'Tidak ada',
+    setText: '👁️ Teks', textY: 'Tampilkan teks', textN: 'Hanya audio (tanpa teks)',
+    start: '▶ Mulai Pelajaran', timerLabel: 'sisa waktu',
+    phaseTr: '<span class="flag">🇮🇩</span> Bahasa Indonesia',
+    phaseJp: '<span class="flag">🇯🇵</span> Bahasa Jepang — tirukan!',
+    played: n => 'Kalimat diputar: ' + n,
+    peek: '👁 Lihat teks sebentar',
+    finTitle: 'Pelajaran selesai!',
+    finSummary: (m, p) => m + ' menit · ' + p + ' kalimat diputar. Kerja bagus!',
+    again: '🔁 Sekali lagi', home: '🏠 Beranda'
+  },
+  my: {
+    flag: '🇲🇲',
+    loginSub: 'စတင်လေ့လာဖို့ ဝင်ရောက်ပါ',
+    idPh: 'အသုံးပြုသူ ID', pinPh: 'PIN', masuk: 'ဝင်မယ်',
+    errLogin: 'ID သို့မဟုတ် PIN မှားနေပါတယ်။',
+    errConn: 'ချိတ်ဆက်လို့မရပါ။ အင်တာနက်ကို စစ်ဆေးပါ။',
+    logout: n => n + ' အကောင့်ကနေ ထွက်မလား။',
+    progress: 'သင့်လေ့လာမှု တိုးတက်မှု', unit: 'ဝါကျ',
+    lessonTitle: 'အလိုအလျောက် သင်ခန်းစာ',
+    lessonDesc: 'အသံ အလိုအလျောက် ဖွင့်ပေးမယ်: မြန်မာ → ဂျပန်။ ကြာချိန် (၁၀–၄၅ မိနစ်)၊ ကျပန်းအစီအစဉ်၊ စာမပါမုဒ် ရွေးနိုင်ပါတယ်။',
+    guide: '<b>Shadowing လေ့ကျင့်နည်း 🗣️</b>1. ဂျပန်အသံကို နားထောင်ပါ။<br>2. အသံနဲ့ <u>တစ်ပြိုင်တည်း</u> လိုက်ဆိုပါ (အရိပ်လို)။<br>3. ကိုယ့်အသံကို သွင်းပြီး နှိုင်းယှဉ်ပါ။<br>4. ကျွမ်းကျင်တဲ့အထိ ထပ်လုပ်ပြီး ✓ ပြီးပြီလို့ မှတ်ပါ။',
+    doneBadge: n => '✓ ' + n + ' ပြီးပြီ',
+    step: 'နားထောင်ပြီး လိုက်ဆိုပါ', arti: 'အဓိပ္ပာယ်',
+    hint: '🐢 = နှေးနှေး &nbsp;|&nbsp; 🔁 = ထပ်ခါထပ်ခါဖွင့်',
+    rec: '🎙️ ကိုယ့်အသံ သွင်းမယ်', recAgain: '🎙️ ထပ်သွင်းမယ်', recStop: '⏹ ရပ်မယ်',
+    recPlay: '▶ အသွင်း ဖွင့်မယ်', micErr: 'မိုက်ခရိုဖုန်း သုံးလို့မရပါ: ',
+    prev: '← အရင်ဝါကျ', next: 'နောက်ဝါကျ →',
+    done: '✓ ပြီးပြီ', doneAlready: '✓ ပြီးသွားပြီ',
+    counter: (i, n) => 'ဝါကျ ' + i + ' / ' + n,
+    setCat: '📚 အမျိုးအစား', allCat: n => 'အမျိုးအစားအားလုံး (ဝါကျ ' + n + ' ခု)',
+    setDur: '⏱️ ကြာချိန်', menit: 'မိနစ်',
+    setOrder: '🔀 အစီအစဉ်', seq: 'အစဉ်လိုက် (1→2→3)', rand: 'ကျပန်း (1→3→2…)',
+    setPattern: '🔊 အသံပုံစံ',
+    setGap: '⏸️ လိုက်ဆိုချိန် ကြားနား', gapY: 'ရှိမယ် (လိုက်ဆိုဖို့)', gapN: 'မရှိဘူး',
+    setText: '👁️ စာသား', textY: 'စာသား ပြမယ်', textN: 'အသံပဲ (စာမပါ)',
+    start: '▶ သင်ခန်းစာ စတင်မယ်', timerLabel: 'ကျန်ချိန်',
+    phaseTr: '<span class="flag">🇲🇲</span> မြန်မာဘာသာ',
+    phaseJp: '<span class="flag">🇯🇵</span> ဂျပန်ဘာသာ — လိုက်ဆိုပါ!',
+    played: n => 'ဖွင့်ပြီးဝါကျ: ' + n,
+    peek: '👁 စာသား ခဏကြည့်မယ်',
+    finTitle: 'သင်ခန်းစာ ပြီးပါပြီ!',
+    finSummary: (m, p) => m + ' မိနစ် · ဝါကျ ' + p + ' ခု ဖွင့်ပြီးပါပြီ။ အရမ်းကောင်းပါတယ်!',
+    again: '🔁 နောက်တစ်ခါ', home: '🏠 ပင်မ'
+  }
+};
+function T() { return STR[LANG]; }
+function trans(s) { return LANG === 'my' ? (s.mya || s.idn || '') : (s.idn || ''); }
+function catName(c) { return (LANG === 'my' ? c.name_my : c.name_id) || c.name_id; }
+function setLang(lg) {
+  if (lg === LANG) { markLangButtons(); return; }
+  LANG = lg; localStorage.setItem(LS_LANG, LANG);
+  location.reload();
+}
+function toggleLang() { setLang(LANG === 'id' ? 'my' : 'id'); }
+function markLangButtons() {
+  const a = document.getElementById('lang-id'), b = document.getElementById('lang-my');
+  if (a) a.classList.toggle('on', LANG === 'id');
+  if (b) b.classList.toggle('on', LANG === 'my');
+  const lb = document.getElementById('lang-btn');
+  if (lb) lb.textContent = T().flag;
+}
+function applyLang() {
+  const t = T();
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('t-login-sub', t.loginSub); set('t-progress', t.progress); set('t-unit', t.unit);
+  set('t-lesson-title', t.lessonTitle); set('t-lesson-desc', t.lessonDesc);
+  document.getElementById('t-guide').innerHTML = t.guide;
+  set('t-step', t.step);
+  document.getElementById('tg-idn').textContent = t.arti;
+  document.getElementById('t-hint').innerHTML = t.hint;
+  set('btn-rec', t.rec); set('btn-recplay', t.recPlay);
+  set('btn-prev', t.prev); set('btn-next', t.next);
+  set('t-set-cat', t.setCat); set('t-set-dur', t.setDur);
+  set('t-set-order', t.setOrder); set('t-set-pattern', t.setPattern);
+  set('t-set-gap', t.setGap); set('t-set-text', t.setText);
+  document.querySelectorAll('#ls-dur .opt').forEach(b => { b.textContent = b.dataset.v + ' ' + t.menit; });
+  const ord = { seq: t.seq, rand: t.rand };
+  document.querySelectorAll('#ls-order .opt').forEach(b => { b.textContent = ord[b.dataset.v]; });
+  const fl = LANG === 'my' ? '🇲🇲' : '🇮🇩';
+  const pat = { idjpidjp: fl+'→🇯🇵→'+fl+'→🇯🇵', idjp: fl+'→🇯🇵', jpjp: '🇯🇵→🇯🇵', jp: '🇯🇵 ' + (LANG==='my'?'သီးသန့်':'saja') };
+  document.querySelectorAll('#ls-pattern .opt').forEach(b => { b.textContent = pat[b.dataset.v]; });
+  const gap = { '1': t.gapY, '0': t.gapN };
+  document.querySelectorAll('#ls-gap .opt').forEach(b => { b.textContent = gap[b.dataset.v]; });
+  const txt = { '1': t.textY, '0': t.textN };
+  document.querySelectorAll('#ls-text .opt').forEach(b => { b.textContent = txt[b.dataset.v]; });
+  set('t-start', t.start); set('t-timer-label', t.timerLabel);
+  set('l-peek', t.peek); set('t-fin-title', t.finTitle);
+  set('t-again', t.again); set('t-home', t.home);
+  document.getElementById('li-id').placeholder = t.idPh;
+  document.getElementById('li-pin').placeholder = t.pinPh;
+  set('li-btn', t.masuk);
+  markLangButtons();
+}
 let DATA = null, curCat = null, curList = [], curIdx = 0;
 let audio = new Audio(), slow = false, loop = false;
 let mediaRec = null, recChunks = [], recUrl = null, recording = false;
@@ -365,18 +498,18 @@ async function doLogin(e) {
       showChip();
       flushEvents();
     } else {
-      err.textContent = 'ID atau PIN salah.';
+      err.textContent = T().errLogin;
       err.classList.remove('hidden');
     }
   } catch (ex) {
-    err.textContent = 'Tidak dapat terhubung. Periksa koneksi internet Anda.';
+    err.textContent = T().errConn;
     err.classList.remove('hidden');
   }
-  btn.disabled = false; btn.textContent = 'Masuk';
+  btn.disabled = false; btn.textContent = T().masuk;
 }
 function confirmLogout() {
   if (!session) return;
-  if (!confirm('Keluar dari akun ' + (session.name || session.user_id) + '?')) return;
+  if (!confirm(T().logout(session.name || session.user_id))) return;
   flushEvents({ keepalive: true });
   localStorage.removeItem(LS_SESSION);
   session = null;
@@ -413,6 +546,7 @@ async function init() {
   DATA = await res.json();
   const custom = JSON.parse(localStorage.getItem(LS_CUSTOM) || 'null');
   if (custom && custom.sentences) DATA = custom;
+  applyLang();
   renderHome();
   if (window.speechSynthesis) speechSynthesis.getVoices(); // warm up voice list
   initSession();
@@ -433,8 +567,8 @@ function renderHome() {
     const d = doneCount(list);
     const el = document.createElement('div');
     el.className = 'cat';
-    el.innerHTML = `<div class="ic">${c.icon || '📘'}</div><h3>${c.name_id}</h3><p>${c.name_jp} · ${list.length} kalimat</p>` +
-      (d ? `<div class="done">✓ ${d}/${list.length} selesai</div>` : '');
+    el.innerHTML = `<div class="ic">${c.icon || '📘'}</div><h3>${catName(c)}</h3><p>${c.name_jp} · ${list.length} ${T().unit}</p>` +
+      (d ? `<div class="done">${T().doneBadge(d + '/' + list.length)}</div>` : '');
     el.onclick = () => showList(c);
     grid.appendChild(el);
   });
@@ -444,13 +578,13 @@ function swap(id){ VIEWS.forEach(v => document.getElementById(v).classList.toggl
 function showHome(){ stopAll(); lessonAbort(); swap('view-home'); renderHome(); }
 function showList(cat) {
   curCat = cat; curList = sentencesOf(cat.id);
-  document.getElementById('list-title').textContent = `${cat.icon || ''} ${cat.name_id}`;
+  document.getElementById('list-title').textContent = `${cat.icon || ''} ${catName(cat)}`;
   const box = document.getElementById('sentence-list');
   box.innerHTML = '';
   curList.forEach((s, i) => {
     const el = document.createElement('div');
     el.className = 'sentence-item' + (progress[s.id] ? ' is-done' : '');
-    el.innerHTML = `<div class="num">${progress[s.id] ? '✓' : i+1}</div><div><div class="jp">${s.jp}</div><div class="idn">${s.idn}</div></div>`;
+    el.innerHTML = `<div class="num">${progress[s.id] ? '✓' : i+1}</div><div><div class="jp">${s.jp}</div><div class="idn">${trans(s)}</div></div>`;
     el.onclick = () => showPractice(i);
     box.appendChild(el);
   });
@@ -460,12 +594,12 @@ function backToList(){ stopAll(); showList(curCat); }
 function showPractice(i) {
   curIdx = i; clearRec();
   const s = curList[i];
-  document.getElementById('practice-cat').textContent = `${curCat.icon || ''} ${curCat.name_id}`;
+  document.getElementById('practice-cat').textContent = `${curCat.icon || ''} ${catName(curCat)}`;
   document.getElementById('pr-jp').textContent = s.jp;
   document.getElementById('pr-kana').textContent = s.kana || '';
   document.getElementById('pr-romaji').textContent = s.romaji || '';
-  document.getElementById('pr-idn').textContent = s.idn || '';
-  document.getElementById('pr-counter').textContent = `Kalimat ${i+1} / ${curList.length}`;
+  document.getElementById('pr-idn').textContent = trans(s);
+  document.getElementById('pr-counter').textContent = T().counter(i+1, curList.length);
   updateDoneBtn(); applyToggles();
   swap('view-practice');
   playAudio();
@@ -515,16 +649,16 @@ async function toggleRec() {
       stream.getTracks().forEach(t => t.stop());
       recUrl = URL.createObjectURL(new Blob(recChunks, { type: 'audio/webm' }));
       recording = false;
-      btn.classList.remove('recording'); btn.textContent = '🎙️ Rekam lagi';
+      btn.classList.remove('recording'); btn.textContent = T().recAgain;
       document.getElementById('btn-recplay').classList.remove('hidden');
     };
     mediaRec.start(); recording = true;
-    btn.classList.add('recording'); btn.textContent = '⏹ Berhenti';
-  } catch (e) { alert('Mikrofon tidak dapat diakses: ' + e.message); }
+    btn.classList.add('recording'); btn.textContent = T().recStop;
+  } catch (e) { alert(T().micErr + e.message); }
 }
 function playRec(){ if (recUrl) new Audio(recUrl).play(); }
 function clearRec(){ recUrl = null; recording = false;
-  const b = document.getElementById('btn-rec'); b.classList.remove('recording'); b.textContent = '🎙️ Rekam suara saya';
+  const b = document.getElementById('btn-rec'); b.classList.remove('recording'); b.textContent = T().rec;
   document.getElementById('btn-recplay').classList.add('hidden'); }
 
 function toggleDone() {
@@ -538,7 +672,7 @@ function updateDoneBtn() {
   const b = document.getElementById('btn-done');
   const done = !!progress[s.id];
   b.classList.toggle('undone', !done);
-  b.textContent = done ? '✓ Sudah selesai' : '✓ Selesai';
+  b.textContent = done ? T().doneAlready : T().done;
 }
 function nextSentence(){ stopAll(); if (curIdx < curList.length - 1) showPractice(curIdx + 1); else backToList(); }
 function prevSentence(){ stopAll(); if (curIdx > 0) showPractice(curIdx - 1); }
@@ -549,10 +683,10 @@ let L = null; // lesson state
 function showLessonSetup() {
   stopAll(); lessonAbort();
   const sel = document.getElementById('ls-cat');
-  sel.innerHTML = '<option value="">Semua kategori (' + DATA.sentences.length + ' kalimat)</option>' +
+  sel.innerHTML = '<option value="">' + T().allCat(DATA.sentences.length) + '</option>' +
     DATA.categories.map(c => {
       const n = sentencesOf(c.id).length;
-      return n ? `<option value="${c.id}">${c.icon || ''} ${c.name_id} (${n})</option>` : '';
+      return n ? `<option value="${c.id}">${c.icon || ''} ${catName(c)} (${n})</option>` : '';
     }).join('');
   swap('view-lesson-setup');
 }
@@ -580,10 +714,10 @@ function startLesson() {
   L = {
     list,
     endAt: Date.now() + parseInt(optVal('ls-dur')) * 60000,
-    order: optVal('ls-order'),
+    order: 'rand',        // 教師要望: 常にランダム（順番を覚えてしまうため）
     steps: PATTERNS[optVal('ls-pattern')],
     gap: optVal('ls-gap') === '1',
-    showText: optVal('ls-text') === '1',
+    showText: false,      // 教師要望: スクリプト非表示（👁ボタンで一時表示のみ）
     paused: false, stopped: false, played: 0, seqIdx: -1, lastIdx: -1,
     startedMin: parseInt(optVal('ls-dur'))
   };
@@ -637,13 +771,19 @@ function speakAsync(text, lang, rate, voice) {
 async function playStep(s, step) {
   const ph = document.getElementById('l-phase');
   if (step === 'id') {
-    ph.innerHTML = '<span class="flag">🇮🇩</span> Bahasa Indonesia';
-    const v = idVoice();
-    if (v) await speakAsync(s.idn, v.lang, 1.0, v);
-    else if (s.audio_id) await playFileAsync(s.audio_id);
-    else await speakAsync(s.idn, 'id-ID', 1.0, null);
+    ph.innerHTML = T().phaseTr;
+    if (LANG === 'my') {
+      // ミャンマー語はブラウザ内蔵音声がほぼ無いため音声ファイル優先
+      if (s.audio_my) await playFileAsync(s.audio_my);
+      else await speakAsync(s.mya || '', 'my-MM', 1.0, null);
+    } else {
+      const v = idVoice();
+      if (v) await speakAsync(s.idn, v.lang, 1.0, v);
+      else if (s.audio_id) await playFileAsync(s.audio_id);
+      else await speakAsync(s.idn, 'id-ID', 1.0, null);
+    }
   } else {
-    ph.innerHTML = '<span class="flag">🇯🇵</span> Bahasa Jepang — tirukan!';
+    ph.innerHTML = T().phaseJp;
     logPlay(s.id, 'lesson');
     if (s.audio) await playFileAsync(s.audio);
     else await speakAsync(s.jp, 'ja-JP', 0.9, null);
@@ -657,8 +797,8 @@ async function runLesson() {
     L.lastIdx = i;
     const s = L.list[i];
     document.getElementById('l-jp').textContent = s.jp;
-    document.getElementById('l-idn').textContent = s.idn;
-    document.getElementById('l-count').textContent = `Kalimat diputar: ${L.played + 1}`;
+    document.getElementById('l-idn').textContent = trans(s);
+    document.getElementById('l-count').textContent = T().played(L.played + 1);
     for (const step of L.steps) {
       if (L !== my || L.stopped || Date.now() >= L.endAt) break;
       await waitWhilePaused(); if (L !== my || L.stopped) return;
@@ -710,7 +850,7 @@ function stopLesson(){ lessonAbort(); showHome(); }
 function finishLesson() {
   const played = L.played, mins = L.startedMin;
   lessonCleanup(); L = null;
-  document.getElementById('ld-summary').textContent = `${mins} menit · ${played} kalimat diputar. Kerja bagus!`;
+  document.getElementById('ld-summary').textContent = T().finSummary(mins, played);
   swap('view-lesson-done');
 }
 init();
