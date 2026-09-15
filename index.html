@@ -133,7 +133,7 @@
       <div class="progress-num"><span id="p-done">0</span> / <span id="p-total">0</span> <span id="t-unit">kalimat</span></div>
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
     </div>
-    <div class="lesson-card" onclick="showLessonSetup()">
+    <div class="lesson-card" onclick="startAutoLesson()">
       <div class="big">▶️</div>
       <div>
         <h2 id="t-lesson-title">Pelajaran Otomatis</h2>
@@ -147,7 +147,8 @@
       3. Rekam suara Anda dan bandingkan.<br>
       4. Ulangi sampai lancar, lalu tandai ✓ Selesai.
     </div>
-    <div class="cats" id="cat-grid"></div>
+    <!-- 教師要望: 学習内容は自動選択のためカテゴリ選択は非表示 -->
+    <div class="cats hidden" id="cat-grid"></div>
   </div>
 
   <!-- LIST -->
@@ -278,7 +279,7 @@
       <h2 style="margin:0 0 8px" id="t-fin-title">Pelajaran selesai!</h2>
       <p style="color:var(--sub); font-size:14px" id="ld-summary"></p>
       <div class="l-ctrl">
-        <button class="btn-rec rec-start" id="t-again" onclick="showLessonSetup()">🔁 Sekali lagi</button>
+        <button class="btn-rec rec-start" id="t-again" onclick="startAutoLesson()">🔁 Sekali lagi</button>
         <button class="btn-rec rec-play" id="t-home" onclick="showHome()">🏠 Beranda</button>
       </div>
     </div>
@@ -326,8 +327,8 @@ const STR = {
     errConn: 'Tidak dapat terhubung. Periksa koneksi internet Anda.',
     logout: n => 'Keluar dari akun ' + n + '?',
     progress: 'Kemajuan Belajar Anda', unit: 'kalimat',
-    lessonTitle: 'Pelajaran Otomatis',
-    lessonDesc: 'Audio diputar otomatis: Indonesia → Jepang. Pilih durasi (10–45 menit), urutan acak, mode tanpa teks.',
+    lessonTitle: 'Mulai Belajar (30 menit)',
+    lessonDesc: 'Tekan di sini untuk mulai. Kalimat dipilih otomatis secara acak — setiap hari berbeda.',
     guide: '<b>Cara latihan shadowing 🗣️</b>1. Dengarkan audio bahasa Jepang.<br>2. Tirukan ucapannya <u>bersamaan</u> dengan audio (seperti bayangan).<br>3. Rekam suara Anda dan bandingkan.<br>4. Ulangi sampai lancar, lalu tandai ✓ Selesai.',
     doneBadge: n => '✓ ' + n + ' selesai',
     step: 'Dengarkan & Tirukan', arti: 'Arti',
@@ -360,8 +361,8 @@ const STR = {
     errConn: 'ချိတ်ဆက်လို့မရပါ။ အင်တာနက်ကို စစ်ဆေးပါ။',
     logout: n => n + ' အကောင့်ကနေ ထွက်မလား။',
     progress: 'သင့်လေ့လာမှု တိုးတက်မှု', unit: 'ဝါကျ',
-    lessonTitle: 'အလိုအလျောက် သင်ခန်းစာ',
-    lessonDesc: 'အသံ အလိုအလျောက် ဖွင့်ပေးမယ်: မြန်မာ → ဂျပန်။ ကြာချိန် (၁၀–၄၅ မိနစ်)၊ ကျပန်းအစီအစဉ်၊ စာမပါမုဒ် ရွေးနိုင်ပါတယ်။',
+    lessonTitle: 'လေ့လာမှု စတင်မယ် (၃၀ မိနစ်)',
+    lessonDesc: 'ဒီနေရာကို နှိပ်ပြီး စတင်ပါ။ ဝါကျတွေကို အလိုအလျောက် ကျပန်းရွေးပေးပြီး နေ့တိုင်း မတူပါဘူး။',
     guide: '<b>Shadowing လေ့ကျင့်နည်း 🗣️</b>1. ဂျပန်အသံကို နားထောင်ပါ။<br>2. အသံနဲ့ <u>တစ်ပြိုင်တည်း</u> လိုက်ဆိုပါ (အရိပ်လို)။<br>3. ကိုယ့်အသံကို သွင်းပြီး နှိုင်းယှဉ်ပါ။<br>4. ကျွမ်းကျင်တဲ့အထိ ထပ်လုပ်ပြီး ✓ ပြီးပြီလို့ မှတ်ပါ။',
     doneBadge: n => '✓ ' + n + ' ပြီးပြီ',
     step: 'နားထောင်ပြီး လိုက်ဆိုပါ', arti: 'အဓိပ္ပာယ်',
@@ -680,6 +681,55 @@ function prevSentence(){ stopAll(); if (curIdx > 0) showPractice(curIdx - 1); }
 /* ================= LESSON MODE ================= */
 let L = null; // lesson state
 
+/* ---- 出題ローテーション: 全文を一巡するまで重複しないシャッフル順 ---- */
+const LS_ROT = 'shadowing_n4_rotation_v1';
+function newRotation() {
+  const ids = DATA.sentences.map(s => s.id);
+  for (let i = ids.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [ids[i], ids[j]] = [ids[j], ids[i]];
+  }
+  return { ids: ids, pos: 0 };
+}
+function nextRotationId() {
+  let rot = null;
+  try { rot = JSON.parse(localStorage.getItem(LS_ROT) || 'null'); } catch (e) {}
+  const cur = new Set(DATA.sentences.map(s => s.id));
+  if (!rot || !Array.isArray(rot.ids) || typeof rot.pos !== 'number' ||
+      rot.ids.length !== cur.size || !rot.ids.every(id => cur.has(id))) {
+    rot = newRotation(); // 文リストが変わったら作り直し
+  }
+  if (rot.pos >= rot.ids.length) rot = newRotation(); // 一巡したら再シャッフル
+  const id = rot.ids[rot.pos];
+  rot.pos++;
+  try { localStorage.setItem(LS_ROT, JSON.stringify(rot)); } catch (e) {}
+  return id;
+}
+
+/* ---- 教師指定の固定レッスン: 30分・自動出題・スクリプト非表示 ---- */
+function startAutoLesson() {
+  if (!DATA) return;
+  stopAll(); lessonAbort();
+  L = {
+    list: DATA.sentences,
+    endAt: Date.now() + 30 * 60000,   // 30分固定
+    order: 'rotation',                 // 一巡するまで重複しないランダム
+    steps: PATTERNS.idjpidjp,
+    gap: true,
+    showText: false,                   // スクリプト非表示（👁で一時表示のみ）
+    paused: false, stopped: false, played: 0, seqIdx: -1, lastIdx: -1,
+    startedMin: 30
+  };
+  document.getElementById('l-peek').classList.remove('hidden');
+  document.getElementById('l-textbox').classList.add('blurred');
+  document.getElementById('l-pause').textContent = '⏸';
+  swap('view-lesson');
+  try { navigator.wakeLock && navigator.wakeLock.request('screen').then(w => L.wake = w).catch(()=>{}); } catch(e){}
+  L.timerInt = setInterval(updateLessonTimer, 500);
+  updateLessonTimer();
+  runLesson();
+}
+
 function showLessonSetup() {
   stopAll(); lessonAbort();
   const sel = document.getElementById('ls-cat');
@@ -737,6 +787,14 @@ function updateLessonTimer() {
   document.getElementById('l-timer').textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 }
 function nextLessonSentence() {
+  if (L.order === 'rotation') {
+    for (let tries = 0; tries < 3; tries++) {
+      const id = nextRotationId();
+      const i = L.list.findIndex(s => s.id === id);
+      if (i >= 0) return i;
+    }
+    return Math.floor(Math.random() * L.list.length);
+  }
   if (L.order === 'rand') {
     if (L.list.length === 1) return 0;
     let i;
