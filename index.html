@@ -548,6 +548,7 @@ async function init() {
   const custom = JSON.parse(localStorage.getItem(LS_CUSTOM) || 'null');
   if (custom && custom.sentences) DATA = custom;
   applyLang();
+  seedProgressFromRotation();
   renderHome();
   if (window.speechSynthesis) speechSynthesis.getVoices(); // warm up voice list
   initSession();
@@ -680,6 +681,20 @@ function prevSentence(){ stopAll(); if (curIdx > 0) showPractice(curIdx - 1); }
 
 /* ================= LESSON MODE ================= */
 let L = null; // lesson state
+
+// 過去にレッスンで再生済みの文(ローテーション消化分)を進捗に反映する
+// (進捗カードが0のままになる不具合の救済。現在の一巡分のみ復元可能)
+function seedProgressFromRotation() {
+  try {
+    const rot = JSON.parse(localStorage.getItem('shadowing_n4_rotation_v1') || 'null');
+    if (!rot || !Array.isArray(rot.ids) || typeof rot.pos !== 'number') return;
+    let changed = false;
+    for (let i = 0; i < Math.min(rot.pos, rot.ids.length); i++) {
+      if (!progress[rot.ids[i]]) { progress[rot.ids[i]] = Date.now(); changed = true; }
+    }
+    if (changed) localStorage.setItem(LS_PROGRESS, JSON.stringify(progress));
+  } catch (e) {}
+}
 
 /* ---- 出題ローテーション: 全文を一巡するまで重複しないシャッフル順 ---- */
 const LS_ROT = 'shadowing_n4_rotation_v1';
@@ -843,6 +858,11 @@ async function playStep(s, step) {
   } else {
     ph.innerHTML = T().phaseJp;
     logPlay(s.id, 'lesson');
+    // レッスンで再生した文を進捗(ホームのカウント)に反映
+    if (!progress[s.id]) {
+      progress[s.id] = Date.now();
+      localStorage.setItem(LS_PROGRESS, JSON.stringify(progress));
+    }
     if (s.audio) await playFileAsync(s.audio);
     else await speakAsync(s.jp, 'ja-JP', 0.9, null);
   }
